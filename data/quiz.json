@@ -1,0 +1,8675 @@
+{
+ "questions": [
+  {
+   "id": "2006_rel_identify",
+   "cycle": 2006,
+   "group": "診斷",
+   "question": "PISA 2006：在參與的 57 個國家／經濟體中，臺灣的「相對強弱：辨識科學議題」排第幾？",
+   "short": "相對強弱：辨識科學議題",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      9
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      10,
+      23
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      24,
+      40
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      41,
+      57
+     ]
+    }
+   ],
+   "answer": "D",
+   "answer_rank": 56,
+   "n": 57,
+   "taiwan_value": -23.8283,
+   "unit": "分",
+   "oecd_average": -1.20512,
+   "higher_is_better": null,
+   "surprise": 92.8,
+   "top3": [
+    {
+     "country": "Colombia",
+     "value": 14.446
+    },
+    {
+     "country": "Portugal",
+     "value": 12.15927
+    },
+    {
+     "country": "Mexico",
+     "value": 11.70108
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Azerbaijan",
+     "value": -29.56319
+    },
+    {
+     "country": "Chinese Taipei",
+     "value": -23.8283
+    },
+    {
+     "country": "Hungary",
+     "value": -21.25894
+    }
+   ],
+   "reference": {
+    "Japan": -9.33721,
+    "Korea": -3.07949,
+    "Finland": -8.39374,
+    "United States": 3.18286,
+    "Estonia": -15.74896,
+    "Hong Kong (China)": -14.40646
+   },
+   "source": "衍生：pisa2006_ch2.xls / T2.2c 減 pisa2006_ch2.xls / T2.1c"
+  },
+  {
+   "id": "2006_self_concept",
+   "cycle": 2006,
+   "group": "態度",
+   "question": "PISA 2006：在參與的 57 個國家／經濟體中，臺灣的「科學自我概念（我是不是讀科學的料）」排第幾？",
+   "short": "科學自我概念（我是不是讀科學的料）",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      9
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      10,
+      23
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      24,
+      40
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      41,
+      57
+     ]
+    }
+   ],
+   "answer": "D",
+   "answer_rank": 55,
+   "n": 57,
+   "taiwan_value": -0.40434,
+   "unit": "（指數）",
+   "oecd_average": 0.0036020275637011464,
+   "higher_is_better": true,
+   "surprise": 91.0,
+   "top3": [
+    {
+     "country": "Colombia",
+     "value": 0.74892
+    },
+    {
+     "country": "Jordan",
+     "value": 0.7423
+    },
+    {
+     "country": "Kyrgyzstan",
+     "value": 0.692
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Japan",
+     "value": -0.87318
+    },
+    {
+     "country": "Korea",
+     "value": -0.71287
+    },
+    {
+     "country": "Chinese Taipei",
+     "value": -0.40434
+    }
+   ],
+   "reference": {
+    "Japan": -0.87318,
+    "Korea": -0.71287,
+    "Finland": 0.06439,
+    "United States": 0.20409,
+    "Estonia": 0.11076,
+    "Hong Kong (China)": -0.25394
+   },
+   "source": "pisa2006_ch3.xls / T3.4"
+  },
+  {
+   "id": "2006_parent_sci_career",
+   "cycle": 2006,
+   "group": "職涯",
+   "question": "PISA 2006：在參與的 56 個國家／經濟體中，臺灣的「至少一位家長從事科學相關工作的比例」排第幾？",
+   "short": "至少一位家長從事科學相關工作的比例",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      8
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      9,
+      22
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      23,
+      39
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      40,
+      56
+     ]
+    }
+   ],
+   "answer": "D",
+   "answer_rank": 42,
+   "n": 56,
+   "taiwan_value": 10.91406,
+   "unit": "%",
+   "oecd_average": 18.286794995273763,
+   "higher_is_better": null,
+   "surprise": 69.1,
+   "top3": [
+    {
+     "country": "Norway",
+     "value": 34.36708
+    },
+    {
+     "country": "Netherlands",
+     "value": 28.09523
+    },
+    {
+     "country": "Switzerland",
+     "value": 25.51293
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Indonesia",
+     "value": 1.81292
+    },
+    {
+     "country": "Thailand",
+     "value": 3.04884
+    },
+    {
+     "country": "Macao (China)",
+     "value": 3.6122
+    }
+   ],
+   "reference": {
+    "Japan": 8.48169,
+    "Korea": 10.87848,
+    "Finland": 25.36229,
+    "United States": 22.13919,
+    "Estonia": 12.8358,
+    "Hong Kong (China)": 5.77301
+   },
+   "source": "pisa2006_ch3.xls / T3.13"
+  },
+  {
+   "id": "2006_career_health",
+   "cycle": 2006,
+   "group": "職涯",
+   "question": "PISA 2006：在參與的 52 個國家／經濟體中，臺灣的「想當醫療專業人員的比例」排第幾？",
+   "short": "想當醫療專業人員的比例",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      8
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      9,
+      21
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      22,
+      36
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      37,
+      52
+     ]
+    }
+   ],
+   "answer": "C",
+   "answer_rank": 33,
+   "n": 52,
+   "taiwan_value": 7.55292,
+   "unit": "%",
+   "oecd_average": 8.65376,
+   "higher_is_better": true,
+   "surprise": 57.3,
+   "top3": [
+    {
+     "country": "Colombia",
+     "value": 21.06002
+    },
+    {
+     "country": "United States",
+     "value": 19.32222
+    },
+    {
+     "country": "Jordan",
+     "value": 19.06596
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Czechia",
+     "value": 3.15351
+    },
+    {
+     "country": "Germany",
+     "value": 3.71704
+    },
+    {
+     "country": "Latvia",
+     "value": 3.94882
+    }
+   ],
+   "reference": {
+    "Japan": 7.82186,
+    "Korea": 6.62725,
+    "Finland": 6.1553,
+    "United States": 19.32222,
+    "Estonia": 4.22078,
+    "Hong Kong (China)": 9.72955
+   },
+   "source": "pisa2015_ch3.xlsx / Table I.3.10a"
+  },
+  {
+   "id": "2006_career_sci_eng",
+   "cycle": 2006,
+   "group": "職涯",
+   "question": "PISA 2006：在參與的 52 個國家／經濟體中，臺灣的「想當科學家／工程師的比例」排第幾？",
+   "short": "想當科學家／工程師的比例",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      8
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      9,
+      21
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      22,
+      36
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      37,
+      52
+     ]
+    }
+   ],
+   "answer": "C",
+   "answer_rank": 32,
+   "n": 52,
+   "taiwan_value": 6.53739,
+   "unit": "%",
+   "oecd_average": 8.072599,
+   "higher_is_better": true,
+   "surprise": 55.4,
+   "top3": [
+    {
+     "country": "Colombia",
+     "value": 17.96379
+    },
+    {
+     "country": "Jordan",
+     "value": 16.60385
+    },
+    {
+     "country": "Mexico",
+     "value": 15.52699
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Montenegro",
+     "value": 2.99469
+    },
+    {
+     "country": "Croatia",
+     "value": 3.71391
+    },
+    {
+     "country": "Netherlands",
+     "value": 3.79504
+    }
+   ],
+   "reference": {
+    "Japan": 5.22532,
+    "Korea": 7.82381,
+    "Finland": 4.4873,
+    "United States": 9.3377,
+    "Estonia": 8.21765,
+    "Hong Kong (China)": 6.20608
+   },
+   "source": "pisa2015_ch3.xlsx / Table I.3.10a"
+  },
+  {
+   "id": "2006_env_optimism",
+   "cycle": 2006,
+   "group": "環境",
+   "question": "PISA 2006：在參與的 57 個國家／經濟體中，臺灣的「對環境問題的樂觀程度」排第幾？",
+   "short": "對環境問題的樂觀程度",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      9
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      10,
+      23
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      24,
+      40
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      41,
+      57
+     ]
+    }
+   ],
+   "answer": "C",
+   "answer_rank": 35,
+   "n": 57,
+   "taiwan_value": 0.02987,
+   "unit": "（指數）",
+   "oecd_average": -0.00025881491266586585,
+   "higher_is_better": null,
+   "surprise": 55.3,
+   "top3": [
+    {
+     "country": "Qatar",
+     "value": 0.73259
+    },
+    {
+     "country": "Kyrgyzstan",
+     "value": 0.72454
+    },
+    {
+     "country": "Bulgaria",
+     "value": 0.68333
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Croatia",
+     "value": -0.29162
+    },
+    {
+     "country": "Liechtenstein",
+     "value": -0.26152
+    },
+    {
+     "country": "New Zealand",
+     "value": -0.22134
+    }
+   ],
+   "reference": {
+    "Japan": 0.10029,
+    "Korea": 0.36741,
+    "Finland": 0.00114,
+    "United States": 0.13732,
+    "Estonia": 0.0204,
+    "Hong Kong (China)": 0.32887
+   },
+   "source": "pisa2006_ch3.xls / T3.18"
+  },
+  {
+   "id": "2006_general_interest",
+   "cycle": 2006,
+   "group": "態度",
+   "question": "PISA 2006：在參與的 57 個國家／經濟體中，臺灣的「對科學的一般興趣」排第幾？",
+   "short": "對科學的一般興趣",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      9
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      10,
+      23
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      24,
+      40
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      41,
+      57
+     ]
+    }
+   ],
+   "answer": "C",
+   "answer_rank": 33,
+   "n": 57,
+   "taiwan_value": 0.08774,
+   "unit": "（指數）",
+   "oecd_average": 0.00017832086808602007,
+   "higher_is_better": true,
+   "surprise": 51.7,
+   "top3": [
+    {
+     "country": "Colombia",
+     "value": 1.14622
+    },
+    {
+     "country": "Kyrgyzstan",
+     "value": 0.90558
+    },
+    {
+     "country": "Thailand",
+     "value": 0.79206
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Netherlands",
+     "value": -0.34517
+    },
+    {
+     "country": "Finland",
+     "value": -0.24536
+    },
+    {
+     "country": "Korea",
+     "value": -0.24441
+    }
+   ],
+   "reference": {
+    "Japan": -0.12948,
+    "Korea": -0.24441,
+    "Finland": -0.24536,
+    "United States": 0.03097,
+    "Estonia": 0.19046,
+    "Hong Kong (China)": 0.1943
+   },
+   "source": "pisa2006_ch3.xls / T3.8"
+  },
+  {
+   "id": "2006_future_motivation",
+   "cycle": 2006,
+   "group": "態度",
+   "question": "PISA 2006：在參與的 57 個國家／經濟體中，臺灣的「未來導向動機（想繼續走科學）」排第幾？",
+   "short": "未來導向動機（想繼續走科學）",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      9
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      10,
+      23
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      24,
+      40
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      41,
+      57
+     ]
+    }
+   ],
+   "answer": "C",
+   "answer_rank": 30,
+   "n": 57,
+   "taiwan_value": 0.13683,
+   "unit": "（指數）",
+   "oecd_average": -0.001205284858696969,
+   "higher_is_better": true,
+   "surprise": 46.4,
+   "top3": [
+    {
+     "country": "Tunisia",
+     "value": 1.07023
+    },
+    {
+     "country": "Jordan",
+     "value": 1.06925
+    },
+    {
+     "country": "Kyrgyzstan",
+     "value": 1.02908
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Austria",
+     "value": -0.32927
+    },
+    {
+     "country": "Liechtenstein",
+     "value": -0.29638
+    },
+    {
+     "country": "Korea",
+     "value": -0.25143
+    }
+   ],
+   "reference": {
+    "Japan": -0.24096,
+    "Korea": -0.25143,
+    "Finland": -0.17083,
+    "United States": 0.20183,
+    "Estonia": -0.09015,
+    "Hong Kong (China)": 0.28777
+   },
+   "source": "pisa2006_ch3.xls / T3.11"
+  },
+  {
+   "id": "2006_rel_evidence",
+   "cycle": 2006,
+   "group": "診斷",
+   "question": "PISA 2006：在參與的 57 個國家／經濟體中，臺灣的「相對強弱：運用科學證據」排第幾？",
+   "short": "相對強弱：運用科學證據",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      9
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      10,
+      23
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      24,
+      40
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      41,
+      57
+     ]
+    }
+   ],
+   "answer": "C",
+   "answer_rank": 25,
+   "n": 57,
+   "taiwan_value": -0.63108,
+   "unit": "分",
+   "oecd_average": -0.75814,
+   "higher_is_better": null,
+   "surprise": 37.5,
+   "top3": [
+    {
+     "country": "Korea",
+     "value": 16.31331
+    },
+    {
+     "country": "France",
+     "value": 15.80533
+    },
+    {
+     "country": "Japan",
+     "value": 12.95032
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Azerbaijan",
+     "value": -38.06608
+    },
+    {
+     "country": "Kyrgyzstan",
+     "value": -34.03952
+    },
+    {
+     "country": "Qatar",
+     "value": -25.45946
+    }
+   ],
+   "reference": {
+    "Japan": 12.95032,
+    "Korea": 16.31331,
+    "Finland": 4.1089,
+    "United States": -0.38447,
+    "Estonia": -0.44223,
+    "Hong Kong (China)": 0.15169
+   },
+   "source": "衍生：pisa2006_ch2.xls / T2.4c 減 pisa2006_ch2.xls / T2.1c"
+  },
+  {
+   "id": "2006_career_sci",
+   "cycle": 2006,
+   "group": "職涯",
+   "question": "PISA 2006：在參與的 52 個國家／經濟體中，臺灣的「30歲想從事科學相關工作的比例」排第幾？",
+   "short": "30歲想從事科學相關工作的比例",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      8
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      9,
+      21
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      22,
+      36
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      37,
+      52
+     ]
+    }
+   ],
+   "answer": "C",
+   "answer_rank": 22,
+   "n": 52,
+   "taiwan_value": 22.19519,
+   "unit": "%",
+   "oecd_average": 20.61495,
+   "higher_is_better": true,
+   "surprise": 35.8,
+   "top3": [
+    {
+     "country": "Colombia",
+     "value": 44.04677
+    },
+    {
+     "country": "Jordan",
+     "value": 38.42793
+    },
+    {
+     "country": "Chile",
+     "value": 34.95881
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Montenegro",
+     "value": 9.78131
+    },
+    {
+     "country": "Japan",
+     "value": 13.04718
+    },
+    {
+     "country": "Finland",
+     "value": 13.08712
+    }
+   ],
+   "reference": {
+    "Japan": 13.04718,
+    "Korea": 17.22395,
+    "Finland": 13.08712,
+    "United States": 32.15999,
+    "Estonia": 16.94851,
+    "Hong Kong (China)": 18.55648
+   },
+   "source": "pisa2015_ch3.xlsx / Table I.3.10a"
+  },
+  {
+   "id": "2006_interest_learning",
+   "cycle": 2006,
+   "group": "態度",
+   "question": "PISA 2006：在參與的 57 個國家／經濟體中，臺灣的「對學習科學主題的興趣（量尺分數）」排第幾？",
+   "short": "對學習科學主題的興趣（量尺分數）",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      9
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      10,
+      23
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      24,
+      40
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      41,
+      57
+     ]
+    }
+   ],
+   "answer": "C",
+   "answer_rank": 24,
+   "n": 57,
+   "taiwan_value": 533.27126,
+   "unit": "分",
+   "oecd_average": 500.00239854860234,
+   "higher_is_better": true,
+   "surprise": 35.7,
+   "top3": [
+    {
+     "country": "Colombia",
+     "value": 643.51494
+    },
+    {
+     "country": "Thailand",
+     "value": 642.10647
+    },
+    {
+     "country": "Azerbaijan",
+     "value": 611.6079
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Finland",
+     "value": 448.13307
+    },
+    {
+     "country": "Netherlands",
+     "value": 451.5428
+    },
+    {
+     "country": "Sweden",
+     "value": 454.14113
+    }
+   ],
+   "reference": {
+    "Japan": 511.70773,
+    "Korea": 485.51715,
+    "Finland": 448.13307,
+    "United States": 479.62769,
+    "Estonia": 502.4052,
+    "Hong Kong (China)": 536.05825
+   },
+   "source": "pisa2006_ch3.xls / T3.1"
+  },
+  {
+   "id": "2006_sci_sd",
+   "cycle": 2006,
+   "group": "成績",
+   "question": "PISA 2006：在參與的 57 個國家／經濟體中，臺灣的「科學分數標準差（分數落差）」排第幾？",
+   "short": "科學分數標準差（分數落差）",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      9
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      10,
+      23
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      24,
+      40
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      41,
+      57
+     ]
+    }
+   ],
+   "answer": "B",
+   "answer_rank": 22,
+   "n": 57,
+   "taiwan_value": 94.45096,
+   "unit": "分",
+   "oecd_average": 95.20829631184812,
+   "higher_is_better": null,
+   "surprise": 32.1,
+   "top3": [
+    {
+     "country": "Israel",
+     "value": 111.4908
+    },
+    {
+     "country": "New Zealand",
+     "value": 107.27896
+    },
+    {
+     "country": "United Kingdom",
+     "value": 106.78852
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Azerbaijan",
+     "value": 55.67985
+    },
+    {
+     "country": "Indonesia",
+     "value": 70.06014
+    },
+    {
+     "country": "Thailand",
+     "value": 77.17495
+    }
+   ],
+   "reference": {
+    "Japan": 100.12455,
+    "Korea": 90.05428,
+    "Finland": 85.6441,
+    "United States": 106.04864,
+    "Estonia": 83.64203,
+    "Hong Kong (China)": 91.67782
+   },
+   "source": "pisa2006_ch2.xls / T2.1c"
+  },
+  {
+   "id": "2006_enjoyment",
+   "cycle": 2006,
+   "group": "態度",
+   "question": "PISA 2006：在參與的 57 個國家／經濟體中，臺灣的「享受科學（樂趣）」排第幾？",
+   "short": "享受科學（樂趣）",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      9
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      10,
+      23
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      24,
+      40
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      41,
+      57
+     ]
+    }
+   ],
+   "answer": "B",
+   "answer_rank": 22,
+   "n": 57,
+   "taiwan_value": 0.1656,
+   "unit": "（指數）",
+   "oecd_average": -0.000399568531235965,
+   "higher_is_better": true,
+   "surprise": 32.1,
+   "top3": [
+    {
+     "country": "Tunisia",
+     "value": 1.01686
+    },
+    {
+     "country": "Kyrgyzstan",
+     "value": 0.94379
+    },
+    {
+     "country": "Colombia",
+     "value": 0.80524
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Netherlands",
+     "value": -0.32288
+    },
+    {
+     "country": "Japan",
+     "value": -0.26067
+    },
+    {
+     "country": "Poland",
+     "value": -0.25191
+    }
+   ],
+   "reference": {
+    "Japan": -0.26067,
+    "Korea": -0.17023,
+    "Finland": 0.11205,
+    "United States": -0.03025,
+    "Estonia": 0.01804,
+    "Hong Kong (China)": 0.37596
+   },
+   "source": "pisa2006_ch3.xls / T3.9"
+  },
+  {
+   "id": "2006_instrumental",
+   "cycle": 2006,
+   "group": "態度",
+   "question": "PISA 2006：在參與的 57 個國家／經濟體中，臺灣的「工具性動機（學科學有用）」排第幾？",
+   "short": "工具性動機（學科學有用）",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      9
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      10,
+      23
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      24,
+      40
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      41,
+      57
+     ]
+    }
+   ],
+   "answer": "B",
+   "answer_rank": 22,
+   "n": 57,
+   "taiwan_value": 0.27033,
+   "unit": "（指數）",
+   "oecd_average": 0.0033575803211214846,
+   "higher_is_better": true,
+   "surprise": 32.1,
+   "top3": [
+    {
+     "country": "Kyrgyzstan",
+     "value": 0.84244
+    },
+    {
+     "country": "Tunisia",
+     "value": 0.83598
+    },
+    {
+     "country": "Jordan",
+     "value": 0.80316
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Japan",
+     "value": -0.4323
+    },
+    {
+     "country": "Austria",
+     "value": -0.39706
+    },
+    {
+     "country": "Israel",
+     "value": -0.36728
+    }
+   ],
+   "reference": {
+    "Japan": -0.4323,
+    "Korea": -0.25912,
+    "Finland": -0.21668,
+    "United States": 0.28745,
+    "Estonia": 0.05771,
+    "Hong Kong (China)": 0.16117
+   },
+   "source": "pisa2006_ch3.xls / T3.10"
+  },
+  {
+   "id": "2006_sci_activities",
+   "cycle": 2006,
+   "group": "態度",
+   "question": "PISA 2006：在參與的 57 個國家／經濟體中，臺灣的「課外科學活動參與」排第幾？",
+   "short": "課外科學活動參與",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      9
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      10,
+      23
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      24,
+      40
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      41,
+      57
+     ]
+    }
+   ],
+   "answer": "B",
+   "answer_rank": 22,
+   "n": 57,
+   "taiwan_value": 0.39697,
+   "unit": "（指數）",
+   "oecd_average": -0.0011025770964890847,
+   "higher_is_better": true,
+   "surprise": 32.1,
+   "top3": [
+    {
+     "country": "Kyrgyzstan",
+     "value": 1.33147
+    },
+    {
+     "country": "Azerbaijan",
+     "value": 1.22191
+    },
+    {
+     "country": "Tunisia",
+     "value": 1.11341
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Japan",
+     "value": -0.62329
+    },
+    {
+     "country": "Ireland",
+     "value": -0.43215
+    },
+    {
+     "country": "Sweden",
+     "value": -0.41027
+    }
+   ],
+   "reference": {
+    "Japan": -0.62329,
+    "Korea": -0.186,
+    "Finland": -0.16193,
+    "United States": -0.08679,
+    "Estonia": 0.39617,
+    "Hong Kong (China)": 0.25794
+   },
+   "source": "pisa2006_ch3.xls / T3.15"
+  },
+  {
+   "id": "2006_sub_identify",
+   "cycle": 2006,
+   "group": "成績",
+   "question": "PISA 2006：在參與的 57 個國家／經濟體中，臺灣的「科學子項：辨識科學議題」排第幾？",
+   "short": "科學子項：辨識科學議題",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      9
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      10,
+      23
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      24,
+      40
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      41,
+      57
+     ]
+    }
+   ],
+   "answer": "B",
+   "answer_rank": 17,
+   "n": 57,
+   "taiwan_value": 508.64525,
+   "unit": "分",
+   "oecd_average": 498.793367502292,
+   "higher_is_better": true,
+   "surprise": 23.2,
+   "top3": [
+    {
+     "country": "Finland",
+     "value": 554.92909
+    },
+    {
+     "country": "New Zealand",
+     "value": 536.22958
+    },
+    {
+     "country": "Australia",
+     "value": 535.32924
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Kyrgyzstan",
+     "value": 321.29425
+    },
+    {
+     "country": "Qatar",
+     "value": 352.41313
+    },
+    {
+     "country": "Azerbaijan",
+     "value": 352.77075
+    }
+   ],
+   "reference": {
+    "Japan": 522.0513,
+    "Korea": 519.06865,
+    "Finland": 554.92909,
+    "United States": 492.0897,
+    "Estonia": 515.64284,
+    "Hong Kong (China)": 527.80493
+   },
+   "source": "pisa2006_ch2.xls / T2.2c"
+  },
+  {
+   "id": "2006_career_vague",
+   "cycle": 2006,
+   "group": "職涯",
+   "question": "PISA 2006：在參與的 52 個國家／經濟體中，臺灣的「對未來職業沒有明確想法的比例」排第幾？",
+   "short": "對未來職業沒有明確想法的比例",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      8
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      9,
+      21
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      22,
+      36
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      37,
+      52
+     ]
+    }
+   ],
+   "answer": "B",
+   "answer_rank": 15,
+   "n": 52,
+   "taiwan_value": 18.25372,
+   "unit": "%",
+   "oecd_average": 23.06147,
+   "higher_is_better": false,
+   "surprise": 22.1,
+   "top3": [
+    {
+     "country": "Korea",
+     "value": 5.97779
+    },
+    {
+     "country": "Colombia",
+     "value": 9.23549
+    },
+    {
+     "country": "Romania",
+     "value": 10.26634
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Israel",
+     "value": 50.70528
+    },
+    {
+     "country": "Thailand",
+     "value": 35.77796
+    },
+    {
+     "country": "Croatia",
+     "value": 34.25567
+    }
+   ],
+   "reference": {
+    "Japan": 31.99948,
+    "Korea": 5.97779,
+    "Finland": 25.08489,
+    "United States": 15.85215,
+    "Estonia": 25.95739,
+    "Hong Kong (China)": 16.25391
+   },
+   "source": "pisa2015_ch3.xlsx / Table I.3.10a"
+  },
+  {
+   "id": "2006_sub_evidence",
+   "cycle": 2006,
+   "group": "成績",
+   "question": "PISA 2006：在參與的 57 個國家／經濟體中，臺灣的「科學子項：運用科學證據」排第幾？",
+   "short": "科學子項：運用科學證據",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      9
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      10,
+      23
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      24,
+      40
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      41,
+      57
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 8,
+   "n": 57,
+   "taiwan_value": 531.84247,
+   "unit": "分",
+   "oecd_average": 499.24034484040305,
+   "higher_is_better": true,
+   "surprise": 7.1,
+   "top3": [
+    {
+     "country": "Finland",
+     "value": 567.43173
+    },
+    {
+     "country": "Japan",
+     "value": 544.33883
+    },
+    {
+     "country": "Hong Kong (China)",
+     "value": 542.36308
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Kyrgyzstan",
+     "value": 287.99206
+    },
+    {
+     "country": "Qatar",
+     "value": 323.85369
+    },
+    {
+     "country": "Azerbaijan",
+     "value": 344.26786
+    }
+   ],
+   "reference": {
+    "Japan": 544.33883,
+    "Korea": 538.46145,
+    "Finland": 567.43173,
+    "United States": 488.52237,
+    "Estonia": 530.94957,
+    "Hong Kong (China)": 542.36308
+   },
+   "source": "pisa2006_ch2.xls / T2.4c"
+  },
+  {
+   "id": "2006_personal_value",
+   "cycle": 2006,
+   "group": "態度",
+   "question": "PISA 2006：在參與的 57 個國家／經濟體中，臺灣的「科學的個人價值（對我有用）」排第幾？",
+   "short": "科學的個人價值（對我有用）",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      9
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      10,
+      23
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      24,
+      40
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      41,
+      57
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 8,
+   "n": 57,
+   "taiwan_value": 0.5976,
+   "unit": "（指數）",
+   "oecd_average": -0.001244879010817753,
+   "higher_is_better": true,
+   "surprise": 7.1,
+   "top3": [
+    {
+     "country": "Colombia",
+     "value": 0.88395
+    },
+    {
+     "country": "Thailand",
+     "value": 0.7887
+    },
+    {
+     "country": "Azerbaijan",
+     "value": 0.75205
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Austria",
+     "value": -0.36202
+    },
+    {
+     "country": "Liechtenstein",
+     "value": -0.25804
+    },
+    {
+     "country": "Germany",
+     "value": -0.23432
+    }
+   ],
+   "reference": {
+    "Japan": -0.22725,
+    "Korea": -0.05996,
+    "Finland": -0.0933,
+    "United States": 0.2906,
+    "Estonia": 0.13649,
+    "Hong Kong (China)": 0.51882
+   },
+   "source": "pisa2006_ch3.xls / T3.6"
+  },
+  {
+   "id": "2006_career_ict",
+   "cycle": 2006,
+   "group": "職涯",
+   "question": "PISA 2006：在參與的 52 個國家／經濟體中，臺灣的「想當資通訊專業人員的比例」排第幾？",
+   "short": "想當資通訊專業人員的比例",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      8
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      9,
+      21
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      22,
+      36
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      37,
+      52
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 1,
+   "n": 52,
+   "taiwan_value": 6.88256,
+   "unit": "%",
+   "oecd_average": 2.408901,
+   "higher_is_better": true,
+   "surprise": -5.4,
+   "top3": [
+    {
+     "country": "Chinese Taipei",
+     "value": 6.88256
+    },
+    {
+     "country": "Poland",
+     "value": 6.29776
+    },
+    {
+     "country": "Bulgaria",
+     "value": 5.96762
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Japan",
+     "value": 0.0
+    },
+    {
+     "country": "Denmark",
+     "value": 0.49549
+    },
+    {
+     "country": "Türkiye",
+     "value": 0.56815
+    }
+   ],
+   "reference": {
+    "Japan": 0.0,
+    "Korea": 2.31888,
+    "Finland": 1.28828,
+    "United States": 1.68512,
+    "Estonia": 4.28307,
+    "Hong Kong (China)": 2.14346
+   },
+   "source": "pisa2015_ch3.xlsx / Table I.3.10a"
+  },
+  {
+   "id": "2006_env_awareness",
+   "cycle": 2006,
+   "group": "環境",
+   "question": "PISA 2006：在參與的 57 個國家／經濟體中，臺灣的「環境議題認識程度」排第幾？",
+   "short": "環境議題認識程度",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      9
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      10,
+      23
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      24,
+      40
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      41,
+      57
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 1,
+   "n": 57,
+   "taiwan_value": 0.45508,
+   "unit": "（指數）",
+   "oecd_average": 0.0001951485833690802,
+   "higher_is_better": true,
+   "surprise": -5.4,
+   "top3": [
+    {
+     "country": "Chinese Taipei",
+     "value": 0.45508
+    },
+    {
+     "country": "Ireland",
+     "value": 0.3761
+    },
+    {
+     "country": "Poland",
+     "value": 0.37388
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Indonesia",
+     "value": -1.085
+    },
+    {
+     "country": "Tunisia",
+     "value": -0.72914
+    },
+    {
+     "country": "Qatar",
+     "value": -0.72268
+    }
+   ],
+   "reference": {
+    "Japan": -0.13142,
+    "Korea": -0.2245,
+    "Finland": -0.01712,
+    "United States": 0.00696,
+    "Estonia": 0.24255,
+    "Hong Kong (China)": 0.34239
+   },
+   "source": "pisa2006_ch3.xls / T3.16"
+  },
+  {
+   "id": "2006_env_responsibility",
+   "cycle": 2006,
+   "group": "環境",
+   "question": "PISA 2006：在參與的 56 個國家／經濟體中，臺灣的「對永續發展的責任感」排第幾？",
+   "short": "對永續發展的責任感",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      8
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      9,
+      22
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      23,
+      39
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      40,
+      56
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 1,
+   "n": 56,
+   "taiwan_value": 0.76367,
+   "unit": "（指數）",
+   "oecd_average": -0.0015714856392017474,
+   "higher_is_better": true,
+   "surprise": -5.4,
+   "top3": [
+    {
+     "country": "Chinese Taipei",
+     "value": 0.76367
+    },
+    {
+     "country": "Türkiye",
+     "value": 0.7299
+    },
+    {
+     "country": "Portugal",
+     "value": 0.52495
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Netherlands",
+     "value": -0.47542
+    },
+    {
+     "country": "Latvia",
+     "value": -0.3833
+    },
+    {
+     "country": "New Zealand",
+     "value": -0.34453
+    }
+   ],
+   "reference": {
+    "Japan": 0.03877,
+    "Korea": 0.42673,
+    "Finland": -0.102,
+    "United States": -0.3276,
+    "Estonia": -0.16965,
+    "Hong Kong (China)": 0.29176
+   },
+   "source": "pisa2006_ch3.xls / T3.19"
+  },
+  {
+   "id": "2006_self_efficacy",
+   "cycle": 2006,
+   "group": "態度",
+   "question": "PISA 2006：在參與的 57 個國家／經濟體中，臺灣的「科學自我效能（我做得到）」排第幾？",
+   "short": "科學自我效能（我做得到）",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      9
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      10,
+      23
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      24,
+      40
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      41,
+      57
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 7,
+   "n": 57,
+   "taiwan_value": 0.18043,
+   "unit": "（指數）",
+   "oecd_average": 0.0005034755706126261,
+   "higher_is_better": true,
+   "surprise": 5.3,
+   "top3": [
+    {
+     "country": "Poland",
+     "value": 0.25898
+    },
+    {
+     "country": "United States",
+     "value": 0.2209
+    },
+    {
+     "country": "Canada",
+     "value": 0.2129
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Indonesia",
+     "value": -0.70021
+    },
+    {
+     "country": "Japan",
+     "value": -0.53228
+    },
+    {
+     "country": "Azerbaijan",
+     "value": -0.45588
+    }
+   ],
+   "reference": {
+    "Japan": -0.53228,
+    "Korea": -0.21492,
+    "Finland": 0.02425,
+    "United States": 0.2209,
+    "Estonia": 0.02758,
+    "Hong Kong (China)": 0.06279
+   },
+   "source": "pisa2006_ch3.xls / T3.3"
+  },
+  {
+   "id": "2006_env_concern",
+   "cycle": 2006,
+   "group": "環境",
+   "question": "PISA 2006：在參與的 57 個國家／經濟體中，臺灣的「對環境議題的擔憂」排第幾？",
+   "short": "對環境議題的擔憂",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      9
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      10,
+      23
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      24,
+      40
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      41,
+      57
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 7,
+   "n": 57,
+   "taiwan_value": 0.5177,
+   "unit": "（指數）",
+   "oecd_average": -0.0010945533234601572,
+   "higher_is_better": true,
+   "surprise": 5.3,
+   "top3": [
+    {
+     "country": "Türkiye",
+     "value": 0.88177
+    },
+    {
+     "country": "Colombia",
+     "value": 0.70803
+    },
+    {
+     "country": "Portugal",
+     "value": 0.59944
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Finland",
+     "value": -0.51688
+    },
+    {
+     "country": "Sweden",
+     "value": -0.42508
+    },
+    {
+     "country": "Iceland",
+     "value": -0.41547
+    }
+   ],
+   "reference": {
+    "Japan": 0.01124,
+    "Korea": 0.07162,
+    "Finland": -0.51688,
+    "United States": -0.07967,
+    "Estonia": -0.03824,
+    "Hong Kong (China)": -0.02124
+   },
+   "source": "pisa2006_ch3.xls / T3.17"
+  },
+  {
+   "id": "2006_general_value",
+   "cycle": 2006,
+   "group": "態度",
+   "question": "PISA 2006：在參與的 57 個國家／經濟體中，臺灣的「科學的一般價值（對社會有用）」排第幾？",
+   "short": "科學的一般價值（對社會有用）",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      9
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      10,
+      23
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      24,
+      40
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      41,
+      57
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 2,
+   "n": 57,
+   "taiwan_value": 0.71503,
+   "unit": "（指數）",
+   "oecd_average": -0.0013113441991647482,
+   "higher_is_better": true,
+   "surprise": -3.6,
+   "top3": [
+    {
+     "country": "Thailand",
+     "value": 0.77243
+    },
+    {
+     "country": "Chinese Taipei",
+     "value": 0.71503
+    },
+    {
+     "country": "Tunisia",
+     "value": 0.70402
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Denmark",
+     "value": -0.26949
+    },
+    {
+     "country": "Netherlands",
+     "value": -0.21199
+    },
+    {
+     "country": "Iceland",
+     "value": -0.19455
+    }
+   ],
+   "reference": {
+    "Japan": -0.17772,
+    "Korea": 0.2656,
+    "Finland": 0.06627,
+    "United States": 0.14802,
+    "Estonia": 0.14321,
+    "Hong Kong (China)": 0.54554
+   },
+   "source": "pisa2006_ch3.xls / T3.5"
+  },
+  {
+   "id": "2006_sub_explain",
+   "cycle": 2006,
+   "group": "成績",
+   "question": "PISA 2006：在參與的 57 個國家／經濟體中，臺灣的「科學子項：科學地解釋現象」排第幾？",
+   "short": "科學子項：科學地解釋現象",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      9
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      10,
+      23
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      24,
+      40
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      41,
+      57
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 3,
+   "n": 57,
+   "taiwan_value": 545.1757,
+   "unit": "分",
+   "oecd_average": 500.3548844685051,
+   "higher_is_better": true,
+   "surprise": -1.8,
+   "top3": [
+    {
+     "country": "Finland",
+     "value": 566.17013
+    },
+    {
+     "country": "Hong Kong (China)",
+     "value": 549.2516
+    },
+    {
+     "country": "Chinese Taipei",
+     "value": 545.1757
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Kyrgyzstan",
+     "value": 333.77772
+    },
+    {
+     "country": "Qatar",
+     "value": 355.95989
+    },
+    {
+     "country": "Colombia",
+     "value": 379.02375
+    }
+   ],
+   "reference": {
+    "Japan": 527.29403,
+    "Korea": 511.64755,
+    "Finland": 566.17013,
+    "United States": 486.08158,
+    "Estonia": 540.55354,
+    "Hong Kong (China)": 549.2516
+   },
+   "source": "pisa2006_ch2.xls / T2.3c"
+  },
+  {
+   "id": "2006_support_enquiry",
+   "cycle": 2006,
+   "group": "態度",
+   "question": "PISA 2006：在參與的 57 個國家／經濟體中，臺灣的「支持科學探究的態度（量尺分數）」排第幾？",
+   "short": "支持科學探究的態度（量尺分數）",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      9
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      10,
+      23
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      24,
+      40
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      41,
+      57
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 5,
+   "n": 57,
+   "taiwan_value": 545.65015,
+   "unit": "分",
+   "oecd_average": 500.00159126895863,
+   "higher_is_better": true,
+   "surprise": 1.7,
+   "top3": [
+    {
+     "country": "Thailand",
+     "value": 568.59829
+    },
+    {
+     "country": "Chile",
+     "value": 563.98486
+    },
+    {
+     "country": "Türkiye",
+     "value": 562.91761
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Netherlands",
+     "value": 446.65969
+    },
+    {
+     "country": "Japan",
+     "value": 467.65964
+    },
+    {
+     "country": "United Kingdom",
+     "value": 469.80034
+    }
+   ],
+   "reference": {
+    "Japan": 467.65964,
+    "Korea": 495.33302,
+    "Finland": 479.23942,
+    "United States": 490.36726,
+    "Estonia": 496.95412,
+    "Hong Kong (China)": 528.86995
+   },
+   "source": "pisa2006_ch3.xls / T3.2"
+  },
+  {
+   "id": "2006_rel_explain",
+   "cycle": 2006,
+   "group": "診斷",
+   "question": "PISA 2006：在參與的 57 個國家／經濟體中，臺灣的「相對強弱：科學地解釋現象」排第幾？",
+   "short": "相對強弱：科學地解釋現象",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      9
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      10,
+      23
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      24,
+      40
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      41,
+      57
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 5,
+   "n": 57,
+   "taiwan_value": 12.70215,
+   "unit": "分",
+   "oecd_average": 0.3564,
+   "higher_is_better": null,
+   "surprise": 1.7,
+   "top3": [
+    {
+     "country": "Azerbaijan",
+     "value": 29.64924
+    },
+    {
+     "country": "Jordan",
+     "value": 15.65797
+    },
+    {
+     "country": "Czechia",
+     "value": 14.61369
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "France",
+     "value": -14.10323
+    },
+    {
+     "country": "Korea",
+     "value": -10.50059
+    },
+    {
+     "country": "Israel",
+     "value": -10.45416
+    }
+   ],
+   "reference": {
+    "Japan": -4.09448,
+    "Korea": -10.50059,
+    "Finland": 2.8473,
+    "United States": -2.82526,
+    "Estonia": 9.16174,
+    "Hong Kong (China)": 7.04021
+   },
+   "source": "衍生：pisa2006_ch2.xls / T2.3c 減 pisa2006_ch2.xls / T2.1c"
+  },
+  {
+   "id": "2006_sci_mean",
+   "cycle": 2006,
+   "group": "成績",
+   "question": "PISA 2006：在參與的 57 個國家／經濟體中，臺灣的「科學平均分數」排第幾？",
+   "short": "科學平均分數",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      9
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      10,
+      23
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      24,
+      40
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      41,
+      57
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 4,
+   "n": 57,
+   "taiwan_value": 532.47355,
+   "unit": "分",
+   "oecd_average": 499.9984874814208,
+   "higher_is_better": true,
+   "surprise": null,
+   "top3": [
+    {
+     "country": "Finland",
+     "value": 563.32283
+    },
+    {
+     "country": "Hong Kong (China)",
+     "value": 542.21139
+    },
+    {
+     "country": "Canada",
+     "value": 534.46978
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Kyrgyzstan",
+     "value": 322.03158
+    },
+    {
+     "country": "Qatar",
+     "value": 349.31315
+    },
+    {
+     "country": "Azerbaijan",
+     "value": 382.33394
+    }
+   ],
+   "reference": {
+    "Japan": 531.38851,
+    "Korea": 522.14814,
+    "Finland": 563.32283,
+    "United States": 488.90684,
+    "Estonia": 531.3918,
+    "Hong Kong (China)": 542.21139
+   },
+   "source": "pisa2006_ch2.xls / T2.1c"
+  },
+  {
+   "id": "2015_career_health",
+   "cycle": 2015,
+   "group": "職涯",
+   "question": "PISA 2015：在參與的 73 個國家／經濟體中，臺灣的「想當醫療專業人員的比例」排第幾？",
+   "short": "想當醫療專業人員的比例",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      11
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      12,
+      29
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      30,
+      51
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      52,
+      73
+     ]
+    }
+   ],
+   "answer": "D",
+   "answer_rank": 71,
+   "n": 73,
+   "taiwan_value": 7.18238,
+   "unit": "%",
+   "oecd_average": 11.61099,
+   "higher_is_better": true,
+   "surprise": 93.0,
+   "top3": [
+    {
+     "country": "Colombia",
+     "value": 22.4585
+    },
+    {
+     "country": "Tunisia",
+     "value": 22.19737
+    },
+    {
+     "country": "Lebanon",
+     "value": 22.09521
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Germany",
+     "value": 4.56371
+    },
+    {
+     "country": "Hungary",
+     "value": 5.44285
+    },
+    {
+     "country": "Chinese Taipei",
+     "value": 7.18238
+    }
+   ],
+   "reference": {
+    "Japan": 9.89288,
+    "Korea": 8.33737,
+    "Singapore": 11.7287,
+    "B-S-J-Z (China)": 7.50801,
+    "Finland": 10.75808,
+    "United States": 22.08368,
+    "Estonia": 8.14826,
+    "Hong Kong (China)": 13.02226
+   },
+   "source": "pisa2015_ch3.xlsx / Table I.3.10a"
+  },
+  {
+   "id": "2015_enjoyment",
+   "cycle": 2015,
+   "group": "態度",
+   "question": "PISA 2015：在參與的 73 個國家／經濟體中，臺灣的「享受科學（樂趣）」排第幾？",
+   "short": "享受科學（樂趣）",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      11
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      12,
+      29
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      30,
+      51
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      52,
+      73
+     ]
+    }
+   ],
+   "answer": "D",
+   "answer_rank": 59,
+   "n": 73,
+   "taiwan_value": -0.06414,
+   "unit": "（指數）",
+   "oecd_average": 0.0154034120786903,
+   "higher_is_better": true,
+   "surprise": 76.4,
+   "top3": [
+    {
+     "country": "Kosovo",
+     "value": 0.92221
+    },
+    {
+     "country": "Kazakhstan",
+     "value": 0.85499
+    },
+    {
+     "country": "Albania",
+     "value": 0.71988
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Netherlands",
+     "value": -0.5199
+    },
+    {
+     "country": "Slovenia",
+     "value": -0.36454
+    },
+    {
+     "country": "Czechia",
+     "value": -0.33579
+    }
+   ],
+   "reference": {
+    "Japan": -0.33029,
+    "Korea": -0.13614,
+    "Singapore": 0.59371,
+    "B-S-J-Z (China)": 0.36975,
+    "Finland": -0.07488,
+    "United States": 0.22843,
+    "Estonia": 0.16135,
+    "Hong Kong (China)": 0.27591
+   },
+   "source": "pisa2015_ch3.xlsx / Table I.3.1a"
+  },
+  {
+   "id": "2015_career_sci",
+   "cycle": 2015,
+   "group": "職涯",
+   "question": "PISA 2015：在參與的 73 個國家／經濟體中，臺灣的「30歲想從事科學相關工作的比例」排第幾？",
+   "short": "30歲想從事科學相關工作的比例",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      11
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      12,
+      29
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      30,
+      51
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      52,
+      73
+     ]
+    }
+   ],
+   "answer": "D",
+   "answer_rank": 56,
+   "n": 73,
+   "taiwan_value": 20.89637,
+   "unit": "%",
+   "oecd_average": 24.46577,
+   "higher_is_better": true,
+   "surprise": 72.2,
+   "top3": [
+    {
+     "country": "Dominican Republic",
+     "value": 45.72457
+    },
+    {
+     "country": "Costa Rica",
+     "value": 43.98309
+    },
+    {
+     "country": "Jordan",
+     "value": 43.72992
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Denmark",
+     "value": 14.7856
+    },
+    {
+     "country": "Germany",
+     "value": 15.32712
+    },
+    {
+     "country": "Indonesia",
+     "value": 15.33697
+    }
+   ],
+   "reference": {
+    "Japan": 18.02004,
+    "Korea": 19.32129,
+    "Singapore": 27.98798,
+    "B-S-J-Z (China)": 16.81227,
+    "Finland": 17.01784,
+    "United States": 37.99071,
+    "Estonia": 24.70342,
+    "Hong Kong (China)": 23.58281
+   },
+   "source": "pisa2015_ch3.xlsx / Table I.3.10a"
+  },
+  {
+   "id": "2015_career_vague",
+   "cycle": 2015,
+   "group": "職涯",
+   "question": "PISA 2015：在參與的 73 個國家／經濟體中，臺灣的「對未來職業沒有明確想法的比例」排第幾？",
+   "short": "對未來職業沒有明確想法的比例",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      11
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      12,
+      29
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      30,
+      51
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      52,
+      73
+     ]
+    }
+   ],
+   "answer": "D",
+   "answer_rank": 54,
+   "n": 73,
+   "taiwan_value": 20.80364,
+   "unit": "%",
+   "oecd_average": 18.83586,
+   "higher_is_better": false,
+   "surprise": 69.4,
+   "top3": [
+    {
+     "country": "Malaysia",
+     "value": 3.97919
+    },
+    {
+     "country": "Türkiye",
+     "value": 6.07527
+    },
+    {
+     "country": "Mexico",
+     "value": 6.18751
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Denmark",
+     "value": 48.3261
+    },
+    {
+     "country": "Germany",
+     "value": 32.93518
+    },
+    {
+     "country": "B-S-J-Z (China)",
+     "value": 31.45627
+    }
+   ],
+   "reference": {
+    "Japan": 18.32534,
+    "Korea": 7.49998,
+    "Singapore": 14.10923,
+    "B-S-J-Z (China)": 31.45627,
+    "Finland": 24.45282,
+    "United States": 13.11983,
+    "Estonia": 15.39632,
+    "Hong Kong (China)": 19.80573
+   },
+   "source": "pisa2015_ch3.xlsx / Table I.3.10a"
+  },
+  {
+   "id": "2015_interest_broad",
+   "cycle": 2015,
+   "group": "態度",
+   "question": "PISA 2015：在參與的 57 個國家／經濟體中，臺灣的「對各類科學主題的興趣」排第幾？",
+   "short": "對各類科學主題的興趣",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      9
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      10,
+      23
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      24,
+      40
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      41,
+      57
+     ]
+    }
+   ],
+   "answer": "D",
+   "answer_rank": 41,
+   "n": 57,
+   "taiwan_value": -0.01156,
+   "unit": "（指數）",
+   "oecd_average": 0.004883291446886,
+   "higher_is_better": true,
+   "surprise": 67.2,
+   "top3": [
+    {
+     "country": "Dominican Republic",
+     "value": 0.69377
+    },
+    {
+     "country": "Thailand",
+     "value": 0.60196
+    },
+    {
+     "country": "Malaysia",
+     "value": 0.48651
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Czechia",
+     "value": -0.66884
+    },
+    {
+     "country": "Slovenia",
+     "value": -0.32416
+    },
+    {
+     "country": "Slovak Republic",
+     "value": -0.32131
+    }
+   ],
+   "reference": {
+    "Japan": -0.10558,
+    "Korea": -0.06837,
+    "Singapore": 0.28123,
+    "B-S-J-Z (China)": 0.45412,
+    "Finland": -0.09439,
+    "United States": 0.0508,
+    "Estonia": 0.0157,
+    "Hong Kong (China)": 0.24628
+   },
+   "source": "pisa2015_ch3.xlsx / Table I.3.2a"
+  },
+  {
+   "id": "2015_career_sci_eng",
+   "cycle": 2015,
+   "group": "職涯",
+   "question": "PISA 2015：在參與的 73 個國家／經濟體中，臺灣的「想當科學家／工程師的比例」排第幾？",
+   "short": "想當科學家／工程師的比例",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      11
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      12,
+      29
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      30,
+      51
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      52,
+      73
+     ]
+    }
+   ],
+   "answer": "C",
+   "answer_rank": 45,
+   "n": 73,
+   "taiwan_value": 7.89336,
+   "unit": "%",
+   "oecd_average": 8.768434,
+   "higher_is_better": true,
+   "surprise": 56.9,
+   "top3": [
+    {
+     "country": "Dominican Republic",
+     "value": 21.53532
+    },
+    {
+     "country": "Peru",
+     "value": 21.39266
+    },
+    {
+     "country": "United Arab Emirates",
+     "value": 21.37063
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Indonesia",
+     "value": 1.85131
+    },
+    {
+     "country": "Slovak Republic",
+     "value": 3.67677
+    },
+    {
+     "country": "Finland",
+     "value": 3.86079
+    }
+   ],
+   "reference": {
+    "Japan": 4.81839,
+    "Korea": 6.2542,
+    "Singapore": 14.06005,
+    "B-S-J-Z (China)": 6.72118,
+    "Finland": 3.86079,
+    "United States": 13.04134,
+    "Estonia": 7.677,
+    "Hong Kong (China)": 8.53425
+   },
+   "source": "pisa2015_ch3.xlsx / Table I.3.10a"
+  },
+  {
+   "id": "2015_instrumental",
+   "cycle": 2015,
+   "group": "態度",
+   "question": "PISA 2015：在參與的 73 個國家／經濟體中，臺灣的「工具性動機（學科學有用）」排第幾？",
+   "short": "工具性動機（學科學有用）",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      11
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      12,
+      29
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      30,
+      51
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      52,
+      73
+     ]
+    }
+   ],
+   "answer": "C",
+   "answer_rank": 44,
+   "n": 73,
+   "taiwan_value": 0.24411,
+   "unit": "（指數）",
+   "oecd_average": 0.1379664935964593,
+   "higher_is_better": true,
+   "surprise": 55.5,
+   "top3": [
+    {
+     "country": "Albania",
+     "value": 0.87988
+    },
+    {
+     "country": "Indonesia",
+     "value": 0.80953
+    },
+    {
+     "country": "Kosovo",
+     "value": 0.80483
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Switzerland",
+     "value": -0.24589
+    },
+    {
+     "country": "Germany",
+     "value": -0.24348
+    },
+    {
+     "country": "Austria",
+     "value": -0.22275
+    }
+   ],
+   "reference": {
+    "Japan": -0.025,
+    "Korea": 0.03179,
+    "Singapore": 0.51472,
+    "B-S-J-Z (China)": 0.53143,
+    "Finland": 0.15781,
+    "United States": 0.32326,
+    "Estonia": 0.18905,
+    "Hong Kong (China)": 0.23381
+   },
+   "source": "pisa2015_ch3.xlsx / Table I.3.3a"
+  },
+  {
+   "id": "2015_sci_activities",
+   "cycle": 2015,
+   "group": "態度",
+   "question": "PISA 2015：在參與的 57 個國家／經濟體中，臺灣的「課外科學活動參與」排第幾？",
+   "short": "課外科學活動參與",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      9
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      10,
+      23
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      24,
+      40
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      41,
+      57
+     ]
+    }
+   ],
+   "answer": "C",
+   "answer_rank": 25,
+   "n": 57,
+   "taiwan_value": 0.20104,
+   "unit": "（指數）",
+   "oecd_average": -0.0207377539979816,
+   "higher_is_better": true,
+   "surprise": 38.7,
+   "top3": [
+    {
+     "country": "Tunisia",
+     "value": 1.19833
+    },
+    {
+     "country": "Thailand",
+     "value": 0.92317
+    },
+    {
+     "country": "Dominican Republic",
+     "value": 0.92305
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Japan",
+     "value": -0.56698
+    },
+    {
+     "country": "Finland",
+     "value": -0.50147
+    },
+    {
+     "country": "Netherlands",
+     "value": -0.4292
+    }
+   ],
+   "reference": {
+    "Japan": -0.56698,
+    "Korea": -0.28278,
+    "Singapore": 0.1956,
+    "B-S-J-Z (China)": 0.51798,
+    "Finland": -0.50147,
+    "United States": -0.01751,
+    "Estonia": 0.28887,
+    "Hong Kong (China)": 0.28312
+   },
+   "source": "pisa2015_ch3.xlsx / Table I.3.5a"
+  },
+  {
+   "id": "2015_self_efficacy",
+   "cycle": 2015,
+   "group": "態度",
+   "question": "PISA 2015：在參與的 73 個國家／經濟體中，臺灣的「科學自我效能（我做得到）」排第幾？",
+   "short": "科學自我效能（我做得到）",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      11
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      12,
+      29
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      30,
+      51
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      52,
+      73
+     ]
+    }
+   ],
+   "answer": "B",
+   "answer_rank": 19,
+   "n": 73,
+   "taiwan_value": 0.18819,
+   "unit": "（指數）",
+   "oecd_average": 0.0365439560612264,
+   "higher_is_better": true,
+   "surprise": 20.8,
+   "top3": [
+    {
+     "country": "Jordan",
+     "value": 0.56353
+    },
+    {
+     "country": "Dominican Republic",
+     "value": 0.54393
+    },
+    {
+     "country": "Kazakhstan",
+     "value": 0.45763
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Indonesia",
+     "value": -0.5052
+    },
+    {
+     "country": "Japan",
+     "value": -0.46103
+    },
+    {
+     "country": "Kosovo",
+     "value": -0.28935
+    }
+   ],
+   "reference": {
+    "Japan": -0.46103,
+    "Korea": -0.01635,
+    "Singapore": 0.10614,
+    "B-S-J-Z (China)": -0.01037,
+    "Finland": -0.04176,
+    "United States": 0.26215,
+    "Estonia": -0.03797,
+    "Hong Kong (China)": -0.06822
+   },
+   "source": "pisa2015_ch3.xlsx / Table I.3.4a"
+  },
+  {
+   "id": "2015_career_ict",
+   "cycle": 2015,
+   "group": "職涯",
+   "question": "PISA 2015：在參與的 73 個國家／經濟體中，臺灣的「想當資通訊專業人員的比例」排第幾？",
+   "short": "想當資通訊專業人員的比例",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      11
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      12,
+      29
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      30,
+      51
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      52,
+      73
+     ]
+    }
+   ],
+   "answer": "B",
+   "answer_rank": 18,
+   "n": 73,
+   "taiwan_value": 3.39542,
+   "unit": "%",
+   "oecd_average": 2.629242,
+   "higher_is_better": true,
+   "surprise": 19.4,
+   "top3": [
+    {
+     "country": "Bulgaria",
+     "value": 8.34674
+    },
+    {
+     "country": "Estonia",
+     "value": 8.08779
+    },
+    {
+     "country": "Moldova",
+     "value": 5.07808
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Algeria",
+     "value": 0.20167
+    },
+    {
+     "country": "Jordan",
+     "value": 0.20927
+    },
+    {
+     "country": "Türkiye",
+     "value": 0.36362
+    }
+   ],
+   "reference": {
+    "Japan": 2.41633,
+    "Korea": 2.46956,
+    "Singapore": 1.68035,
+    "B-S-J-Z (China)": 2.14972,
+    "Finland": 1.68648,
+    "United States": 2.13113,
+    "Estonia": 8.08779,
+    "Hong Kong (China)": 1.73038
+   },
+   "source": "pisa2015_ch3.xlsx / Table I.3.10a"
+  },
+  {
+   "id": "2015_sci_sd",
+   "cycle": 2015,
+   "group": "成績",
+   "question": "PISA 2015：在參與的 73 個國家／經濟體中，臺灣的「科學分數標準差（分數落差）」排第幾？",
+   "short": "科學分數標準差（分數落差）",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      11
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      12,
+      29
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      30,
+      51
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      52,
+      73
+     ]
+    }
+   ],
+   "answer": "B",
+   "answer_rank": 14,
+   "n": 73,
+   "taiwan_value": 99.55322,
+   "unit": "分",
+   "oecd_average": 94.41457173328729,
+   "higher_is_better": null,
+   "surprise": 13.9,
+   "top3": [
+    {
+     "country": "Malta",
+     "value": 117.63803
+    },
+    {
+     "country": "Israel",
+     "value": 106.36356
+    },
+    {
+     "country": "New Zealand",
+     "value": 104.09494
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Tunisia",
+     "value": 64.85265
+    },
+    {
+     "country": "Indonesia",
+     "value": 68.36698
+    },
+    {
+     "country": "Algeria",
+     "value": 69.28151
+    }
+   ],
+   "reference": {
+    "Japan": 93.47152,
+    "Korea": 95.17856,
+    "Singapore": 103.60264,
+    "B-S-J-Z (China)": 103.38525,
+    "Finland": 96.17347,
+    "United States": 98.62148,
+    "Estonia": 88.90062,
+    "Hong Kong (China)": 80.57183
+   },
+   "source": "pisa2015_ch2.xlsx / Table I.2.3"
+  },
+  {
+   "id": "2015_epistemic",
+   "cycle": 2015,
+   "group": "態度",
+   "question": "PISA 2015：在參與的 73 個國家／經濟體中，臺灣的「科學知識論信念（相信科學怎麼運作）」排第幾？",
+   "short": "科學知識論信念（相信科學怎麼運作）",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      11
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      12,
+      29
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      30,
+      51
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      52,
+      73
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 1,
+   "n": 73,
+   "taiwan_value": 0.30709,
+   "unit": "（指數）",
+   "oecd_average": -0.0045807950124571,
+   "higher_is_better": true,
+   "surprise": -4.2,
+   "top3": [
+    {
+     "country": "Chinese Taipei",
+     "value": 0.30709
+    },
+    {
+     "country": "Canada",
+     "value": 0.29704
+    },
+    {
+     "country": "Iceland",
+     "value": 0.29265
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Romania",
+     "value": -0.37951
+    },
+    {
+     "country": "Hungary",
+     "value": -0.36195
+    },
+    {
+     "country": "Slovak Republic",
+     "value": -0.35076
+    }
+   ],
+   "reference": {
+    "Japan": -0.06024,
+    "Korea": 0.02239,
+    "Singapore": 0.22484,
+    "B-S-J-Z (China)": -0.08093,
+    "Finland": -0.07211,
+    "United States": 0.25016,
+    "Estonia": 0.01066,
+    "Hong Kong (China)": 0.04028
+   },
+   "source": "pisa2015_ch2.xlsx / Table I.2.12a"
+  },
+  {
+   "id": "2015_sci_mean",
+   "cycle": 2015,
+   "group": "成績",
+   "question": "PISA 2015：在參與的 73 個國家／經濟體中，臺灣的「科學平均分數」排第幾？",
+   "short": "科學平均分數",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      11
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      12,
+      29
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      30,
+      51
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      52,
+      73
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 4,
+   "n": 73,
+   "taiwan_value": 532.34745,
+   "unit": "分",
+   "oecd_average": 493.2017129961685,
+   "higher_is_better": true,
+   "surprise": null,
+   "top3": [
+    {
+     "country": "Singapore",
+     "value": 555.57468
+    },
+    {
+     "country": "Japan",
+     "value": 538.39475
+    },
+    {
+     "country": "Estonia",
+     "value": 534.19375
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Dominican Republic",
+     "value": 331.63883
+    },
+    {
+     "country": "Algeria",
+     "value": 375.7451
+    },
+    {
+     "country": "Kosovo",
+     "value": 378.44218
+    }
+   ],
+   "reference": {
+    "Japan": 538.39475,
+    "Korea": 515.80991,
+    "Singapore": 555.57468,
+    "B-S-J-Z (China)": 517.77928,
+    "Finland": 530.66116,
+    "United States": 496.24243,
+    "Estonia": 534.19375,
+    "Hong Kong (China)": 523.27745
+   },
+   "source": "pisa2015_ch2.xlsx / Table I.2.3"
+  },
+  {
+   "id": "2025_cram_ses_gap",
+   "cycle": 2025,
+   "group": "城鄉",
+   "question": "PISA 2025：在參與的 88 個國家／經濟體中，臺灣的「補習的社經落差（優勢−弱勢，百分點）」排第幾？",
+   "short": "補習的社經落差（優勢−弱勢，百分點）",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      13
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      14,
+      35
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      36,
+      62
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      63,
+      88
+     ]
+    }
+   ],
+   "answer": "D",
+   "answer_rank": 87,
+   "n": 88,
+   "taiwan_value": 21.9737,
+   "unit": "%",
+   "oecd_average": 3.38645,
+   "higher_is_better": false,
+   "surprise": 95.6,
+   "top3": [
+    {
+     "country": "Iceland",
+     "value": -10.93264
+    },
+    {
+     "country": "Luxembourg",
+     "value": -10.70983
+    },
+    {
+     "country": "Austria",
+     "value": -8.98965
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Korea",
+     "value": 26.25794
+    },
+    {
+     "country": "Chinese Taipei",
+     "value": 21.9737
+    },
+    {
+     "country": "B-S-J-Z (China)",
+     "value": 21.83903
+    }
+   ],
+   "reference": {
+    "Japan": 13.06511,
+    "Korea": 26.25794,
+    "Singapore": 13.74362,
+    "B-S-J-Z (China)": 21.83903,
+    "Finland": 2.17431,
+    "United States": 12.3076,
+    "Estonia": -0.73507,
+    "Hong Kong (China)": 14.41858
+   },
+   "source": "b1_7_2025.xlsx / Table I.B1.4.105"
+  },
+  {
+   "id": "2025_cognitive_adaptability",
+   "cycle": 2025,
+   "group": "態度",
+   "question": "PISA 2025：在參與的 83 個國家／經濟體中，臺灣的「認知彈性」排第幾？",
+   "short": "認知彈性",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      12
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      13,
+      33
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      34,
+      58
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      59,
+      83
+     ]
+    }
+   ],
+   "answer": "D",
+   "answer_rank": 81,
+   "n": 83,
+   "taiwan_value": -0.24645,
+   "unit": "（指數）",
+   "oecd_average": 0.00753,
+   "higher_is_better": true,
+   "surprise": 94.3,
+   "top3": [
+    {
+     "country": "Saudi Arabia",
+     "value": 0.30046
+    },
+    {
+     "country": "Albania",
+     "value": 0.28496
+    },
+    {
+     "country": "Costa Rica",
+     "value": 0.26895
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Japan",
+     "value": -0.53505
+    },
+    {
+     "country": "Brunei Darussalam",
+     "value": -0.31641
+    },
+    {
+     "country": "Chinese Taipei",
+     "value": -0.24645
+    }
+   ],
+   "reference": {
+    "Japan": -0.53505,
+    "Korea": -0.19989,
+    "Singapore": -0.00238,
+    "B-S-J-Z (China)": 0.05886,
+    "Finland": -0.01673,
+    "United States": 0.15924,
+    "Estonia": 0.11812,
+    "Hong Kong (China)": -0.185
+   },
+   "source": "b1_6_2025.xlsx / Table I.B1.3.40"
+  },
+  {
+   "id": "2025_rel_infodecision",
+   "cycle": 2025,
+   "group": "診斷",
+   "question": "PISA 2025：在參與的 85 個國家／經濟體中，臺灣的「相對強弱：評估科學資訊做決策」排第幾？",
+   "short": "相對強弱：評估科學資訊做決策",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      13
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      14,
+      34
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      35,
+      59
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      60,
+      85
+     ]
+    }
+   ],
+   "answer": "D",
+   "answer_rank": 82,
+   "n": 85,
+   "taiwan_value": -11.43566,
+   "unit": "分",
+   "oecd_average": -1.48906,
+   "higher_is_better": null,
+   "surprise": 93.1,
+   "top3": [
+    {
+     "country": "United States",
+     "value": 7.22642
+    },
+    {
+     "country": "Singapore",
+     "value": 6.47154
+    },
+    {
+     "country": "Dominican Republic",
+     "value": 6.41255
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Iceland",
+     "value": -16.09352
+    },
+    {
+     "country": "Kenya",
+     "value": -15.7911
+    },
+    {
+     "country": "Serbia",
+     "value": -14.85157
+    }
+   ],
+   "reference": {
+    "Japan": -3.15778,
+    "Korea": -0.73621,
+    "Singapore": 6.47154,
+    "B-S-J-Z (China)": -1.42518,
+    "Finland": 2.44818,
+    "United States": 7.22642,
+    "Estonia": 0.52908,
+    "Hong Kong (China)": 1.65619
+   },
+   "source": "衍生：b1_2_2025.xlsx / Table I.B1.2a.7 減 b1_2_2025.xlsx / Table I.B1.2a.1"
+  },
+  {
+   "id": "2025_urban_rural_gap",
+   "cycle": 2025,
+   "group": "城鄉",
+   "question": "PISA 2025：在參與的 74 個國家／經濟體中，臺灣的「城鄉科學分數差（城市−鄉村）」排第幾？",
+   "short": "城鄉科學分數差（城市−鄉村）",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      11
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      12,
+      30
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      31,
+      52
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      53,
+      74
+     ]
+    }
+   ],
+   "answer": "D",
+   "answer_rank": 71,
+   "n": 74,
+   "taiwan_value": 102.44468,
+   "unit": "分",
+   "oecd_average": 32.29527,
+   "higher_is_better": false,
+   "surprise": 92.6,
+   "top3": [
+    {
+     "country": "Belgium",
+     "value": -33.96618
+    },
+    {
+     "country": "Cyprus",
+     "value": -11.17639
+    },
+    {
+     "country": "United States",
+     "value": -7.09058
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Romania",
+     "value": 115.88601
+    },
+    {
+     "country": "Hungary",
+     "value": 110.55347
+    },
+    {
+     "country": "Slovak Republic",
+     "value": 105.19624
+    }
+   ],
+   "reference": {
+    "Korea": 15.34449,
+    "B-S-J-Z (China)": 88.20623,
+    "Finland": 18.91231,
+    "United States": -7.09058,
+    "Estonia": 17.62947,
+    "Hong Kong (China)": 9.94362
+   },
+   "source": "b1_8_2025.xlsx / Table I.B1.5.4"
+  },
+  {
+   "id": "2025_env_career",
+   "cycle": 2025,
+   "group": "環境",
+   "question": "PISA 2025：在參與的 82 個國家／經濟體中，臺灣的「期待從事與環境相關工作的比例」排第幾？",
+   "short": "期待從事與環境相關工作的比例",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      12
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      13,
+      33
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      34,
+      57
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      58,
+      82
+     ]
+    }
+   ],
+   "answer": "D",
+   "answer_rank": 78,
+   "n": 82,
+   "taiwan_value": 49.61734,
+   "unit": "%",
+   "oecd_average": 61.59409,
+   "higher_is_better": true,
+   "surprise": 91.8,
+   "top3": [
+    {
+     "country": "Viet Nam",
+     "value": 92.7766
+    },
+    {
+     "country": "Indonesia",
+     "value": 92.48179
+    },
+    {
+     "country": "Peru",
+     "value": 86.04756
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Netherlands",
+     "value": 41.02131
+    },
+    {
+     "country": "Hong Kong (China)",
+     "value": 45.47493
+    },
+    {
+     "country": "Germany",
+     "value": 45.92593
+    }
+   ],
+   "reference": {
+    "Japan": 62.20858,
+    "Korea": 52.87566,
+    "Singapore": 61.65642,
+    "B-S-J-Z (China)": 77.77979,
+    "Finland": 51.49831,
+    "Estonia": 60.77416,
+    "Hong Kong (China)": 45.47493
+   },
+   "source": "b1_8_2025.xlsx / Table I.B1.5.41"
+  },
+  {
+   "id": "2025_class_size_city_rural",
+   "cycle": 2025,
+   "group": "城鄉",
+   "question": "PISA 2025：在參與的 76 個國家／經濟體中，臺灣的「城鄉班級人數差（城市−鄉村）」排第幾？",
+   "short": "城鄉班級人數差（城市−鄉村）",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      11
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      12,
+      30
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      31,
+      53
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      54,
+      76
+     ]
+    }
+   ],
+   "answer": "D",
+   "answer_rank": 70,
+   "n": 76,
+   "taiwan_value": 11.74747,
+   "unit": "人",
+   "oecd_average": 5.06012,
+   "higher_is_better": false,
+   "surprise": 88.7,
+   "top3": [
+    {
+     "country": "Hong Kong (China)",
+     "value": -1.64599
+    },
+    {
+     "country": "Viet Nam",
+     "value": -1.62497
+    },
+    {
+     "country": "Morocco",
+     "value": -1.4223
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Paraguay",
+     "value": 15.26283
+    },
+    {
+     "country": "Mongolia",
+     "value": 13.87567
+    },
+    {
+     "country": "Georgia",
+     "value": 12.87016
+    }
+   ],
+   "reference": {
+    "Korea": 7.48344,
+    "B-S-J-Z (China)": 0.2776,
+    "Finland": 3.75279,
+    "United States": 9.24492,
+    "Estonia": 8.01306,
+    "Hong Kong (China)": -1.64599
+   },
+   "source": "b1_7_2025.xlsx / Table I.B1.4.109"
+  },
+  {
+   "id": "2025_ai_use",
+   "cycle": 2025,
+   "group": "學校",
+   "question": "PISA 2025：在參與的 85 個國家／經濟體中，臺灣的「用 AI 做功課的程度」排第幾？",
+   "short": "用 AI 做功課的程度",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      13
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      14,
+      34
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      35,
+      59
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      60,
+      85
+     ]
+    }
+   ],
+   "answer": "D",
+   "answer_rank": 78,
+   "n": 85,
+   "taiwan_value": -0.19737,
+   "unit": "（指數）",
+   "oecd_average": -0.00124,
+   "higher_is_better": null,
+   "surprise": 88.4,
+   "top3": [
+    {
+     "country": "United Arab Emirates",
+     "value": 0.5538
+    },
+    {
+     "country": "Viet Nam",
+     "value": 0.42835
+    },
+    {
+     "country": "Saudi Arabia",
+     "value": 0.39352
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Japan",
+     "value": -0.69136
+    },
+    {
+     "country": "Ireland",
+     "value": -0.47694
+    },
+    {
+     "country": "United Kingdom",
+     "value": -0.4662
+    }
+   ],
+   "reference": {
+    "Japan": -0.69136,
+    "Korea": 0.17365,
+    "Singapore": 0.37449,
+    "B-S-J-Z (China)": -0.27618,
+    "Finland": -0.35225,
+    "United States": -0.29806,
+    "Estonia": 0.01608,
+    "Hong Kong (China)": 0.23944
+   },
+   "source": "b1_7_2025.xlsx / Table I.B1.4.53"
+  },
+  {
+   "id": "2025_growth_mindset",
+   "cycle": 2025,
+   "group": "態度",
+   "question": "PISA 2025：在參與的 90 個國家／經濟體中，臺灣的「成長心態：不認同「智力天生無法改變」的比例」排第幾？",
+   "short": "成長心態：不認同「智力天生無法改變」的比例",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      14
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      15,
+      36
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      37,
+      63
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      64,
+      90
+     ]
+    }
+   ],
+   "answer": "D",
+   "answer_rank": 82,
+   "n": 90,
+   "taiwan_value": 45.54022,
+   "unit": "%",
+   "oecd_average": 69.25207,
+   "higher_is_better": true,
+   "surprise": 87.7,
+   "top3": [
+    {
+     "country": "Estonia",
+     "value": 83.00313
+    },
+    {
+     "country": "United States",
+     "value": 81.05845
+    },
+    {
+     "country": "France",
+     "value": 80.53021
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Indonesia",
+     "value": 30.24725
+    },
+    {
+     "country": "Thailand",
+     "value": 36.30167
+    },
+    {
+     "country": "Malaysia",
+     "value": 37.0452
+    }
+   ],
+   "reference": {
+    "Japan": 76.01869,
+    "Korea": 77.86266,
+    "Singapore": 62.34588,
+    "B-S-J-Z (China)": 49.58161,
+    "Finland": 76.57937,
+    "United States": 81.05845,
+    "Estonia": 83.00313,
+    "Hong Kong (China)": 44.04943
+   },
+   "source": "b1_6_2025.xlsx / Table I.B1.3.16"
+  },
+  {
+   "id": "2025_goal_setting",
+   "cycle": 2025,
+   "group": "態度",
+   "question": "PISA 2025：在參與的 85 個國家／經濟體中，臺灣的「目標設定」排第幾？",
+   "short": "目標設定",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      13
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      14,
+      34
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      35,
+      59
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      60,
+      85
+     ]
+    }
+   ],
+   "answer": "D",
+   "answer_rank": 77,
+   "n": 85,
+   "taiwan_value": -0.10777,
+   "unit": "（指數）",
+   "oecd_average": 0.00305,
+   "higher_is_better": true,
+   "surprise": 87.2,
+   "top3": [
+    {
+     "country": "Albania",
+     "value": 0.74381
+    },
+    {
+     "country": "Kenya",
+     "value": 0.59329
+    },
+    {
+     "country": "United Arab Emirates",
+     "value": 0.56466
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Japan",
+     "value": -0.4398
+    },
+    {
+     "country": "Czechia",
+     "value": -0.35182
+    },
+    {
+     "country": "Denmark",
+     "value": -0.20747
+    }
+   ],
+   "reference": {
+    "Japan": -0.4398,
+    "Korea": -0.14164,
+    "Singapore": 0.19754,
+    "B-S-J-Z (China)": 0.09184,
+    "Finland": -0.09442,
+    "United States": 0.04178,
+    "Estonia": -0.02575,
+    "Hong Kong (China)": 0.01599
+   },
+   "source": "b1_6_2025.xlsx / Table I.B1.3.49"
+  },
+  {
+   "id": "2025_life_satisfaction",
+   "cycle": 2025,
+   "group": "態度",
+   "question": "PISA 2025：在參與的 85 個國家／經濟體中，臺灣的「生活滿意度（0–10分）」排第幾？",
+   "short": "生活滿意度（0–10分）",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      13
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      14,
+      34
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      35,
+      59
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      60,
+      85
+     ]
+    }
+   ],
+   "answer": "D",
+   "answer_rank": 76,
+   "n": 85,
+   "taiwan_value": 6.71615,
+   "unit": "分（0–10）",
+   "oecd_average": 7.2197000000000005,
+   "higher_is_better": true,
+   "surprise": 86.0,
+   "top3": [
+    {
+     "country": "Albania",
+     "value": 8.63938
+    },
+    {
+     "country": "Kazakhstan",
+     "value": 8.6287
+    },
+    {
+     "country": "Armenia",
+     "value": 8.46564
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Rwanda",
+     "value": 5.46614
+    },
+    {
+     "country": "Zambia",
+     "value": 6.07096
+    },
+    {
+     "country": "Brunei Darussalam",
+     "value": 6.09252
+    }
+   ],
+   "reference": {
+    "Japan": 7.18211,
+    "Korea": 6.72697,
+    "B-S-J-Z (China)": 7.15404,
+    "Finland": 7.66878,
+    "Estonia": 7.41513,
+    "Hong Kong (China)": 6.73382
+   },
+   "source": "b1_6_2025.xlsx / Table I.B1.3.79"
+  },
+  {
+   "id": "2025_sci_spread",
+   "cycle": 2025,
+   "group": "成績",
+   "question": "PISA 2025：在參與的 91 個國家／經濟體中，臺灣的「科學高低分差距（P90−P10）」排第幾？",
+   "short": "科學高低分差距（P90−P10）",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      14
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      15,
+      36
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      37,
+      64
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      65,
+      91
+     ]
+    }
+   ],
+   "answer": "D",
+   "answer_rank": 81,
+   "n": 91,
+   "taiwan_value": 281.35108,
+   "unit": "分",
+   "oecd_average": 258.38297,
+   "higher_is_better": false,
+   "surprise": 85.6,
+   "top3": [
+    {
+     "country": "Dushanbe (Tajikistan)",
+     "value": 160.56426
+    },
+    {
+     "country": "Cambodia",
+     "value": 162.06141
+    },
+    {
+     "country": "Kurdistan Region (Iraq)",
+     "value": 167.21177
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Luxembourg",
+     "value": 298.97098
+    },
+    {
+     "country": "United States",
+     "value": 297.92082
+    },
+    {
+     "country": "Israel",
+     "value": 289.6245
+    }
+   ],
+   "reference": {
+    "Japan": 260.40435,
+    "Korea": 269.69177,
+    "Singapore": 276.03039,
+    "B-S-J-Z (China)": 223.04141,
+    "Finland": 274.83553,
+    "United States": 297.92082,
+    "Estonia": 229.68326,
+    "Hong Kong (China)": 267.54865
+   },
+   "source": "b1_2_2025.xlsx / Table I.B1.2a.1"
+  },
+  {
+   "id": "2025_school_ses_gap",
+   "cycle": 2025,
+   "group": "城鄉",
+   "question": "PISA 2025：在參與的 84 個國家／經濟體中，臺灣的「優勢校與弱勢校的科學分數差」排第幾？",
+   "short": "優勢校與弱勢校的科學分數差",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      13
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      14,
+      34
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      35,
+      59
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      60,
+      84
+     ]
+    }
+   ],
+   "answer": "D",
+   "answer_rank": 73,
+   "n": 84,
+   "taiwan_value": 136.72517,
+   "unit": "分",
+   "oecd_average": 109.5182,
+   "higher_is_better": false,
+   "surprise": 83.4,
+   "top3": [
+    {
+     "country": "Palestinian Authority",
+     "value": 17.65382
+    },
+    {
+     "country": "Uzbekistan",
+     "value": 21.18143
+    },
+    {
+     "country": "Kenya",
+     "value": 27.53888
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Germany",
+     "value": 181.19096
+    },
+    {
+     "country": "Luxembourg",
+     "value": 172.87463
+    },
+    {
+     "country": "Bulgaria",
+     "value": 166.04133
+    }
+   ],
+   "reference": {
+    "Japan": 132.27824,
+    "Korea": 90.14885,
+    "Singapore": 112.47589,
+    "B-S-J-Z (China)": 96.89501,
+    "Finland": 42.48037,
+    "United States": 122.66255,
+    "Estonia": 65.58169,
+    "Hong Kong (China)": 90.71287
+   },
+   "source": "b1_8_2025.xlsx / Table I.B1.5.4"
+  },
+  {
+   "id": "2025_homework_hours",
+   "cycle": 2025,
+   "group": "學校",
+   "question": "PISA 2025：在參與的 91 個國家／經濟體中，臺灣的「每天做功課時數（所有科目）」排第幾？",
+   "short": "每天做功課時數（所有科目）",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      14
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      15,
+      36
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      37,
+      64
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      65,
+      91
+     ]
+    }
+   ],
+   "answer": "D",
+   "answer_rank": 75,
+   "n": 91,
+   "taiwan_value": 0.58122,
+   "unit": "小時",
+   "oecd_average": 0.65183,
+   "higher_is_better": null,
+   "surprise": 78.9,
+   "top3": [
+    {
+     "country": "Azerbaijan",
+     "value": 1.33133
+    },
+    {
+     "country": "Albania",
+     "value": 1.32684
+    },
+    {
+     "country": "Kenya",
+     "value": 1.26982
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Ireland",
+     "value": 0.40766
+    },
+    {
+     "country": "Denmark",
+     "value": 0.43832
+    },
+    {
+     "country": "Switzerland",
+     "value": 0.43902
+    }
+   ],
+   "reference": {
+    "Japan": 0.52359,
+    "Korea": 0.72113,
+    "Singapore": 0.87436,
+    "B-S-J-Z (China)": 1.11915,
+    "Finland": 0.44811,
+    "United States": 0.54346,
+    "Estonia": 0.6854,
+    "Hong Kong (China)": 0.74735
+   },
+   "source": "b1_7_2025.xlsx / Table I.B1.4.93"
+  },
+  {
+   "id": "2025_between_school_var",
+   "cycle": 2025,
+   "group": "城鄉",
+   "question": "PISA 2025：在參與的 91 個國家／經濟體中，臺灣的「科學成績差異來自「學校之間」的比例」排第幾？",
+   "short": "科學成績差異來自「學校之間」的比例",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      14
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      15,
+      36
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      37,
+      64
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      65,
+      91
+     ]
+    }
+   ],
+   "answer": "D",
+   "answer_rank": 74,
+   "n": 91,
+   "taiwan_value": 42.10793,
+   "unit": "%",
+   "oecd_average": 31.267280000000003,
+   "higher_is_better": false,
+   "surprise": 77.8,
+   "top3": [
+    {
+     "country": "Iceland",
+     "value": 6.85272
+    },
+    {
+     "country": "Cambodia",
+     "value": 7.6366
+    },
+    {
+     "country": "Finland",
+     "value": 8.12033
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Zambia",
+     "value": 83.00459
+    },
+    {
+     "country": "Netherlands",
+     "value": 71.59846
+    },
+    {
+     "country": "Bulgaria",
+     "value": 66.72156
+    }
+   ],
+   "reference": {
+    "Japan": 47.86455,
+    "Korea": 26.46282,
+    "Singapore": 32.16547,
+    "B-S-J-Z (China)": 34.41588,
+    "Finland": 8.12033,
+    "United States": 38.8662,
+    "Estonia": 15.18847,
+    "Hong Kong (China)": 32.66823
+   },
+   "source": "b1_2_2025.xlsx / Table I.B1.2a.25"
+  },
+  {
+   "id": "2025_class_size_sci",
+   "cycle": 2025,
+   "group": "學校",
+   "question": "PISA 2025：在參與的 89 個國家／經濟體中，臺灣的「科學課班級人數」排第幾？",
+   "short": "科學課班級人數",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      13
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      14,
+      36
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      37,
+      62
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      63,
+      89
+     ]
+    }
+   ],
+   "answer": "D",
+   "answer_rank": 71,
+   "n": 89,
+   "taiwan_value": 32.86779,
+   "unit": "人",
+   "oecd_average": 25.67117,
+   "higher_is_better": false,
+   "surprise": 76.2,
+   "top3": [
+    {
+     "country": "Malta",
+     "value": 17.28172
+    },
+    {
+     "country": "Cyprus",
+     "value": 18.44714
+    },
+    {
+     "country": "Finland",
+     "value": 18.48462
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Mexico",
+     "value": 47.06928
+    },
+    {
+     "country": "Kenya",
+     "value": 45.10133
+    },
+    {
+     "country": "Cambodia",
+     "value": 44.13506
+    }
+   ],
+   "reference": {
+    "Japan": 35.34329,
+    "Korea": 27.65438,
+    "Singapore": 32.80051,
+    "B-S-J-Z (China)": 43.57701,
+    "Finland": 18.48462,
+    "United States": 24.6939,
+    "Estonia": 22.56251,
+    "Hong Kong (China)": 25.98015
+   },
+   "source": "b1_7_2025.xlsx / Table I.B1.4.109"
+  },
+  {
+   "id": "2025_escs_gap",
+   "cycle": 2025,
+   "group": "公平性",
+   "question": "PISA 2025：在參與的 90 個國家／經濟體中，臺灣的「社經前後四分之一的科學分數差」排第幾？",
+   "short": "社經前後四分之一的科學分數差",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      14
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      15,
+      36
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      37,
+      63
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      64,
+      90
+     ]
+    }
+   ],
+   "answer": "D",
+   "answer_rank": 71,
+   "n": 90,
+   "taiwan_value": 91.40403,
+   "unit": "分",
+   "oecd_average": 84.72297,
+   "higher_is_better": false,
+   "surprise": 75.4,
+   "top3": [
+    {
+     "country": "Kenya",
+     "value": 8.13808
+    },
+    {
+     "country": "Cambodia",
+     "value": 8.9152
+    },
+    {
+     "country": "Kurdistan Region (Iraq)",
+     "value": 19.0915
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Zambia",
+     "value": 177.42316
+    },
+    {
+     "country": "Luxembourg",
+     "value": 130.13083
+    },
+    {
+     "country": "Germany",
+     "value": 124.97788
+    }
+   ],
+   "reference": {
+    "Japan": 71.29973,
+    "Korea": 69.28508,
+    "Singapore": 91.08428,
+    "B-S-J-Z (China)": 72.41262,
+    "Finland": 77.94083,
+    "United States": 104.42571,
+    "Estonia": 68.04962,
+    "Hong Kong (China)": 68.50927
+   },
+   "source": "b1_3_2025.xlsx / Table I.B1.2b.2"
+  },
+  {
+   "id": "2025_curiosity",
+   "cycle": 2025,
+   "group": "態度",
+   "question": "PISA 2025：在參與的 87 個國家／經濟體中，臺灣的「好奇心」排第幾？",
+   "short": "好奇心",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      13
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      14,
+      35
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      36,
+      61
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      62,
+      87
+     ]
+    }
+   ],
+   "answer": "D",
+   "answer_rank": 66,
+   "n": 87,
+   "taiwan_value": -0.12809,
+   "unit": "（指數）",
+   "oecd_average": 0.00167,
+   "higher_is_better": true,
+   "surprise": 72.3,
+   "top3": [
+    {
+     "country": "Albania",
+     "value": 0.45491
+    },
+    {
+     "country": "Mauritius",
+     "value": 0.32371
+    },
+    {
+     "country": "Costa Rica",
+     "value": 0.30866
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Palestinian Authority",
+     "value": -0.33515
+    },
+    {
+     "country": "Ukrainian regions (17 of 27)",
+     "value": -0.32487
+    },
+    {
+     "country": "Jordan",
+     "value": -0.31668
+    }
+   ],
+   "reference": {
+    "Japan": -0.20735,
+    "Korea": 0.00822,
+    "Singapore": 0.14877,
+    "B-S-J-Z (China)": 0.00899,
+    "Finland": -0.0644,
+    "Estonia": -0.01445,
+    "Hong Kong (China)": -0.05997
+   },
+   "source": "b1_6_2025.xlsx / Table I.B1.3.1"
+  },
+  {
+   "id": "2025_cognitive_activation",
+   "cycle": 2025,
+   "group": "態度",
+   "question": "PISA 2025：在參與的 90 個國家／經濟體中，臺灣的「科學課的認知啟動」排第幾？",
+   "short": "科學課的認知啟動",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      14
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      15,
+      36
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      37,
+      63
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      64,
+      90
+     ]
+    }
+   ],
+   "answer": "C",
+   "answer_rank": 63,
+   "n": 90,
+   "taiwan_value": -0.05166,
+   "unit": "（指數）",
+   "oecd_average": 0.0031300000000000004,
+   "higher_is_better": true,
+   "surprise": 66.4,
+   "top3": [
+    {
+     "country": "Uzbekistan",
+     "value": 0.81649
+    },
+    {
+     "country": "Albania",
+     "value": 0.71285
+    },
+    {
+     "country": "B-S-J-Z (China)",
+     "value": 0.66732
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Netherlands",
+     "value": -0.36412
+    },
+    {
+     "country": "Greece",
+     "value": -0.30624
+    },
+    {
+     "country": "Uruguay",
+     "value": -0.29524
+    }
+   ],
+   "reference": {
+    "Japan": 0.30297,
+    "Korea": 0.44045,
+    "Singapore": 0.51245,
+    "B-S-J-Z (China)": 0.66732,
+    "Finland": -0.07704,
+    "United States": 0.35667,
+    "Estonia": -0.07855,
+    "Hong Kong (China)": 0.32578
+   },
+   "source": "b1_6_2025.xlsx / Table I.B1.3.57"
+  },
+  {
+   "id": "2025_enjoyment",
+   "cycle": 2025,
+   "group": "態度",
+   "question": "PISA 2025：在參與的 91 個國家／經濟體中，臺灣的「享受科學（樂趣）」排第幾？",
+   "short": "享受科學（樂趣）",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      14
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      15,
+      36
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      37,
+      64
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      65,
+      91
+     ]
+    }
+   ],
+   "answer": "C",
+   "answer_rank": 57,
+   "n": 91,
+   "taiwan_value": 0.05247,
+   "unit": "（指數）",
+   "oecd_average": -0.00167,
+   "higher_is_better": true,
+   "surprise": 58.9,
+   "top3": [
+    {
+     "country": "Albania",
+     "value": 0.73173
+    },
+    {
+     "country": "Uzbekistan",
+     "value": 0.66238
+    },
+    {
+     "country": "B-S-J-Z (China)",
+     "value": 0.59579
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Slovenia",
+     "value": -0.40729
+    },
+    {
+     "country": "Netherlands",
+     "value": -0.34451
+    },
+    {
+     "country": "Serbia",
+     "value": -0.28637
+    }
+   ],
+   "reference": {
+    "Japan": -0.02786,
+    "Korea": 0.13794,
+    "Singapore": 0.42676,
+    "B-S-J-Z (China)": 0.59579,
+    "Finland": -0.0267,
+    "United States": 0.13995,
+    "Estonia": 0.13983,
+    "Hong Kong (China)": 0.22471
+   },
+   "source": "b1_6_2025.xlsx / Table I.B1.3.53"
+  },
+  {
+   "id": "2025_escs_strength",
+   "cycle": 2025,
+   "group": "公平性",
+   "question": "PISA 2025：在參與的 90 個國家／經濟體中，臺灣的「社經地位可解釋的科學成績變異％」排第幾？",
+   "short": "社經地位可解釋的科學成績變異％",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      14
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      15,
+      36
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      37,
+      63
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      64,
+      90
+     ]
+    }
+   ],
+   "answer": "C",
+   "answer_rank": 55,
+   "n": 90,
+   "taiwan_value": 11.43435,
+   "unit": "%",
+   "oecd_average": 11.57385,
+   "higher_is_better": false,
+   "surprise": 57.4,
+   "top3": [
+    {
+     "country": "Kenya",
+     "value": 0.18613
+    },
+    {
+     "country": "Cambodia",
+     "value": 0.4721
+    },
+    {
+     "country": "Uzbekistan",
+     "value": 1.25379
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Zambia",
+     "value": 37.76778
+    },
+    {
+     "country": "Romania",
+     "value": 21.74233
+    },
+    {
+     "country": "Luxembourg",
+     "value": 21.68377
+    }
+   ],
+   "reference": {
+    "Japan": 7.60975,
+    "Korea": 7.68667,
+    "Singapore": 12.46784,
+    "B-S-J-Z (China)": 9.71394,
+    "Finland": 9.01965,
+    "United States": 11.03107,
+    "Estonia": 9.63874,
+    "Hong Kong (China)": 6.21879
+   },
+   "source": "b1_3_2025.xlsx / Table I.B1.2b.2"
+  },
+  {
+   "id": "2025_family_support",
+   "cycle": 2025,
+   "group": "學校",
+   "question": "PISA 2025：在參與的 90 個國家／經濟體中，臺灣的「家庭支持」排第幾？",
+   "short": "家庭支持",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      14
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      15,
+      36
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      37,
+      63
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      64,
+      90
+     ]
+    }
+   ],
+   "answer": "C",
+   "answer_rank": 52,
+   "n": 90,
+   "taiwan_value": -0.27011,
+   "unit": "（指數）",
+   "oecd_average": -0.1868,
+   "higher_is_better": true,
+   "surprise": 54.0,
+   "top3": [
+    {
+     "country": "Albania",
+     "value": 0.42494
+    },
+    {
+     "country": "Romania",
+     "value": 0.16147
+    },
+    {
+     "country": "Estonia",
+     "value": 0.11146
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Macao (China)",
+     "value": -0.67696
+    },
+    {
+     "country": "Cambodia",
+     "value": -0.66398
+    },
+    {
+     "country": "Japan",
+     "value": -0.64445
+    }
+   ],
+   "reference": {
+    "Japan": -0.64445,
+    "Korea": -0.05842,
+    "Singapore": -0.51294,
+    "B-S-J-Z (China)": -0.10488,
+    "Finland": -0.04783,
+    "United States": -0.18287,
+    "Estonia": 0.11146,
+    "Hong Kong (China)": -0.54981
+   },
+   "source": "b1_7_2025.xlsx / Table I.B1.4.120"
+  },
+  {
+   "id": "2025_rel_enquiry",
+   "cycle": 2025,
+   "group": "診斷",
+   "question": "PISA 2025：在參與的 85 個國家／經濟體中，臺灣的「相對強弱：評估探究設計」排第幾？",
+   "short": "相對強弱：評估探究設計",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      13
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      14,
+      34
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      35,
+      59
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      60,
+      85
+     ]
+    }
+   ],
+   "answer": "C",
+   "answer_rank": 46,
+   "n": 85,
+   "taiwan_value": -0.03566,
+   "unit": "分",
+   "oecd_average": -0.66393,
+   "higher_is_better": null,
+   "surprise": 50.3,
+   "top3": [
+    {
+     "country": "Morocco",
+     "value": 11.37607
+    },
+    {
+     "country": "Lebanon",
+     "value": 10.24648
+    },
+    {
+     "country": "Philippines",
+     "value": 8.87972
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Argentina",
+     "value": -7.27555
+    },
+    {
+     "country": "Armenia",
+     "value": -6.81532
+    },
+    {
+     "country": "United States",
+     "value": -6.38158
+    }
+   ],
+   "reference": {
+    "Japan": 0.17955,
+    "Korea": -1.23234,
+    "Singapore": -3.03799,
+    "B-S-J-Z (China)": 3.00518,
+    "Finland": -4.22567,
+    "United States": -6.38158,
+    "Estonia": 2.90452,
+    "Hong Kong (China)": 1.06168
+   },
+   "source": "衍生：b1_2_2025.xlsx / Table I.B1.2a.6 減 b1_2_2025.xlsx / Table I.B1.2a.1"
+  },
+  {
+   "id": "2025_cram_science",
+   "cycle": 2025,
+   "group": "學校",
+   "question": "PISA 2025：在參與的 89 個國家／經濟體中，臺灣的「有上額外科學課／補習的比例」排第幾？",
+   "short": "有上額外科學課／補習的比例",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      13
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      14,
+      36
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      37,
+      62
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      63,
+      89
+     ]
+    }
+   ],
+   "answer": "C",
+   "answer_rank": 45,
+   "n": 89,
+   "taiwan_value": 72.36109,
+   "unit": "%",
+   "oecd_average": 60.21207,
+   "higher_is_better": null,
+   "surprise": 46.7,
+   "top3": [
+    {
+     "country": "Viet Nam",
+     "value": 97.01123
+    },
+    {
+     "country": "Indonesia",
+     "value": 94.41472
+    },
+    {
+     "country": "Jordan",
+     "value": 93.84926
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Belgium",
+     "value": 33.85576
+    },
+    {
+     "country": "Uruguay",
+     "value": 41.03904
+    },
+    {
+     "country": "Japan",
+     "value": 42.1119
+    }
+   ],
+   "reference": {
+    "Japan": 42.1119,
+    "Korea": 71.13825,
+    "Singapore": 79.95975,
+    "B-S-J-Z (China)": 81.1302,
+    "Finland": 52.5172,
+    "United States": 60.87893,
+    "Estonia": 68.20549,
+    "Hong Kong (China)": 71.77114
+   },
+   "source": "b1_7_2025.xlsx / Table I.B1.4.105"
+  },
+  {
+   "id": "2025_belonging",
+   "cycle": 2025,
+   "group": "態度",
+   "question": "PISA 2025：在參與的 85 個國家／經濟體中，臺灣的「學校歸屬感」排第幾？",
+   "short": "學校歸屬感",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      13
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      14,
+      34
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      35,
+      59
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      60,
+      85
+     ]
+    }
+   ],
+   "answer": "C",
+   "answer_rank": 42,
+   "n": 85,
+   "taiwan_value": 0.01299,
+   "unit": "（指數）",
+   "oecd_average": 0.09483000000000001,
+   "higher_is_better": true,
+   "surprise": 45.5,
+   "top3": [
+    {
+     "country": "Albania",
+     "value": 0.67477
+    },
+    {
+     "country": "Austria",
+     "value": 0.49505
+    },
+    {
+     "country": "Croatia",
+     "value": 0.45974
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Brunei Darussalam",
+     "value": -0.43025
+    },
+    {
+     "country": "Hong Kong (China)",
+     "value": -0.31697
+    },
+    {
+     "country": "Philippines",
+     "value": -0.28732
+    }
+   ],
+   "reference": {
+    "Japan": 0.42034,
+    "Korea": 0.31006,
+    "Singapore": -0.10735,
+    "B-S-J-Z (China)": -0.0398,
+    "Finland": 0.16557,
+    "United States": -0.20504,
+    "Estonia": -0.03631,
+    "Hong Kong (China)": -0.31697
+   },
+   "source": "b1_6_2025.xlsx / Table I.B1.3.62"
+  },
+  {
+   "id": "2025_perseverance",
+   "cycle": 2025,
+   "group": "態度",
+   "question": "PISA 2025：在參與的 82 個國家／經濟體中，臺灣的「毅力」排第幾？",
+   "short": "毅力",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      12
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      13,
+      33
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      34,
+      57
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      58,
+      82
+     ]
+    }
+   ],
+   "answer": "C",
+   "answer_rank": 37,
+   "n": 82,
+   "taiwan_value": 0.01711,
+   "unit": "（指數）",
+   "oecd_average": 0.00238,
+   "higher_is_better": true,
+   "surprise": 41.1,
+   "top3": [
+    {
+     "country": "Costa Rica",
+     "value": 0.50678
+    },
+    {
+     "country": "Thailand",
+     "value": 0.40163
+    },
+    {
+     "country": "Malaysia",
+     "value": 0.3827
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Poland",
+     "value": -0.34067
+    },
+    {
+     "country": "Slovenia",
+     "value": -0.30652
+    },
+    {
+     "country": "Czechia",
+     "value": -0.29678
+    }
+   ],
+   "reference": {
+    "Japan": 0.05412,
+    "Korea": -0.02263,
+    "Singapore": 0.08124,
+    "B-S-J-Z (China)": 0.10088,
+    "Finland": -0.10022,
+    "Estonia": -0.06217,
+    "Hong Kong (China)": -0.13139
+   },
+   "source": "b1_6_2025.xlsx / Table I.B1.3.9"
+  },
+  {
+   "id": "2025_school_waste",
+   "cycle": 2025,
+   "group": "態度",
+   "question": "PISA 2025：在參與的 90 個國家／經濟體中，臺灣的「認為「上學是浪費時間」的比例」排第幾？",
+   "short": "認為「上學是浪費時間」的比例",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      14
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      15,
+      36
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      37,
+      63
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      64,
+      90
+     ]
+    }
+   ],
+   "answer": "C",
+   "answer_rank": 38,
+   "n": 90,
+   "taiwan_value": 21.24978,
+   "unit": "%",
+   "oecd_average": 23.86278,
+   "higher_is_better": false,
+   "surprise": 38.3,
+   "top3": [
+    {
+     "country": "Japan",
+     "value": 6.30085
+    },
+    {
+     "country": "Malaysia",
+     "value": 6.91389
+    },
+    {
+     "country": "B-S-J-Z (China)",
+     "value": 8.00445
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Poland",
+     "value": 37.7793
+    },
+    {
+     "country": "Israel",
+     "value": 36.70669
+    },
+    {
+     "country": "Cyprus",
+     "value": 35.67189
+    }
+   ],
+   "reference": {
+    "Japan": 6.30085,
+    "Korea": 9.84242,
+    "Singapore": 15.97428,
+    "B-S-J-Z (China)": 8.00445,
+    "Finland": 23.99805,
+    "United States": 25.52143,
+    "Estonia": 21.40846,
+    "Hong Kong (China)": 22.42473
+   },
+   "source": "b1_6_2025.xlsx / Table I.B1.3.70"
+  },
+  {
+   "id": "2025_teacher_support",
+   "cycle": 2025,
+   "group": "學校",
+   "question": "PISA 2025：在參與的 84 個國家／經濟體中，臺灣的「科學課的教師支持」排第幾？",
+   "short": "科學課的教師支持",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      13
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      14,
+      34
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      35,
+      59
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      60,
+      84
+     ]
+    }
+   ],
+   "answer": "C",
+   "answer_rank": 35,
+   "n": 84,
+   "taiwan_value": 0.32642,
+   "unit": "（指數）",
+   "oecd_average": 0.0347,
+   "higher_is_better": true,
+   "surprise": 37.7,
+   "top3": [
+    {
+     "country": "Albania",
+     "value": 0.97042
+    },
+    {
+     "country": "Azerbaijan",
+     "value": 0.8182
+    },
+    {
+     "country": "Saudi Arabia",
+     "value": 0.81801
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Poland",
+     "value": -0.56269
+    },
+    {
+     "country": "Czechia",
+     "value": -0.50505
+    },
+    {
+     "country": "Slovenia",
+     "value": -0.41374
+    }
+   ],
+   "reference": {
+    "Japan": 0.36626,
+    "Korea": 0.50909,
+    "Singapore": 0.42924,
+    "B-S-J-Z (China)": 0.62362,
+    "Finland": 0.22073,
+    "United States": 0.26341,
+    "Estonia": 0.01414,
+    "Hong Kong (China)": 0.26431
+   },
+   "source": "b1_7_2025.xlsx / Table I.B1.4.113"
+  },
+  {
+   "id": "2025_gender_gap_sci",
+   "cycle": 2025,
+   "group": "性別",
+   "question": "PISA 2025：在參與的 91 個國家／經濟體中，臺灣的「科學成績的性別差（女−男）」排第幾？",
+   "short": "科學成績的性別差（女−男）",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      14
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      15,
+      36
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      37,
+      64
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      65,
+      91
+     ]
+    }
+   ],
+   "answer": "B",
+   "answer_rank": 30,
+   "n": 91,
+   "taiwan_value": 10.51395,
+   "unit": "分",
+   "oecd_average": 1.20088,
+   "higher_is_better": null,
+   "surprise": 28.9,
+   "top3": [
+    {
+     "country": "Palestinian Authority",
+     "value": 36.61428
+    },
+    {
+     "country": "Kurdistan Region (Iraq)",
+     "value": 25.86932
+    },
+    {
+     "country": "Bulgaria",
+     "value": 25.63211
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Rwanda",
+     "value": -26.07693
+    },
+    {
+     "country": "Kenya",
+     "value": -23.79412
+    },
+    {
+     "country": "Hong Kong (China)",
+     "value": -16.02246
+    }
+   ],
+   "reference": {
+    "Japan": -9.62906,
+    "Korea": 2.06614,
+    "Singapore": 0.20812,
+    "B-S-J-Z (China)": -14.09416,
+    "Finland": 22.16103,
+    "United States": -8.05127,
+    "Estonia": 1.06208,
+    "Hong Kong (China)": -16.02246
+   },
+   "source": "衍生：b1_4_2025.xlsx / Table I.B1.2c.1 減 b1_4_2025.xlsx / Table I.B1.2c.1"
+  },
+  {
+   "id": "2025_sci_rural",
+   "cycle": 2025,
+   "group": "城鄉",
+   "question": "PISA 2025：在參與的 75 個國家／經濟體中，臺灣的「鄉村學校的科學分數」排第幾？",
+   "short": "鄉村學校的科學分數",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      11
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      12,
+      30
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      31,
+      52
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      53,
+      75
+     ]
+    }
+   ],
+   "answer": "B",
+   "answer_rank": 23,
+   "n": 75,
+   "taiwan_value": 453.92966,
+   "unit": "分",
+   "oecd_average": 457.62926,
+   "higher_is_better": true,
+   "surprise": 26.4,
+   "top3": [
+    {
+     "country": "B-S-J-Z (China)",
+     "value": 521.37995
+    },
+    {
+     "country": "Belgium",
+     "value": 514.523
+    },
+    {
+     "country": "Estonia",
+     "value": 511.93783
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Guatemala",
+     "value": 307.18508
+    },
+    {
+     "country": "Paraguay",
+     "value": 315.76156
+    },
+    {
+     "country": "Kenya",
+     "value": 316.40449
+    }
+   ],
+   "reference": {
+    "Korea": 508.5958,
+    "B-S-J-Z (China)": 521.37995,
+    "Finland": 493.52179,
+    "United States": 498.48894,
+    "Estonia": 511.93783,
+    "Hong Kong (China)": 490.14139
+   },
+   "source": "b1_8_2025.xlsx / Table I.B1.5.4"
+  },
+  {
+   "id": "2025_env_awareness",
+   "cycle": 2025,
+   "group": "環境",
+   "question": "PISA 2025：在參與的 90 個國家／經濟體中，臺灣的「環境議題認識程度」排第幾？",
+   "short": "環境議題認識程度",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      14
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      15,
+      36
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      37,
+      63
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      64,
+      90
+     ]
+    }
+   ],
+   "answer": "B",
+   "answer_rank": 19,
+   "n": 90,
+   "taiwan_value": -0.00815,
+   "unit": "（指數）",
+   "oecd_average": -0.13887,
+   "higher_is_better": true,
+   "surprise": 16.9,
+   "top3": [
+    {
+     "country": "B-S-J-Z (China)",
+     "value": 0.54379
+    },
+    {
+     "country": "Albania",
+     "value": 0.42824
+    },
+    {
+     "country": "Türkiye",
+     "value": 0.38774
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Kurdistan Region (Iraq)",
+     "value": -0.99223
+    },
+    {
+     "country": "Dushanbe (Tajikistan)",
+     "value": -0.96746
+    },
+    {
+     "country": "Palestinian Authority",
+     "value": -0.89977
+    }
+   ],
+   "reference": {
+    "Japan": -0.42331,
+    "Korea": 0.11919,
+    "Singapore": 0.37404,
+    "B-S-J-Z (China)": 0.54379,
+    "Finland": -0.14917,
+    "Estonia": 0.02259,
+    "Hong Kong (China)": 0.08734
+   },
+   "source": "b1_8_2025.xlsx / Table I.B1.5.6"
+  },
+  {
+   "id": "2025_feel_safe",
+   "cycle": 2025,
+   "group": "學校",
+   "question": "PISA 2025：在參與的 88 個國家／經濟體中，臺灣的「在學校感到安全」排第幾？",
+   "short": "在學校感到安全",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      13
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      14,
+      35
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      36,
+      62
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      63,
+      88
+     ]
+    }
+   ],
+   "answer": "B",
+   "answer_rank": 18,
+   "n": 88,
+   "taiwan_value": 0.27111,
+   "unit": "（指數）",
+   "oecd_average": 0.184,
+   "higher_is_better": true,
+   "surprise": 16.2,
+   "top3": [
+    {
+     "country": "Switzerland",
+     "value": 0.62643
+    },
+    {
+     "country": "Austria",
+     "value": 0.59774
+    },
+    {
+     "country": "Spain",
+     "value": 0.58142
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Moldova",
+     "value": -0.76279
+    },
+    {
+     "country": "Rwanda",
+     "value": -0.39386
+    },
+    {
+     "country": "Cambodia",
+     "value": -0.34632
+    }
+   ],
+   "reference": {
+    "Korea": 0.33566,
+    "Singapore": 0.41696,
+    "B-S-J-Z (China)": 0.2184,
+    "Finland": 0.49384,
+    "United States": 0.08132,
+    "Estonia": 0.3334,
+    "Hong Kong (China)": 0.11489
+   },
+   "source": "b1_7_2025.xlsx / Table I.B1.4.149"
+  },
+  {
+   "id": "2025_help_seeking",
+   "cycle": 2025,
+   "group": "態度",
+   "question": "PISA 2025：在參與的 85 個國家／經濟體中，臺灣的「主動求助」排第幾？",
+   "short": "主動求助",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      13
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      14,
+      34
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      35,
+      59
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      60,
+      85
+     ]
+    }
+   ],
+   "answer": "B",
+   "answer_rank": 15,
+   "n": 85,
+   "taiwan_value": 0.20486,
+   "unit": "（指數）",
+   "oecd_average": 0.002,
+   "higher_is_better": true,
+   "surprise": 13.4,
+   "top3": [
+    {
+     "country": "Albania",
+     "value": 0.42854
+    },
+    {
+     "country": "Malaysia",
+     "value": 0.42629
+    },
+    {
+     "country": "Singapore",
+     "value": 0.37661
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Poland",
+     "value": -0.3305
+    },
+    {
+     "country": "Czechia",
+     "value": -0.27196
+    },
+    {
+     "country": "Slovak Republic",
+     "value": -0.25921
+    }
+   ],
+   "reference": {
+    "Japan": 0.06996,
+    "Korea": 0.19987,
+    "Singapore": 0.37661,
+    "B-S-J-Z (China)": 0.30551,
+    "Finland": 0.02394,
+    "United States": 0.14574,
+    "Estonia": 0.07633,
+    "Hong Kong (China)": 0.16248
+   },
+   "source": "b1_6_2025.xlsx / Table I.B1.3.44"
+  },
+  {
+   "id": "2025_env_collective",
+   "cycle": 2025,
+   "group": "環境",
+   "question": "PISA 2025：在參與的 89 個國家／經濟體中，臺灣的「相信集體行動能改變環境」排第幾？",
+   "short": "相信集體行動能改變環境",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      13
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      14,
+      36
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      37,
+      62
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      63,
+      89
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 13,
+   "n": 89,
+   "taiwan_value": 0.33503,
+   "unit": "（指數）",
+   "oecd_average": -0.00298,
+   "higher_is_better": true,
+   "surprise": 10.3,
+   "top3": [
+    {
+     "country": "Albania",
+     "value": 0.77855
+    },
+    {
+     "country": "Singapore",
+     "value": 0.57106
+    },
+    {
+     "country": "B-S-J-Z (China)",
+     "value": 0.53056
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Netherlands",
+     "value": -0.32235
+    },
+    {
+     "country": "Germany",
+     "value": -0.30435
+    },
+    {
+     "country": "Czechia",
+     "value": -0.27096
+    }
+   ],
+   "reference": {
+    "Japan": 0.35504,
+    "Korea": 0.35146,
+    "Singapore": 0.57106,
+    "B-S-J-Z (China)": 0.53056,
+    "Finland": -0.08427,
+    "Estonia": -0.0257,
+    "Hong Kong (China)": 0.19131
+   },
+   "source": "b1_8_2025.xlsx / Table I.B1.5.18"
+  },
+  {
+   "id": "2025_sci_sd",
+   "cycle": 2025,
+   "group": "成績",
+   "question": "PISA 2025：在參與的 91 個國家／經濟體中，臺灣的「科學分數標準差（分數落差）」排第幾？",
+   "short": "科學分數標準差（分數落差）",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      14
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      15,
+      36
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      37,
+      64
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      65,
+      91
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 11,
+   "n": 91,
+   "taiwan_value": 107.46699,
+   "unit": "分",
+   "oecd_average": 98.63806000000001,
+   "higher_is_better": null,
+   "surprise": 7.8,
+   "top3": [
+    {
+     "country": "United States",
+     "value": 114.29363
+    },
+    {
+     "country": "Luxembourg",
+     "value": 113.33079
+    },
+    {
+     "country": "Israel",
+     "value": 111.34369
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Cambodia",
+     "value": 63.09634
+    },
+    {
+     "country": "Dushanbe (Tajikistan)",
+     "value": 64.22704
+    },
+    {
+     "country": "Kurdistan Region (Iraq)",
+     "value": 64.70232
+    }
+   ],
+   "reference": {
+    "Japan": 99.70823,
+    "Korea": 104.04034,
+    "Singapore": 105.27781,
+    "B-S-J-Z (China)": 87.81097,
+    "Finland": 104.93994,
+    "United States": 114.29363,
+    "Estonia": 88.43502,
+    "Hong Kong (China)": 102.91343
+   },
+   "source": "b1_2_2025.xlsx / Table I.B1.2a.1"
+  },
+  {
+   "id": "2025_env_agency",
+   "cycle": 2025,
+   "group": "環境",
+   "question": "PISA 2025：在參與的 89 個國家／經濟體中，臺灣的「相信自己能帶來環境改變」排第幾？",
+   "short": "相信自己能帶來環境改變",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      13
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      14,
+      36
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      37,
+      62
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      63,
+      89
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 10,
+   "n": 89,
+   "taiwan_value": 0.29509,
+   "unit": "（指數）",
+   "oecd_average": -0.00305,
+   "higher_is_better": true,
+   "surprise": 6.9,
+   "top3": [
+    {
+     "country": "Albania",
+     "value": 0.81902
+    },
+    {
+     "country": "B-S-J-Z (China)",
+     "value": 0.59732
+    },
+    {
+     "country": "Korea",
+     "value": 0.42926
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Netherlands",
+     "value": -0.41044
+    },
+    {
+     "country": "Poland",
+     "value": -0.31442
+    },
+    {
+     "country": "Czechia",
+     "value": -0.24118
+    }
+   ],
+   "reference": {
+    "Japan": 0.03032,
+    "Korea": 0.42926,
+    "Singapore": 0.35456,
+    "B-S-J-Z (China)": 0.59732,
+    "Finland": -0.10379,
+    "Estonia": -0.0809,
+    "Hong Kong (China)": 0.10795
+   },
+   "source": "b1_8_2025.xlsx / Table I.B1.5.11"
+  },
+  {
+   "id": "2025_discipline",
+   "cycle": 2025,
+   "group": "學校",
+   "question": "PISA 2025：在參與的 85 個國家／經濟體中，臺灣的「科學課的秩序與紀律」排第幾？",
+   "short": "科學課的秩序與紀律",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      13
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      14,
+      34
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      35,
+      59
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      60,
+      85
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 9,
+   "n": 85,
+   "taiwan_value": 0.59139,
+   "unit": "（指數）",
+   "oecd_average": 0.14105,
+   "higher_is_better": true,
+   "surprise": 6.2,
+   "top3": [
+    {
+     "country": "Korea",
+     "value": 1.31976
+    },
+    {
+     "country": "Japan",
+     "value": 1.1229
+    },
+    {
+     "country": "Uzbekistan",
+     "value": 0.82411
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Argentina",
+     "value": -0.43278
+    },
+    {
+     "country": "Greece",
+     "value": -0.31751
+    },
+    {
+     "country": "Lebanon",
+     "value": -0.22368
+    }
+   ],
+   "reference": {
+    "Japan": 1.1229,
+    "Korea": 1.31976,
+    "Singapore": 0.18717,
+    "B-S-J-Z (China)": 0.80013,
+    "Finland": 0.1372,
+    "United States": 0.26737,
+    "Estonia": 0.22594,
+    "Hong Kong (China)": 0.48226
+   },
+   "source": "b1_7_2025.xlsx / Table I.B1.4.132"
+  },
+  {
+   "id": "2025_school_unprepared",
+   "cycle": 2025,
+   "group": "態度",
+   "question": "PISA 2025：在參與的 90 個國家／經濟體中，臺灣的「認為「學校沒讓我為成年生活做好準備」的比例」排第幾？",
+   "short": "認為「學校沒讓我為成年生活做好準備」的比例",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      14
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      15,
+      36
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      37,
+      63
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      64,
+      90
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 9,
+   "n": 90,
+   "taiwan_value": 30.34429,
+   "unit": "%",
+   "oecd_average": 48.58382,
+   "higher_is_better": false,
+   "surprise": 5.7,
+   "top3": [
+    {
+     "country": "Korea",
+     "value": 15.10544
+    },
+    {
+     "country": "Armenia",
+     "value": 23.78765
+    },
+    {
+     "country": "Japan",
+     "value": 24.1357
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Germany",
+     "value": 75.35706
+    },
+    {
+     "country": "Philippines",
+     "value": 67.41281
+    },
+    {
+     "country": "Brunei Darussalam",
+     "value": 66.39118
+    }
+   ],
+   "reference": {
+    "Japan": 24.1357,
+    "Korea": 15.10544,
+    "Singapore": 37.39009,
+    "B-S-J-Z (China)": 49.59982,
+    "Finland": 35.27044,
+    "United States": 47.04767,
+    "Estonia": 46.26886,
+    "Hong Kong (China)": 48.97378
+   },
+   "source": "b1_6_2025.xlsx / Table I.B1.3.70"
+  },
+  {
+   "id": "2025_digital_distraction",
+   "cycle": 2025,
+   "group": "學校",
+   "question": "PISA 2025：在參與的 85 個國家／經濟體中，臺灣的「科學課被數位裝置干擾的比例」排第幾？",
+   "short": "科學課被數位裝置干擾的比例",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      13
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      14,
+      34
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      35,
+      59
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      60,
+      85
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 8,
+   "n": 85,
+   "taiwan_value": 13.19112,
+   "unit": "%",
+   "oecd_average": 28.44324,
+   "higher_is_better": false,
+   "surprise": 5.0,
+   "top3": [
+    {
+     "country": "B-S-J-Z (China)",
+     "value": 4.89119
+    },
+    {
+     "country": "Japan",
+     "value": 6.59645
+    },
+    {
+     "country": "Korea",
+     "value": 6.6718
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Uruguay",
+     "value": 56.84962
+    },
+    {
+     "country": "Argentina",
+     "value": 55.4012
+    },
+    {
+     "country": "Chile",
+     "value": 47.94449
+    }
+   ],
+   "reference": {
+    "Japan": 6.59645,
+    "Korea": 6.6718,
+    "Singapore": 28.85097,
+    "B-S-J-Z (China)": 4.89119,
+    "Finland": 25.46213,
+    "United States": 29.32806,
+    "Estonia": 35.53512,
+    "Hong Kong (China)": 19.60009
+   },
+   "source": "b1_7_2025.xlsx / Table I.B1.4.43"
+  },
+  {
+   "id": "2025_sci_p10",
+   "cycle": 2025,
+   "group": "成績",
+   "question": "PISA 2025：在參與的 91 個國家／經濟體中，臺灣的「科學後段（第10百分位）分數」排第幾？",
+   "short": "科學後段（第10百分位）分數",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      14
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      15,
+      36
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      37,
+      64
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      65,
+      91
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 6,
+   "n": 91,
+   "taiwan_value": 390.68874,
+   "unit": "分",
+   "oecd_average": 351.17913000000004,
+   "higher_is_better": true,
+   "surprise": 2.3,
+   "top3": [
+    {
+     "country": "B-S-J-Z (China)",
+     "value": 481.93465
+    },
+    {
+     "country": "Macao (China)",
+     "value": 423.0888
+    },
+    {
+     "country": "Singapore",
+     "value": 410.59858
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Zambia",
+     "value": 213.828
+    },
+    {
+     "country": "Rwanda",
+     "value": 234.14877
+    },
+    {
+     "country": "Kenya",
+     "value": 243.24851
+    }
+   ],
+   "reference": {
+    "Japan": 400.97468,
+    "Korea": 384.06162,
+    "Singapore": 410.59858,
+    "B-S-J-Z (China)": 481.93465,
+    "Finland": 363.27895,
+    "United States": 351.39512,
+    "Estonia": 409.84217,
+    "Hong Kong (China)": 360.50213
+   },
+   "source": "b1_2_2025.xlsx / Table I.B1.2a.1"
+  },
+  {
+   "id": "2025_pct_below2",
+   "cycle": 2025,
+   "group": "成績",
+   "question": "PISA 2025：在參與的 91 個國家／經濟體中，臺灣的「科學未達基礎水準（L2以下）比例」排第幾？",
+   "short": "科學未達基礎水準（L2以下）比例",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      14
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      15,
+      36
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      37,
+      64
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      65,
+      91
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 6,
+   "n": 91,
+   "taiwan_value": 12.89841,
+   "unit": "%",
+   "oecd_average": 25.69598,
+   "higher_is_better": false,
+   "surprise": 2.3,
+   "top3": [
+    {
+     "country": "B-S-J-Z (China)",
+     "value": 2.52623
+    },
+    {
+     "country": "Macao (China)",
+     "value": 7.91872
+    },
+    {
+     "country": "Singapore",
+     "value": 9.85694
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Dushanbe (Tajikistan)",
+     "value": 88.15075
+    },
+    {
+     "country": "Rwanda",
+     "value": 87.24824
+    },
+    {
+     "country": "Kenya",
+     "value": 83.96586
+    }
+   ],
+   "reference": {
+    "Japan": 11.33655,
+    "Korea": 14.20615,
+    "Singapore": 9.85694,
+    "B-S-J-Z (China)": 2.52623,
+    "Finland": 19.35302,
+    "United States": 22.32031,
+    "Estonia": 9.93095,
+    "Hong Kong (China)": 20.93848
+   },
+   "source": "b1_2_2025.xlsx / Table I.B1.2a.10"
+  },
+  {
+   "id": "2025_bullying",
+   "cycle": 2025,
+   "group": "學校",
+   "question": "PISA 2025：在參與的 91 個國家／經濟體中，臺灣的「遭受霸凌的程度」排第幾？",
+   "short": "遭受霸凌的程度",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      14
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      15,
+      36
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      37,
+      64
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      65,
+      91
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 6,
+   "n": 91,
+   "taiwan_value": -0.412,
+   "unit": "（指數）",
+   "oecd_average": -0.07448,
+   "higher_is_better": false,
+   "surprise": 2.3,
+   "top3": [
+    {
+     "country": "Armenia",
+     "value": -0.5544
+    },
+    {
+     "country": "Kazakhstan",
+     "value": -0.5211
+    },
+    {
+     "country": "Uzbekistan",
+     "value": -0.49371
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Rwanda",
+     "value": 1.01093
+    },
+    {
+     "country": "Kenya",
+     "value": 0.81469
+    },
+    {
+     "country": "Philippines",
+     "value": 0.69669
+    }
+   ],
+   "reference": {
+    "Japan": -0.3226,
+    "Korea": -0.426,
+    "Singapore": -0.0065,
+    "B-S-J-Z (China)": -0.28126,
+    "Finland": -0.12293,
+    "United States": -0.09022,
+    "Estonia": 0.15914,
+    "Hong Kong (China)": -0.04089
+   },
+   "source": "b1_7_2025.xlsx / Table I.B1.4.138"
+  },
+  {
+   "id": "2025_nature_of_science",
+   "cycle": 2025,
+   "group": "態度",
+   "question": "PISA 2025：在參與的 90 個國家／經濟體中，臺灣的「對科學本質的信念」排第幾？",
+   "short": "對科學本質的信念",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      14
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      15,
+      36
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      37,
+      63
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      64,
+      90
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 2,
+   "n": 90,
+   "taiwan_value": 0.36103,
+   "unit": "（指數）",
+   "oecd_average": 0.0013900000000000002,
+   "higher_is_better": true,
+   "surprise": -2.2,
+   "top3": [
+    {
+     "country": "B-S-J-Z (China)",
+     "value": 0.38089
+    },
+    {
+     "country": "Chinese Taipei",
+     "value": 0.36103
+    },
+    {
+     "country": "Singapore",
+     "value": 0.30856
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Dominican Republic",
+     "value": -0.57841
+    },
+    {
+     "country": "Rwanda",
+     "value": -0.57218
+    },
+    {
+     "country": "Armenia",
+     "value": -0.52537
+    }
+   ],
+   "reference": {
+    "Japan": 0.2601,
+    "Korea": 0.20751,
+    "Singapore": 0.30856,
+    "B-S-J-Z (China)": 0.38089,
+    "Finland": -0.05694,
+    "United States": 0.20878,
+    "Estonia": 0.12579,
+    "Hong Kong (China)": 0.1723
+   },
+   "source": "b1_6_2025.xlsx / Table I.B1.3.30"
+  },
+  {
+   "id": "2025_cps_mean",
+   "cycle": 2025,
+   "group": "成績",
+   "question": "PISA 2025：在參與的 85 個國家／經濟體中，臺灣的「運算問題解決平均分數」排第幾？",
+   "short": "運算問題解決平均分數",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      13
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      14,
+      34
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      35,
+      59
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      60,
+      85
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 5,
+   "n": 85,
+   "taiwan_value": 550.89796,
+   "unit": "分",
+   "oecd_average": 500.00000000000006,
+   "higher_is_better": true,
+   "surprise": 1.5,
+   "top3": [
+    {
+     "country": "Macao (China)",
+     "value": 571.90155
+    },
+    {
+     "country": "Singapore",
+     "value": 563.4684
+    },
+    {
+     "country": "B-S-J-Z (China)",
+     "value": 560.3053
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Kenya",
+     "value": 277.89092
+    },
+    {
+     "country": "Paraguay",
+     "value": 352.49057
+    },
+    {
+     "country": "Armenia",
+     "value": 354.36597
+    }
+   ],
+   "reference": {
+    "Japan": 557.31996,
+    "Korea": 537.65191,
+    "Singapore": 563.4684,
+    "B-S-J-Z (China)": 560.3053,
+    "Finland": 506.64899,
+    "United States": 513.22293,
+    "Estonia": 540.67639,
+    "Hong Kong (China)": 545.48746
+   },
+   "source": "b1_2_2025.xlsx / Table I.B1.2a.4"
+  },
+  {
+   "id": "2025_sub_infodecision",
+   "cycle": 2025,
+   "group": "成績",
+   "question": "PISA 2025：在參與的 85 個國家／經濟體中，臺灣的「科學子項：評估科學資訊做決策」排第幾？",
+   "short": "科學子項：評估科學資訊做決策",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      13
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      14,
+      34
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      35,
+      59
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      60,
+      85
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 5,
+   "n": 85,
+   "taiwan_value": 528.26603,
+   "unit": "分",
+   "oecd_average": 480.41928,
+   "higher_is_better": true,
+   "surprise": 1.5,
+   "top3": [
+    {
+     "country": "B-S-J-Z (China)",
+     "value": 595.61861
+    },
+    {
+     "country": "Singapore",
+     "value": 566.3221
+    },
+    {
+     "country": "Japan",
+     "value": 534.42846
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Kenya",
+     "value": 319.15826
+    },
+    {
+     "country": "Guatemala",
+     "value": 350.86373
+    },
+    {
+     "country": "Kosovo",
+     "value": 353.16455
+    }
+   ],
+   "reference": {
+    "Japan": 534.42846,
+    "Korea": 525.3691,
+    "Singapore": 566.3221,
+    "B-S-J-Z (China)": 595.61861,
+    "Finland": 506.82063,
+    "United States": 508.80966,
+    "Estonia": 527.64616,
+    "Hong Kong (China)": 497.28285
+   },
+   "source": "b1_2_2025.xlsx / Table I.B1.2a.7"
+  },
+  {
+   "id": "2025_rel_explain",
+   "cycle": 2025,
+   "group": "診斷",
+   "question": "PISA 2025：在參與的 85 個國家／經濟體中，臺灣的「相對強弱：科學地解釋現象」排第幾？",
+   "short": "相對強弱：科學地解釋現象",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      13
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      14,
+      34
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      35,
+      59
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      60,
+      85
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 5,
+   "n": 85,
+   "taiwan_value": 4.39291,
+   "unit": "分",
+   "oecd_average": -0.24712,
+   "higher_is_better": null,
+   "surprise": 1.5,
+   "top3": [
+    {
+     "country": "Ukrainian regions (17 of 27)",
+     "value": 7.06656
+    },
+    {
+     "country": "Mexico",
+     "value": 5.50992
+    },
+    {
+     "country": "Albania",
+     "value": 4.75749
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Morocco",
+     "value": -14.57866
+    },
+    {
+     "country": "Lebanon",
+     "value": -11.80402
+    },
+    {
+     "country": "Philippines",
+     "value": -11.48986
+    }
+   ],
+   "reference": {
+    "Japan": 3.9684,
+    "Korea": -1.12094,
+    "Singapore": -1.18899,
+    "B-S-J-Z (China)": -2.53726,
+    "Finland": 2.4711,
+    "United States": -1.26269,
+    "Estonia": -5.63887,
+    "Hong Kong (China)": -5.27432
+   },
+   "source": "衍生：b1_2_2025.xlsx / Table I.B1.2a.5 減 b1_2_2025.xlsx / Table I.B1.2a.1"
+  },
+  {
+   "id": "2025_sci_p90",
+   "cycle": 2025,
+   "group": "成績",
+   "question": "PISA 2025：在參與的 91 個國家／經濟體中，臺灣的「科學前段（第90百分位）分數」排第幾？",
+   "short": "科學前段（第90百分位）分數",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      14
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      15,
+      36
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      37,
+      64
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      65,
+      91
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 3,
+   "n": 91,
+   "taiwan_value": 672.03983,
+   "unit": "分",
+   "oecd_average": 609.56209,
+   "higher_is_better": true,
+   "surprise": -1.1,
+   "top3": [
+    {
+     "country": "B-S-J-Z (China)",
+     "value": 704.97607
+    },
+    {
+     "country": "Singapore",
+     "value": 686.62897
+    },
+    {
+     "country": "Chinese Taipei",
+     "value": 672.03983
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Dushanbe (Tajikistan)",
+     "value": 418.38462
+    },
+    {
+     "country": "Rwanda",
+     "value": 428.2976
+    },
+    {
+     "country": "Kurdistan Region (Iraq)",
+     "value": 437.17378
+    }
+   ],
+   "reference": {
+    "Japan": 661.37903,
+    "Korea": 653.75339,
+    "Singapore": 686.62897,
+    "B-S-J-Z (China)": 704.97607,
+    "Finland": 638.11448,
+    "United States": 649.31593,
+    "Estonia": 639.52543,
+    "Hong Kong (China)": 628.05078
+   },
+   "source": "b1_2_2025.xlsx / Table I.B1.2a.1"
+  },
+  {
+   "id": "2025_read_mean",
+   "cycle": 2025,
+   "group": "成績",
+   "question": "PISA 2025：在參與的 90 個國家／經濟體中，臺灣的「閱讀平均分數」排第幾？",
+   "short": "閱讀平均分數",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      14
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      15,
+      36
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      37,
+      63
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      64,
+      90
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 3,
+   "n": 90,
+   "taiwan_value": 507.78799,
+   "unit": "分",
+   "oecd_average": 460.94416,
+   "higher_is_better": true,
+   "surprise": -1.1,
+   "top3": [
+    {
+     "country": "Singapore",
+     "value": 534.90002
+    },
+    {
+     "country": "B-S-J-Z (China)",
+     "value": 526.51825
+    },
+    {
+     "country": "Chinese Taipei",
+     "value": 507.78799
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Rwanda",
+     "value": 300.94391
+    },
+    {
+     "country": "Kurdistan Region (Iraq)",
+     "value": 311.53031
+    },
+    {
+     "country": "Kenya",
+     "value": 320.21398
+    }
+   ],
+   "reference": {
+    "Japan": 502.7145,
+    "Korea": 500.56065,
+    "Singapore": 534.90002,
+    "B-S-J-Z (China)": 526.51825,
+    "Finland": 474.29731,
+    "United States": 489.51893,
+    "Estonia": 499.24425,
+    "Hong Kong (China)": 480.12066
+   },
+   "source": "b1_2_2025.xlsx / Table I.B1.2a.2"
+  },
+  {
+   "id": "2025_pct_top",
+   "cycle": 2025,
+   "group": "成績",
+   "question": "PISA 2025：在參與的 91 個國家／經濟體中，臺灣的「科學頂尖學生（L5–6）比例」排第幾？",
+   "short": "科學頂尖學生（L5–6）比例",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      14
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      15,
+      36
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      37,
+      64
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      65,
+      91
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 3,
+   "n": 91,
+   "taiwan_value": 20.135,
+   "unit": "%",
+   "oecd_average": 7.21366,
+   "higher_is_better": true,
+   "surprise": -1.1,
+   "top3": [
+    {
+     "country": "B-S-J-Z (China)",
+     "value": 35.60246
+    },
+    {
+     "country": "Singapore",
+     "value": 26.0884
+    },
+    {
+     "country": "Chinese Taipei",
+     "value": 20.135
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Kyrgyzstan",
+     "value": 0.00145
+    },
+    {
+     "country": "Kurdistan Region (Iraq)",
+     "value": 0.00174
+    },
+    {
+     "country": "Cambodia",
+     "value": 0.00239
+    }
+   ],
+   "reference": {
+    "Japan": 17.15303,
+    "Korea": 14.68617,
+    "Singapore": 26.0884,
+    "B-S-J-Z (China)": 35.60246,
+    "Finland": 10.9711,
+    "United States": 12.92793,
+    "Estonia": 11.33133,
+    "Hong Kong (China)": 9.06233
+   },
+   "source": "b1_2_2025.xlsx / Table I.B1.2a.10"
+  },
+  {
+   "id": "2025_sci_girls",
+   "cycle": 2025,
+   "group": "性別",
+   "question": "PISA 2025：在參與的 91 個國家／經濟體中，臺灣的「科學平均分數（女生）」排第幾？",
+   "short": "科學平均分數（女生）",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      14
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      15,
+      36
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      37,
+      64
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      65,
+      91
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 3,
+   "n": 91,
+   "taiwan_value": 545.1534,
+   "unit": "分",
+   "oecd_average": 482.53726000000006,
+   "higher_is_better": true,
+   "surprise": -1.1,
+   "top3": [
+    {
+     "country": "B-S-J-Z (China)",
+     "value": 589.70262
+    },
+    {
+     "country": "Singapore",
+     "value": 559.95653
+    },
+    {
+     "country": "Chinese Taipei",
+     "value": 545.1534
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Rwanda",
+     "value": 306.03141
+    },
+    {
+     "country": "Kenya",
+     "value": 322.44801
+    },
+    {
+     "country": "Zambia",
+     "value": 330.48005
+    }
+   ],
+   "reference": {
+    "Japan": 532.62351,
+    "Korea": 527.1617,
+    "Singapore": 559.95653,
+    "B-S-J-Z (China)": 589.70262,
+    "Finland": 515.60419,
+    "United States": 497.69475,
+    "Estonia": 527.64941,
+    "Hong Kong (China)": 487.31732
+   },
+   "source": "b1_4_2025.xlsx / Table I.B1.2c.1"
+  },
+  {
+   "id": "2025_sci_boys",
+   "cycle": 2025,
+   "group": "性別",
+   "question": "PISA 2025：在參與的 91 個國家／經濟體中，臺灣的「科學平均分數（男生）」排第幾？",
+   "short": "科學平均分數（男生）",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      14
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      15,
+      36
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      37,
+      64
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      65,
+      91
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 5,
+   "n": 91,
+   "taiwan_value": 534.63945,
+   "unit": "分",
+   "oecd_average": 481.33638,
+   "higher_is_better": true,
+   "surprise": 1.1,
+   "top3": [
+    {
+     "country": "B-S-J-Z (China)",
+     "value": 603.79678
+    },
+    {
+     "country": "Singapore",
+     "value": 559.74841
+    },
+    {
+     "country": "Japan",
+     "value": 542.25257
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Rwanda",
+     "value": 332.10834
+    },
+    {
+     "country": "Dushanbe (Tajikistan)",
+     "value": 335.62673
+    },
+    {
+     "country": "Palestinian Authority",
+     "value": 338.06724
+    }
+   ],
+   "reference": {
+    "Japan": 542.25257,
+    "Korea": 525.09556,
+    "Singapore": 559.74841,
+    "B-S-J-Z (China)": 603.79678,
+    "Finland": 493.44316,
+    "United States": 505.74602,
+    "Estonia": 526.58733,
+    "Hong Kong (China)": 503.33978
+   },
+   "source": "b1_4_2025.xlsx / Table I.B1.2c.1"
+  },
+  {
+   "id": "2025_truancy",
+   "cycle": 2025,
+   "group": "學校",
+   "question": "PISA 2025：在參與的 91 個國家／經濟體中，臺灣的「曾整天蹺課的比例」排第幾？",
+   "short": "曾整天蹺課的比例",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      14
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      15,
+      36
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      37,
+      64
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      65,
+      91
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 5,
+   "n": 91,
+   "taiwan_value": 10.58151,
+   "unit": "%",
+   "oecd_average": 33.87485,
+   "higher_is_better": false,
+   "surprise": 1.1,
+   "top3": [
+    {
+     "country": "Korea",
+     "value": 3.38355
+    },
+    {
+     "country": "B-S-J-Z (China)",
+     "value": 3.75831
+    },
+    {
+     "country": "Japan",
+     "value": 7.07525
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Georgia",
+     "value": 80.43933
+    },
+    {
+     "country": "Paraguay",
+     "value": 74.06218
+    },
+    {
+     "country": "Ukrainian regions (17 of 27)",
+     "value": 72.71451
+    }
+   ],
+   "reference": {
+    "Japan": 7.07525,
+    "Korea": 3.38355,
+    "Singapore": 14.84845,
+    "B-S-J-Z (China)": 3.75831,
+    "Finland": 24.21545,
+    "United States": 43.48078,
+    "Estonia": 37.50702,
+    "Hong Kong (China)": 13.65125
+   },
+   "source": "b1_7_2025.xlsx / Table I.B1.4.158"
+  },
+  {
+   "id": "2025_sub_explain",
+   "cycle": 2025,
+   "group": "成績",
+   "question": "PISA 2025：在參與的 85 個國家／經濟體中，臺灣的「科學子項：科學地解釋現象」排第幾？",
+   "short": "科學子項：科學地解釋現象",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      13
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      14,
+      34
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      35,
+      59
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      60,
+      85
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 3,
+   "n": 85,
+   "taiwan_value": 544.0946,
+   "unit": "分",
+   "oecd_average": 481.66122,
+   "higher_is_better": true,
+   "surprise": -0.9,
+   "top3": [
+    {
+     "country": "B-S-J-Z (China)",
+     "value": 594.50653
+    },
+    {
+     "country": "Singapore",
+     "value": 558.66157
+    },
+    {
+     "country": "Chinese Taipei",
+     "value": 544.0946
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Kenya",
+     "value": 333.12573
+    },
+    {
+     "country": "Morocco",
+     "value": 343.40112
+    },
+    {
+     "country": "Guatemala",
+     "value": 352.62058
+    }
+   ],
+   "reference": {
+    "Japan": 541.55464,
+    "Korea": 524.98437,
+    "Singapore": 558.66157,
+    "B-S-J-Z (China)": 594.50653,
+    "Finland": 506.84355,
+    "United States": 500.32055,
+    "Estonia": 521.47821,
+    "Hong Kong (China)": 490.35234
+   },
+   "source": "b1_2_2025.xlsx / Table I.B1.2a.5"
+  },
+  {
+   "id": "2025_env_sci_mean",
+   "cycle": 2025,
+   "group": "環境",
+   "question": "PISA 2025：在參與的 85 個國家／經濟體中，臺灣的「環境科學子量表平均分數」排第幾？",
+   "short": "環境科學子量表平均分數",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      13
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      14,
+      34
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      35,
+      59
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      60,
+      85
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 3,
+   "n": 85,
+   "taiwan_value": 539.20305,
+   "unit": "分",
+   "oecd_average": 480.12299,
+   "higher_is_better": true,
+   "surprise": -0.9,
+   "top3": [
+    {
+     "country": "B-S-J-Z (China)",
+     "value": 594.09222
+    },
+    {
+     "country": "Singapore",
+     "value": 561.16653
+    },
+    {
+     "country": "Chinese Taipei",
+     "value": 539.20305
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Kenya",
+     "value": 331.10296
+    },
+    {
+     "country": "Guatemala",
+     "value": 346.51635
+    },
+    {
+     "country": "Kosovo",
+     "value": 351.07237
+    }
+   ],
+   "reference": {
+    "Japan": 535.66349,
+    "Korea": 522.0115,
+    "Singapore": 561.16653,
+    "B-S-J-Z (China)": 594.09222,
+    "Finland": 501.90855,
+    "United States": 499.61478,
+    "Estonia": 520.33629,
+    "Hong Kong (China)": 496.59778
+   },
+   "source": "b1_8_2025.xlsx / Table I.B1.5.1"
+  },
+  {
+   "id": "2025_sci_city",
+   "cycle": 2025,
+   "group": "城鄉",
+   "question": "PISA 2025：在參與的 83 個國家／經濟體中，臺灣的「城市學校的科學分數」排第幾？",
+   "short": "城市學校的科學分數",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      12
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      13,
+      33
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      34,
+      58
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      59,
+      83
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 3,
+   "n": 83,
+   "taiwan_value": 556.37434,
+   "unit": "分",
+   "oecd_average": 491.25695,
+   "higher_is_better": true,
+   "surprise": -0.9,
+   "top3": [
+    {
+     "country": "B-S-J-Z (China)",
+     "value": 609.58617
+    },
+    {
+     "country": "Singapore",
+     "value": 561.52035
+    },
+    {
+     "country": "Chinese Taipei",
+     "value": 556.37434
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Palestinian Authority",
+     "value": 363.25555
+    },
+    {
+     "country": "Morocco",
+     "value": 363.55166
+    },
+    {
+     "country": "Kosovo",
+     "value": 365.6769
+    }
+   ],
+   "reference": {
+    "Japan": 546.24268,
+    "Korea": 523.94029,
+    "Singapore": 561.52035,
+    "B-S-J-Z (China)": 609.58617,
+    "Finland": 512.43411,
+    "United States": 491.39836,
+    "Estonia": 529.5673,
+    "Hong Kong (China)": 500.08501
+   },
+   "source": "b1_8_2025.xlsx / Table I.B1.5.4"
+  },
+  {
+   "id": "2025_sub_enquiry",
+   "cycle": 2025,
+   "group": "成績",
+   "question": "PISA 2025：在參與的 85 個國家／經濟體中，臺灣的「科學子項：評估探究設計」排第幾？",
+   "short": "科學子項：評估探究設計",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      13
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      14,
+      34
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      35,
+      59
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      60,
+      85
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 4,
+   "n": 85,
+   "taiwan_value": 539.66603,
+   "unit": "分",
+   "oecd_average": 481.24441,
+   "higher_is_better": true,
+   "surprise": 0.3,
+   "top3": [
+    {
+     "country": "B-S-J-Z (China)",
+     "value": 600.04897
+    },
+    {
+     "country": "Singapore",
+     "value": 556.81257
+    },
+    {
+     "country": "Macao (China)",
+     "value": 544.04597
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Kenya",
+     "value": 339.72865
+    },
+    {
+     "country": "Guatemala",
+     "value": 349.00732
+    },
+    {
+     "country": "Paraguay",
+     "value": 355.07141
+    }
+   ],
+   "reference": {
+    "Japan": 537.76579,
+    "Korea": 524.87297,
+    "Singapore": 556.81257,
+    "B-S-J-Z (China)": 600.04897,
+    "Finland": 500.14678,
+    "United States": 495.20166,
+    "Estonia": 530.0216,
+    "Hong Kong (China)": 496.68834
+   },
+   "source": "b1_2_2025.xlsx / Table I.B1.2a.6"
+  },
+  {
+   "id": "2025_math_mean",
+   "cycle": 2025,
+   "group": "成績",
+   "question": "PISA 2025：在參與的 90 個國家／經濟體中，臺灣的「數學平均分數」排第幾？",
+   "short": "數學平均分數",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      14
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      15,
+      36
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      37,
+      63
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      64,
+      90
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 4,
+   "n": 90,
+   "taiwan_value": 546.18912,
+   "unit": "分",
+   "oecd_average": 463.02078000000006,
+   "higher_is_better": true,
+   "surprise": 0.1,
+   "top3": [
+    {
+     "country": "B-S-J-Z (China)",
+     "value": 612.42966
+    },
+    {
+     "country": "Singapore",
+     "value": 562.89748
+    },
+    {
+     "country": "Macao (China)",
+     "value": 549.30162
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Rwanda",
+     "value": 311.64827
+    },
+    {
+     "country": "Zambia",
+     "value": 313.63332
+    },
+    {
+     "country": "Kenya",
+     "value": 325.93541
+    }
+   ],
+   "reference": {
+    "Japan": 525.3758,
+    "Korea": 522.29784,
+    "Singapore": 562.89748,
+    "B-S-J-Z (China)": 612.42966,
+    "Finland": 468.69454,
+    "United States": 462.84782,
+    "Estonia": 507.89573,
+    "Hong Kong (China)": 521.70777
+   },
+   "source": "b1_2_2025.xlsx / Table I.B1.2a.3"
+  },
+  {
+   "id": "2025_sci_mean",
+   "cycle": 2025,
+   "group": "成績",
+   "question": "PISA 2025：在參與的 91 個國家／經濟體中，臺灣的「科學平均分數」排第幾？",
+   "short": "科學平均分數",
+   "options": [
+    {
+     "key": "A",
+     "label": "世界前段（前 15%）",
+     "range": [
+      1,
+      14
+     ]
+    },
+    {
+     "key": "B",
+     "label": "中上（15–40%）",
+     "range": [
+      15,
+      36
+     ]
+    },
+    {
+     "key": "C",
+     "label": "中後段（40–70%）",
+     "range": [
+      37,
+      64
+     ]
+    },
+    {
+     "key": "D",
+     "label": "後段（後 30%）",
+     "range": [
+      65,
+      91
+     ]
+    }
+   ],
+   "answer": "A",
+   "answer_rank": 4,
+   "n": 91,
+   "taiwan_value": 539.70169,
+   "unit": "分",
+   "oecd_average": 481.90834000000007,
+   "higher_is_better": true,
+   "surprise": null,
+   "top3": [
+    {
+     "country": "B-S-J-Z (China)",
+     "value": 597.04379
+    },
+    {
+     "country": "Singapore",
+     "value": 559.85056
+    },
+    {
+     "country": "Macao (China)",
+     "value": 540.81386
+    }
+   ],
+   "bottom3": [
+    {
+     "country": "Rwanda",
+     "value": 317.28649
+    },
+    {
+     "country": "Dushanbe (Tajikistan)",
+     "value": 333.76479
+    },
+    {
+     "country": "Kenya",
+     "value": 334.94936
+    }
+   ],
+   "reference": {
+    "Japan": 537.58624,
+    "Korea": 526.10531,
+    "Singapore": 559.85056,
+    "B-S-J-Z (China)": 597.04379,
+    "Finland": 504.37245,
+    "United States": 501.58324,
+    "Estonia": 527.11708,
+    "Hong Kong (China)": 495.62666
+   },
+   "source": "b1_2_2025.xlsx / Table I.B1.2a.1"
+  }
+ ],
+ "most_surprising": [
+  "2025_cram_ses_gap",
+  "2025_cognitive_adaptability",
+  "2025_rel_infodecision",
+  "2015_career_health",
+  "2006_rel_identify",
+  "2025_urban_rural_gap",
+  "2025_env_career",
+  "2006_self_concept",
+  "2025_class_size_city_rural",
+  "2025_ai_use",
+  "2025_growth_mindset",
+  "2025_goal_setting",
+  "2025_life_satisfaction",
+  "2025_sci_spread",
+  "2025_school_ses_gap",
+  "2025_homework_hours",
+  "2025_between_school_var",
+  "2015_enjoyment",
+  "2025_class_size_sci",
+  "2025_escs_gap",
+  "2025_curiosity",
+  "2015_career_sci",
+  "2015_career_vague",
+  "2006_parent_sci_career",
+  "2015_interest_broad",
+  "2025_cognitive_activation",
+  "2025_enjoyment",
+  "2025_escs_strength",
+  "2006_career_health",
+  "2015_career_sci_eng"
+ ]
+}

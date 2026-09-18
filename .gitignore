@@ -1,0 +1,13 @@
+# OECD 原始資料表：檔案大（約 57MB）且屬 OECD 出版品，不重新散布
+# 需要時執行 build/fetch_raw.sh 重新下載，來源與 DOI 見 raw/SOURCES.md
+raw/*.xlsx
+raw/*.xls
+raw/*.pdf
+raw/*.txt
+
+__pycache__/
+*.pyc
+.DS_Store
+
+# Claude Code 本機工作檔
+CONVERSATIONS.md

@@ -1,0 +1,309 @@
+[
+ {
+  "indicator": "career_health",
+  "zh": "想當醫療專業人員的比例",
+  "group": "職涯",
+  "kind": "pct",
+  "by_cycle": {
+   "2006": {
+    "value": 7.55292,
+    "rank": 33,
+    "n": 52,
+    "pct_rank": 62.7,
+    "oecd": 8.65376
+   },
+   "2015": {
+    "value": 7.18238,
+    "rank": 71,
+    "n": 73,
+    "pct_rank": 97.2,
+    "oecd": 11.61099
+   }
+  }
+ },
+ {
+  "indicator": "career_ict",
+  "zh": "想當資通訊專業人員的比例",
+  "group": "職涯",
+  "kind": "pct",
+  "by_cycle": {
+   "2006": {
+    "value": 6.88256,
+    "rank": 1,
+    "n": 52,
+    "pct_rank": 0.0,
+    "oecd": 2.408901
+   },
+   "2015": {
+    "value": 3.39542,
+    "rank": 18,
+    "n": 73,
+    "pct_rank": 23.6,
+    "oecd": 2.629242
+   }
+  }
+ },
+ {
+  "indicator": "career_sci",
+  "zh": "30歲想從事科學相關工作的比例",
+  "group": "職涯",
+  "kind": "pct",
+  "by_cycle": {
+   "2006": {
+    "value": 22.19519,
+    "rank": 22,
+    "n": 52,
+    "pct_rank": 41.2,
+    "oecd": 20.61495
+   },
+   "2015": {
+    "value": 20.89637,
+    "rank": 56,
+    "n": 73,
+    "pct_rank": 76.4,
+    "oecd": 24.46577
+   }
+  }
+ },
+ {
+  "indicator": "career_sci_eng",
+  "zh": "想當科學家／工程師的比例",
+  "group": "職涯",
+  "kind": "pct",
+  "by_cycle": {
+   "2006": {
+    "value": 6.53739,
+    "rank": 32,
+    "n": 52,
+    "pct_rank": 60.8,
+    "oecd": 8.072599
+   },
+   "2015": {
+    "value": 7.89336,
+    "rank": 45,
+    "n": 73,
+    "pct_rank": 61.1,
+    "oecd": 8.768434
+   }
+  }
+ },
+ {
+  "indicator": "career_vague",
+  "zh": "對未來職業沒有明確想法的比例",
+  "group": "職涯",
+  "kind": "pct",
+  "by_cycle": {
+   "2006": {
+    "value": 18.25372,
+    "rank": 15,
+    "n": 52,
+    "pct_rank": 27.5,
+    "oecd": 23.06147
+   },
+   "2015": {
+    "value": 20.80364,
+    "rank": 54,
+    "n": 73,
+    "pct_rank": 73.6,
+    "oecd": 18.83586
+   }
+  }
+ },
+ {
+  "indicator": "enjoyment",
+  "zh": "享受科學（樂趣）",
+  "group": "態度",
+  "kind": "index",
+  "by_cycle": {
+   "2006": {
+    "value": 0.1656,
+    "rank": 22,
+    "n": 57,
+    "pct_rank": 37.5,
+    "oecd": -0.000399568531235965
+   },
+   "2015": {
+    "value": -0.06414,
+    "rank": 59,
+    "n": 73,
+    "pct_rank": 80.6,
+    "oecd": 0.0154034120786903
+   },
+   "2025": {
+    "value": 0.05247,
+    "rank": 57,
+    "n": 91,
+    "pct_rank": 62.2,
+    "oecd": -0.00167
+   }
+  }
+ },
+ {
+  "indicator": "env_awareness",
+  "zh": "環境議題認識程度",
+  "group": "環境",
+  "kind": "index",
+  "by_cycle": {
+   "2006": {
+    "value": 0.45508,
+    "rank": 1,
+    "n": 57,
+    "pct_rank": 0.0,
+    "oecd": 0.0001951485833690802
+   },
+   "2025": {
+    "value": -0.00815,
+    "rank": 19,
+    "n": 90,
+    "pct_rank": 20.2,
+    "oecd": -0.13887
+   }
+  }
+ },
+ {
+  "indicator": "instrumental",
+  "zh": "工具性動機（學科學有用）",
+  "group": "態度",
+  "kind": "index",
+  "by_cycle": {
+   "2006": {
+    "value": 0.27033,
+    "rank": 22,
+    "n": 57,
+    "pct_rank": 37.5,
+    "oecd": 0.0033575803211214846
+   },
+   "2015": {
+    "value": 0.24411,
+    "rank": 44,
+    "n": 73,
+    "pct_rank": 59.7,
+    "oecd": 0.1379664935964593
+   }
+  }
+ },
+ {
+  "indicator": "sci_activities",
+  "zh": "課外科學活動參與",
+  "group": "態度",
+  "kind": "index",
+  "by_cycle": {
+   "2006": {
+    "value": 0.39697,
+    "rank": 22,
+    "n": 57,
+    "pct_rank": 37.5,
+    "oecd": -0.0011025770964890847
+   },
+   "2015": {
+    "value": 0.20104,
+    "rank": 25,
+    "n": 57,
+    "pct_rank": 42.9,
+    "oecd": -0.0207377539979816
+   }
+  }
+ },
+ {
+  "indicator": "sci_mean",
+  "zh": "科學平均分數",
+  "group": "成績",
+  "kind": "score",
+  "by_cycle": {
+   "2006": {
+    "value": 532.47355,
+    "rank": 4,
+    "n": 57,
+    "pct_rank": 5.4,
+    "oecd": 499.9984874814208
+   },
+   "2015": {
+    "value": 532.34745,
+    "rank": 4,
+    "n": 73,
+    "pct_rank": 4.2,
+    "oecd": 493.2017129961685
+   },
+   "2025": {
+    "value": 539.70169,
+    "rank": 4,
+    "n": 91,
+    "pct_rank": 3.3,
+    "oecd": 481.90834000000007
+   }
+  }
+ },
+ {
+  "indicator": "sci_sd",
+  "zh": "科學分數標準差（分數落差）",
+  "group": "成績",
+  "kind": "score",
+  "by_cycle": {
+   "2006": {
+    "value": 94.45096,
+    "rank": 22,
+    "n": 57,
+    "pct_rank": 37.5,
+    "oecd": 95.20829631184812
+   },
+   "2015": {
+    "value": 99.55322,
+    "rank": 14,
+    "n": 73,
+    "pct_rank": 18.1,
+    "oecd": 94.41457173328729
+   },
+   "2025": {
+    "value": 107.46699,
+    "rank": 11,
+    "n": 91,
+    "pct_rank": 11.1,
+    "oecd": 98.63806000000001
+   }
+  }
+ },
+ {
+  "indicator": "self_efficacy",
+  "zh": "科學自我效能（我做得到）",
+  "group": "態度",
+  "kind": "index",
+  "by_cycle": {
+   "2006": {
+    "value": 0.18043,
+    "rank": 7,
+    "n": 57,
+    "pct_rank": 10.7,
+    "oecd": 0.0005034755706126261
+   },
+   "2015": {
+    "value": 0.18819,
+    "rank": 19,
+    "n": 73,
+    "pct_rank": 25.0,
+    "oecd": 0.0365439560612264
+   }
+  }
+ },
+ {
+  "indicator": "sub_explain",
+  "zh": "科學子項：科學地解釋現象",
+  "group": "成績",
+  "kind": "score",
+  "by_cycle": {
+   "2006": {
+    "value": 545.1757,
+    "rank": 3,
+    "n": 57,
+    "pct_rank": 3.6,
+    "oecd": 500.3548844685051
+   },
+   "2025": {
+    "value": 544.0946,
+    "rank": 3,
+    "n": 85,
+    "pct_rank": 2.4,
+    "oecd": 481.66122
+   }
+  }
+ }
+]
