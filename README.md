@@ -3,11 +3,13 @@
 一個互動網頁：用 PISA 三個科學主測年（2006、2015、2025）的官方資料，
 讓人**先猜再看答案**——猜臺灣在成績、自信、動機、性別、城鄉、課堂與十九年趨勢上的世界排名。
 
+**線上版：https://thyan-arch.github.io/guess-taiwan-pisa/**
+
 由 [LIS 情境科學教材](https://lis.org.tw) 製作。
 
 ## 網站
 
-`web/index.html` 是一個**單檔、零相依的靜態頁面**（約 218 KB，logo 以 data URI 內嵌），
+`web/index.html`（部署版在 `docs/index.html`）是一個**單檔、零相依的靜態頁面**（約 218 KB，logo 以 data URI 內嵌），
 直接用瀏覽器開啟即可，不需要伺服器或建置工具。
 
 - 27 個問題，分 7 個分類頁：成績 / 自信 / 動機 / 性別 / 城鄉 / 課堂 / 趨勢
@@ -24,7 +26,7 @@ python3 build/extract.py         # 抽取 → data/pisa.json、pisa_long.csv
 python3 build/quiz.py            # → data/taiwan_profile.json、quiz.json
 python3 build/web_data.py        # → data/web_data.json（一般題）
 python3 build/trend_data.py      # → data/trend_data.json（趨勢題）
-python3 build/make_site.py       # 組裝 → web/index.html
+python3 build/make_site.py       # 組裝 → web/index.html 與 docs/index.html
 ```
 
 需要 `openpyxl`、`xlrd`。題目文案集中在 `build/qtext.py`。
