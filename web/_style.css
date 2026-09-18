@@ -223,3 +223,9 @@ footer p+p{margin-top:var(--xs)}
 .fmeta b{font-family:var(--zh);font-weight:500;color:var(--ink-2)}
 
 .tgl{padding:var(--xs) var(--sm);font-size:12px;font-weight:500;white-space:nowrap}
+.scalehint{margin-top:var(--xs);font-family:var(--zh);font-size:12px;color:var(--ink-2);
+  display:inline-block;padding:var(--xs2) var(--xs);border-radius:var(--r-sm);
+  background:var(--sunken);border:1px solid var(--line)}
+.place{margin-top:var(--sm);font-family:var(--zh);font-size:16px;line-height:1.7;color:var(--ink);
+  border-left:var(--xs2) solid var(--brand);padding-left:var(--md)}
+.verdict.vg{background:var(--hi-bg);border-color:var(--hi-line);color:var(--hi-ink)}

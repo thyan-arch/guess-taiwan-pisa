@@ -23,9 +23,12 @@ def build():
     html = (head + '<style>\n' + css + '\n</style>\n\n' + body +
             '\n<script id="pisa-data" type="application/json">' + qs + '</script>\n'
             '<script>\n' + js + '\n</script>\n')
-    out = os.path.join(W, 'index.html')
-    open(out, 'w', encoding='utf-8').write(html)
-    print('web/index.html', round(os.path.getsize(out)/1024), 'KB')
+    for out in (os.path.join(W, 'index.html'), os.path.join(ROOT, 'docs', 'index.html')):
+        os.makedirs(os.path.dirname(out), exist_ok=True)
+        open(out, 'w', encoding='utf-8').write(html)
+        print(os.path.relpath(out, ROOT), round(os.path.getsize(out)/1024), 'KB')
+    # GitHub Pages：關閉 Jekyll 處理
+    open(os.path.join(ROOT, 'docs', '.nojekyll'), 'w').close()
 
 if __name__ == '__main__':
     build()

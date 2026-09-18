@@ -2,7 +2,7 @@
 """趨勢題資料：從 OECD 官方跨屆對照表抽出完整時間序列"""
 import json, os, sys, openpyxl
 sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
-from qtext import TREND
+from qtext import TREND, MORE_WORD, NEUTRAL
 ROOT=os.path.join(os.path.dirname(os.path.abspath(__file__)),'..')
 RAW=os.path.join(ROOT,'raw')
 _c={}
@@ -117,6 +117,8 @@ for sp in SPEC:
       'surprise':round(abs(100*(ranks[gi][0]-1)/max(1,ranks[gi][1]-1)
                            -100*(ranks[0][0]-1)/max(1,ranks[0][1]-1)),1),
       'src':f"{sp['f']} / {sp['sheet']}",
+      'hib':sp['hib'],'kind':('pct' if '%' in sp['fmt'] else ('score' if '分' in sp['fmt'] else 'index')),
+      'moreWord':MORE_WORD.get(sp['id'],'高'),'neutral':sp['id'] in NEUTRAL,
     })
     print(f"  {sp['id']:<12} 臺灣 {tw}  排名 {[r[0] for r in ranks]}")
 json.dump(out,open(os.path.join(ROOT,'data','trend_data.json'),'w',encoding='utf-8'),

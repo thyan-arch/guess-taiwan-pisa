@@ -146,8 +146,9 @@ function chartRank(d,guess){
   s+='<text x="'+tx.toFixed(1)+'" y="'+(T-26)+'" font-size="14" font-weight="700" text-anchor="'+an
     +'" fill="var(--yel-700)" font-family="Noto Sans TC,sans-serif">臺灣 第 '+d.rank+' 名</text></g>';
   s+='<line x1="'+L+'" y1="'+(H-B)+'" x2="'+(W-R)+'" y2="'+(H-B)+'" stroke="var(--line)"/>';
-  s+='<text x="'+L+'" y="'+(H-B+28)+'" font-size="12" fill="var(--ink-3)" font-family="Noto Sans TC,sans-serif">第 1 名</text>';
-  s+='<text x="'+(W-R)+'" y="'+(H-B+28)+'" font-size="12" text-anchor="end" fill="var(--ink-3)" font-family="Noto Sans TC,sans-serif">第 '+n+' 名</text>';
+  var eL=endLabels(d);
+  s+='<text x="'+L+'" y="'+(H-B+28)+'" font-size="12" fill="var(--ink-3)" font-family="Noto Sans TC,sans-serif">'+esc(eL[0])+'</text>';
+  s+='<text x="'+(W-R)+'" y="'+(H-B+28)+'" font-size="12" text-anchor="end" fill="var(--ink-3)" font-family="Noto Sans TC,sans-serif">'+esc(eL[1])+'</text>';
   s+='<text x="'+(L-8)+'" y="'+(T+4)+'" font-size="12" text-anchor="end" fill="var(--ink-3)" font-family="Fira Sans,sans-serif">'+esc(fmt(d.fmt,hi))+'</text>';
   s+='<text x="'+(L-8)+'" y="'+(H-B)+'" font-size="12" text-anchor="end" fill="var(--ink-3)" font-family="Fira Sans,sans-serif">'+esc(fmt(d.fmt,lo))+'</text>';
   return s+'</svg>';
@@ -209,6 +210,69 @@ function chartTrend(d,guess){
   return s+'</svg>';
 }
 
+
+/* ---------- 排名方向 / 定位語 ---------- */
+function diffUnit(d){return {pct:' 個百分點',score:' 分',points10:' 分'}[d.kind]||'';}
+function lowBetter(d){return d.hib===false;}
+function endLabels(d){
+  return lowBetter(d)
+    ? ['第 1 名 · 數值最小','第 '+d.n+' 名 · 數值最大']
+    : ['第 1 名 · 數值最高','第 '+d.n+' 名 · 數值最低'];
+}
+function scaleHint(d){
+  if(d.neutral)
+    return '這題沒有絕對的好壞，看的是方向與幅度。排名從「'+(lowBetter(d)?'數值最小':'數值最高')
+      +'」排到「'+(lowBetter(d)?'數值最大':'數值最低')+'」。';
+  return lowBetter(d)
+    ? '這題數字愈小愈好：第 1 名代表全世界最小，第 '+d.n+' 名代表最大。'
+    : '這題數字愈大愈好：第 1 名代表全世界最高，第 '+d.n+' 名代表最低。';
+}
+function verdictWord(d){
+  var q=d.rank/d.n;
+  if(d.neutral) return q<=0.25?['世界前段','v1']:(q>=0.70?['世界後段','v2']:['世界中段','v2']);
+  return q<=0.25?['臺灣的強項','v0']:(q>=0.70?['臺灣的弱項','v3']:['世界中段','v2']);
+}
+/* 一句話定位：把「第 74 名」翻成看得懂的話 */
+function placement(d){
+  var w=d.moreWord||'高', parts=[];
+  if(d.oecd!=null){
+    var diff=d.tw-d.oecd, ab=Math.abs(diff);
+    var m=/\{v:[+]?\.(\d)f\}/.exec(d.fmt), dec=m?+m[1]:1;
+    parts.push('臺灣 '+fmt(d.fmt,d.tw)+'，OECD 平均 '+fmt(d.fmt,d.oecd)
+      +'（'+(diff>=0?'高':'低')+' '+ab.toFixed(dec)+diffUnit(d)+'）');
+  }else{
+    parts.push('臺灣 '+fmt(d.fmt,d.tw));
+  }
+  var above=d.rank-1, below=d.n-d.rank;
+  if(lowBetter(d)){
+    parts.push('在 '+d.n+' 個國家／經濟體中，只有 '+below+' 個比臺灣更'+w
+      +'、有 '+above+' 個比臺灣更小');
+  }else{
+    parts.push('在 '+d.n+' 個國家／經濟體中，有 '+above+' 個比臺灣更'+w
+      +'、'+below+' 個比臺灣更低');
+  }
+  return parts.join('。')+'。';
+}
+function trendPlacement(d){
+  var i=d.guess_i, v=d.tw[i], v0=d.tw[0];
+  var m=/\{v:[+]?\.(\d)f\}/.exec(d.fmt), dec=m?+m[1]:1;
+  var out=[];
+  if(v0!=null){
+    var diff=v-v0;
+    out.push(d.cycles[0]+' 年到 '+d.cycles[i]+' 年，從 '+fmt(d.fmt,v0)+'變成 '+fmt(d.fmt,v)
+      +'（'+(diff>=0?'增加':'減少')+' '+Math.abs(diff).toFixed(dec)+diffUnit(d)+'）');
+  }
+  var r0=d.ranks[0], rN=d.ranks[i];
+  if(r0&&r0[0]&&rN&&rN[0]){
+    var moved=rN[0]-r0[0];
+    out.push('名次從第 '+r0[0]+'／'+r0[1]+' 變成第 '+rN[0]+'／'+rN[1]
+      +(Math.abs(moved)<=2?'（幾乎沒動）':(moved>0?'（後退 '+moved+' 名）':'（前進 '+(-moved)+' 名）')));
+  }
+  if(d.oecd&&d.oecd[i]!=null)
+    out.push('同一年 OECD 平均是 '+fmt(d.fmt,d.oecd[i]));
+  return out.join('。')+'。';
+}
+
 /* ---------- 卡片 ---------- */
 function unitHelp(d){
   if(/\{v:[+]?\.2f\}/.test(d.fmt)&&d.kind!=='points10')
@@ -238,18 +302,24 @@ function guessUI(d){
     valLabel='第 '+mid+' 名 <small>／ '+d.n+'</small>';
   }
   return '<div class="detail"><p class="q">'+esc(d.q)+'</p>'
-    +'<p class="what">'+esc(d.what)+(help?' '+help:'')+'</p>'+given
+    +'<p class="what">'+esc(d.what)+(help?' '+help:'')+'</p>'
+    +'<p class="scalehint">'+esc(d.type==='trend'
+        ?(d.neutral?'這題沒有絕對的好壞，看的是走勢的方向與幅度。'
+          :(lowBetter(d)?'這個數字愈小愈好。':'這個數字愈大愈好。'))
+        :scaleHint(d))+'</p>'+given
     +'<div class="guess"><div class="guess-top"><span>'+(d.type==='trend'?'猜 '+d.cycles[d.guess_i]+' 年的數值':'你的猜測')+'</span>'
     +'<span>'+(d.type==='trend'?esc(d.label):'共 '+d.n+' 個國家／經濟體')+'</span></div>'
     +'<div class="guess-num" id="gn-'+d.id+'">'+valLabel+'</div>'
     +'<input type="range" id="sl-'+d.id+'" min="'+lo+'" max="'+hi+'" step="'+step+'" value="'+mid+'" aria-label="猜測值">'
-    +'<div class="ends"><span>'+(d.type==='trend'?esc(fmt(d.fmt,lo)):'第 1 名（世界最高）')+'</span>'
-    +'<span>'+(d.type==='trend'?esc(fmt(d.fmt,hi)):'第 '+d.n+' 名（世界最低）')+'</span></div></div>'
+    +'<div class="ends"><span>'+(d.type==='trend'?esc(fmt(d.fmt,lo)):esc(endLabels(d)[0]))+'</span>'
+    +'<span>'+(d.type==='trend'?esc(fmt(d.fmt,hi)):esc(endLabels(d)[1]))+'</span></div></div>'
     +'<div class="acts"><button class="btn" data-act="reveal" data-id="'+d.id+'" type="button">看答案</button>'
     +'<button class="btn alt" data-act="close" type="button">收起</button></div></div>';
 }
 function revealUI(d){
   var s=state[d.id],g=s.guess,ans=answerOf(d),band=bandOf(s.err);
+  var vw=d.type==='trend'?null:verdictWord(d);
+  var place=d.type==='trend'?trendPlacement(d):placement(d);
   var big,your,tbl;
   if(d.type==='trend'){
     big=esc(fmt(d.fmt,ans))+' <small>'+d.cycles[d.guess_i]+' 年</small>';
@@ -276,8 +346,10 @@ function revealUI(d){
   return '<div class="detail"><p class="q">'+esc(d.q)+'</p>'
     +'<p class="what">'+esc(d.what)+'</p>'
     +'<div class="judge"><span class="big" id="big-'+d.id+'">'+big+'</span>'
-    +'<span class="verdict '+band[2]+'">'+band[1]+'</span>'
-    +'<span class="gain">+'+s.pts+' 分</span><span class="your">'+esc(your)+'</span></div>'
+    +(vw?'<span class="verdict '+vw[1]+'">'+esc(vw[0])+'</span>':'')
+    +'<span class="verdict vg">'+band[1]+' +'+s.pts+' 分</span>'
+    +'<span class="your">'+esc(your)+'</span></div>'
+    +'<p class="place">'+esc(place)+'</p>'
     +'<div class="chartwrap">'+(d.type==='trend'?chartTrend(d,g):chartRank(d,g))+'</div>'
     +tbl+'<p class="insight">'+esc(d.note)+'</p>'
     +'<p class="src">資料表：'+esc(d.src)+'</p>'

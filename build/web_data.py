@@ -2,7 +2,7 @@
 """挑出診斷型題目，輸出網頁用的精簡資料 data/web_data.json"""
 import json, os, sys
 sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
-from qtext import RANK, TREND
+from qtext import RANK, TREND, MORE_WORD, NEUTRAL
 from collections import defaultdict
 ROOT=os.path.join(os.path.dirname(os.path.abspath(__file__)),'..')
 db=json.load(open(os.path.join(ROOT,'data','pisa.json'),encoding='utf-8'))
@@ -72,6 +72,7 @@ for grp,cyc,ind,q,note,fmt in Q:
       'best':{'zh':ZH.get(vals[0][1],vals[0][1]),'v':round(vals[0][0],3)},
       'worst':{'zh':ZH.get(vals[-1][1],vals[-1][1]),'v':round(vals[-1][0],3)},
       'src':m['source'],
+      'moreWord':MORE_WORD.get(ind,'高'),'neutral':ind in NEUTRAL,
       'surprise':(None if ind=='sci_mean' else round(abs(
           100*(tw['rank']-1)/max(1,tw['n']-1)
           - 100*(idx[(cyc,'sci_mean')][TW]['rank']-1)/max(1,idx[(cyc,'sci_mean')][TW]['n']-1)),1)

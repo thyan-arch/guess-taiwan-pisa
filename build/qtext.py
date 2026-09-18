@@ -90,3 +90,13 @@ TREND = {
 't_teacher':'問學生「科學課老師多常表達對我的興趣、多常額外幫助我、多常確認每個人都懂了」。指數 OECD 平均 = 0，兩屆已連結可直接比較。',
 't_escs':'用統計方法算出：全國成績差異裡，有多少百分比可以用家庭社經背景（父母學歷、職業、家中資源）解釋。數字愈高代表家庭背景影響愈大。',
 }
+
+
+# 排名方向的措辭：more = 數值更大時要怎麼說（預設「高」）
+MORE_WORD = {
+ 'sci_spread':'大','urban_rural_gap':'大','cram_ses_gap':'大','between_school_var':'大',
+ 'career_vague':'多','cram_science':'多',
+ 't_spread':'大','t_low':'高','t_escs':'高',
+}
+# 沒有絕對好壞、只看方向與幅度的題目
+NEUTRAL = {'gender_gap_sci','t_gender'}
