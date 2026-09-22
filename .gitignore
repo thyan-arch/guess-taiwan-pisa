@@ -11,3 +11,9 @@ __pycache__/
 
 # Claude Code 本機工作檔
 CONVERSATIONS.md
+
+# 題庫原始檔（OECD 出版品，可用 build/fetch_items.sh 重新下載）
+raw/items/*.xlsx
+raw/items/*.pdf
+raw/items/*.zip
+raw/items/zh_official/

@@ -1,0 +1,97 @@
+﻿指數變項,說明（英文原文）,問卷
+HOMEPOS,Home possessions (WLE),學生問卷
+ICTRES,ICT resources (WLE),學生問卷
+BELONG,Sense of belonging (WLE),學生問卷
+BULLIED,Student reports on being bullied (WLE),學生問卷
+FEELSAFE,Student reports on feeling safe (WLE),學生問卷
+DISCLISCI,Disciplinary climate in school science (WLE),學生問卷
+TEACHSUP,Teacher support in science classes (WLE),學生問卷
+COGACSC,Cognitive activation in science classes (WLE),學生問卷
+SCIECOLLR,Science collaborative reasoning (WLE),學生問卷
+JOYSCIE,Students' enjoyment of science (WLE),學生問卷
+EFFSCIE,Science self-efficacy (WLE),學生問卷
+STBELSCIE,Students' beliefs about the nature of science (WLE),學生問卷
+OPENVLRN,Opportunities for environmental learning in class (WLE),學生問卷
+ENVAPART,Students' participation in environment-related activities (WLE),學生問卷
+COLLENEFF,Collective environmental efficacy (WLE),學生問卷
+ENVCAPCH,Students' beliefs in their capacity to generate environmental change (WLE),學生問卷
+ENVAWARE,Students' environmental awareness (WLE),學生問卷
+AIUSESCH,Students' AI use at school (WLE),學生問卷
+FAMSUP,Students' perceptions of family support (WLE),學生問卷
+ENGSCIPR,Students' engagement with science practices (WLE),學生問卷
+PERSEV,Students' perseverance (WLE),學生問卷
+CURIO,Students' curiousity (WLE),學生問卷
+ENPROBS,Enjoyment of problem-solving (WLE),學生問卷
+COGABIL,Cognitive adaptability (WLE),學生問卷
+GOALSET,Goal setting (WLE),學生問卷
+SELFREG,Self-regulation (WLE),學生問卷
+ICTSCH,ICT availability at school (WLE),學生問卷
+ICTHOME,ICT availability outside school (WLE),學生問卷
+ICTQUAL,Quality of access to ICT (WLE),學生問卷
+ICTFEED,Support or feedback via ICT (WLE),學生問卷
+ICTOUT,Use of ICT for school activities outside of the classroom (WLE),學生問卷
+ICTWKDY,Frequency of ICT activity – Weekday (WLE),學生問卷
+ICTWKEND,Frequency of ICT activity – Weekend (WLE),學生問卷
+ICTREG,Views of regulated ICT use in school (WLE),學生問卷
+ICTINFO,Students’ practices regarding online information (WLE),學生問卷
+DIGINTLRN,Interest in learing about digital resources (WLE),學生問卷
+INTICT,Interest in ICT (WLE),學生問卷
+SOIAICT,ICT as a topic in social interaction (WLE),學生問卷
+PRESUPP,Child’s past science activities (WLE),學生問卷
+FSCISUP,Family support for science learning (WLE),學生問卷
+FGENSUP,Family support for general learning (WLE),學生問卷
+PQSCAR,Science-related career (WLE),學生問卷
+PQGENSCI,Parents' views on broad science (WLE),學生問卷
+PQENPERC,Parents concerns regarding environmental topics  (WLE),學生問卷
+PQENVOPT,Parents’ view on future environmental topics (WLE),學生問卷
+PARINVOL,Parental involvement (WLE),學生問卷
+PQSCHOOL,Parents' views of school quality (WLE),學生問卷
+PQFEED,Positive parental feedback (WLE),學生問卷
+PVDRSCUSE,Parental views of digital resource use at school (WLE),學生問卷
+PQSELFREG,Parents'perceptions of students' self-regulated learning skills (WLE),學生問卷
+PQDIGEFF,Parents' digital self-efficacy (WLE),學生問卷
+ALLACTIV,Extra-curricular activities at school (WLE),學校問卷
+AVLRSOFT,Availability of learning software (WLE),學校問卷
+DELGLOB,Delivery of global issues in curriculum (WLE),學校問卷
+DIGPREP,Preparedness for digital learning (WLE),學校問卷
+EDULEAD,Educational leadership (WLE),學校問卷
+EDUSHORT,Shortage of educational material (WLE),學校問卷
+ENCOURPG,School encouragement of parent or guardian involvement  (WLE),學校問卷
+FREESCIE,Freedom of choice for studying science (WLE),學校問卷
+NEGSCLIM,Negative school climate (WLE),學校問卷
+OPPACTENV,Student opportunities for environmental activities (WLE),學校問卷
+PISASUPP,School support for PISA administration (WLE),學校問卷
+PRIORLRN,Priorities for learning objectives (WLE),學校問卷
+SCTRAIN,Science teacher training (WLE),學校問卷
+SESASSESS,Use of SES assessments (WLE),學校問卷
+STAFFSHORT,Shortage of educational staff (WLE),學校問卷
+STDTEST,Use of standardised tests (WLE),學校問卷
+TDTEST,Use of teacher-developed tests (WLE),學校問卷
+BELLRNG,Teachers' beliefs concerning learning growth (WLE),教師問卷
+CONEXSCI,Teachers' self-efficacy related to science content (WLE),教師問卷
+TCSELFATT,Teacher self-efficacy for improving students' attitudes towards English (WLE),教師問卷
+TCSELFUSE,Teacher self-efficacy for using English in the classroom (WLE),教師問卷
+DEVNEED,Need for professional development (WLE),教師問卷
+DRUSESCT,Digital resource use in science teaching (WLE),教師問卷
+ENCOURSTUD,Teachers' encouragement of students (WLE),教師問卷
+ENJBSCIE,Teachers' enjoyment of broad science (WLE),教師問卷
+EXCHT,Exchange and co-ordination for teaching  (WLE),教師問卷
+PARCOOPLRN,Learning about cooperation with parents/guardians (WLE),教師問卷
+PARSCLRN,Parents/guardians' involvement in science learning (WLE),教師問卷
+PERSDIGRES,Teachers' positive perceptions of digitial resources (WLE),教師問卷
+POSLEAD,Positive leadership perceptions (WLE),教師問卷
+SCIETCOLL,Science teacher collaboration  (WLE),教師問卷
+SEFFCM,Teacher’s self-efficacy in classroom management  (WLE),教師問卷
+SEFFINS,Teacher’s self-efficacy in instructional settings (WLE),教師問卷
+SEFFREL,Teacher’s self-efficacy inmaintaining positive relationships with students (WLE),教師問卷
+SETEACH,Teachers' self-efficacy related to teaching science content  (WLE),教師問卷
+STSCIACT,Science activities with students (WLE),教師問卷
+TCBELSCIE,Teachers' epistomological beliefs (WLE),教師問卷
+TCDIGRES,Teacher use of ICT  (WLE),教師問卷
+TCDISCLISC,Disciplinary climate in science (WLE),教師問卷
+TCENWARE,Teachers' environmental awareness (WLE),教師問卷
+TCPENVACT,Teachers' participation in environment-related activities (WLE),教師問卷
+TCUSEENG,Teacher use of English outside the classroom (WLE),教師問卷
+TCENGFORM,Teacher use of formative assessment in English lessons (WLE),教師問卷
+JOBSATENG,Job satisfaction among English teachers (WLE),教師問卷
+USEFORAS,Use of formative assessments (WLE),教師問卷
