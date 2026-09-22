@@ -5,9 +5,9 @@
 
 ## 題幹
 
+> 在貴校中，誰主要負責貴校高一（或國三）學生的生涯輔導？
 
-
-> Who has the main responsibility for career guidance of students in <national modal grade for 15-year-olds> at your school?
+> 原文：Who has the main responsibility for career guidance of students in <national modal grade for 15-year-olds> at your school?
 
 ## 選項量尺
 
@@ -22,4 +22,5 @@ All teachers share the responsibility for career guidance（All teachers share t
 ---
 
 資料：OECD PISA 2025 Codebook（題目原文與選項）＋ PISA 2025 Results (Volume I) Annex B（臺灣與 OECD 百分比）。
-中文為本專案翻譯，非 OECD 官方譯本。〈尖括號〉為 PISA 在地化佔位符。
+中文優先採用 OECD 臺灣國家版問卷（Chinese Taipei StQ/IcQ/ScQ/TcQ/PaQ, zh-TW）的官方題目文字；
+標註「（本專案翻譯）」者為臺灣版未涵蓋、由本專案翻譯。〈尖括號〉為 PISA 在地化佔位符。

@@ -5,9 +5,9 @@
 
 ## 題幹
 
+> 在小一之前，您的孩子於哪些年紀時接受幼兒教育及照顧規畫？
 
-
-> At what ages did your child attend an <early childhood education and care arrangement> prior to <grade 1 in ISCED 1>?
+> 原文：At what ages did your child attend an <early childhood education and care arrangement> prior to <grade 1 in ISCED 1>?
 
 ## 選項量尺
 
@@ -15,39 +15,48 @@
 
 ## 題目
 
-**1. Up to age 1**
+**1. 1 歲前**
 
+　　原文：Up to age 1
 　　代碼：`PA177Q01HA`
 
-**2. Age 1**
+**2. 1 歲**
 
+　　原文：Age 1
 　　代碼：`PA177Q02HA`
 
-**3. Age 2**
+**3. 2 歲**
 
+　　原文：Age 2
 　　代碼：`PA177Q03HA`
 
-**4. Age 3**
+**4. 3 歲**
 
+　　原文：Age 3
 　　代碼：`PA177Q04HA`
 
-**5. Age 4**
+**5. 4 歲**
 
+　　原文：Age 4
 　　代碼：`PA177Q05HA`
 
-**6. Age 5**
+**6. 5 歲**
 
+　　原文：Age 5
 　　代碼：`PA177Q06HA`
 
-**7. Age 6**
+**7. 6 歲**
 
+　　原文：Age 6
 　　代碼：`PA177Q07HA`
 
-**8. Age 7**
+**8. 7 歲**
 
+　　原文：Age 7
 　　代碼：`PA177Q08HA`
 
 ---
 
 資料：OECD PISA 2025 Codebook（題目原文與選項）＋ PISA 2025 Results (Volume I) Annex B（臺灣與 OECD 百分比）。
-中文為本專案翻譯，非 OECD 官方譯本。〈尖括號〉為 PISA 在地化佔位符。
+中文優先採用 OECD 臺灣國家版問卷（Chinese Taipei StQ/IcQ/ScQ/TcQ/PaQ, zh-TW）的官方題目文字；
+標註「（本專案翻譯）」者為臺灣版未涵蓋、由本專案翻譯。〈尖括號〉為 PISA 在地化佔位符。

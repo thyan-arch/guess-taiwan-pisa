@@ -5,9 +5,9 @@
 
 ## 題幹
 
+> 貴校是否為高一（或國三）學生提供下列資訊？
 
-
-> Does your school provide the following types of information to students in <national modal grade for 15-year-olds>?
+> 原文：Does your school provide the following types of information to students in <national modal grade for 15-year-olds>?
 
 ## 選項量尺
 
@@ -15,23 +15,28 @@
 
 ## 題目
 
-**1. Information about internships**
+**1. 有關實習職位的資訊**
 
+　　原文：Information about internships
 　　代碼：`SC171Q01JA`
 
-**2. Information about future careers**
+**2. 有關未來升學就業的資訊**
 
+　　原文：Information about future careers
 　　代碼：`SC171Q02JA`
 
-**3. Information about future educational opportunities**
+**3. 有關未來教育機會的資訊**
 
+　　原文：Information about future educational opportunities
 　　代碼：`SC171Q03JA`
 
-**4. Information about student financing (e.g. student loans or grants)**
+**4. 有關學生資助的資訊（例如：就學貸款或獎助學金）**
 
+　　原文：Information about student financing (e.g. student loans or grants)
 　　代碼：`SC171Q04JA`
 
 ---
 
 資料：OECD PISA 2025 Codebook（題目原文與選項）＋ PISA 2025 Results (Volume I) Annex B（臺灣與 OECD 百分比）。
-中文為本專案翻譯，非 OECD 官方譯本。〈尖括號〉為 PISA 在地化佔位符。
+中文優先採用 OECD 臺灣國家版問卷（Chinese Taipei StQ/IcQ/ScQ/TcQ/PaQ, zh-TW）的官方題目文字；
+標註「（本專案翻譯）」者為臺灣版未涵蓋、由本專案翻譯。〈尖括號〉為 PISA 在地化佔位符。

@@ -5,9 +5,9 @@
 
 ## 題幹
 
+> 您在這所學校擔任教師是哪種聘任狀態？
 
-
-> What is your employment status as a teacher at this school?
+> 原文：What is your employment status as a teacher at this school?
 
 ## 選項量尺
 
@@ -15,11 +15,13 @@ Permanent employment (an on-going contract with no fixed end-point before the ag
 
 ## 題目
 
-**1. What is your employment status as a teacher at this school?**
+**1. 永久聘任（在退休年齡之前沒有固定終止點的持續合約）**
 
+　　原文：What is your employment status as a teacher at this school?
 　　代碼：`TC211Q01JA`
 
 ---
 
 資料：OECD PISA 2025 Codebook（題目原文與選項）＋ PISA 2025 Results (Volume I) Annex B（臺灣與 OECD 百分比）。
-中文為本專案翻譯，非 OECD 官方譯本。〈尖括號〉為 PISA 在地化佔位符。
+中文優先採用 OECD 臺灣國家版問卷（Chinese Taipei StQ/IcQ/ScQ/TcQ/PaQ, zh-TW）的官方題目文字；
+標註「（本專案翻譯）」者為臺灣版未涵蓋、由本專案翻譯。〈尖括號〉為 PISA 在地化佔位符。

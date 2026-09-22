@@ -5,9 +5,9 @@
 
 ## 題幹
 
+> 就工作時數而言，您目前擔任教師的聘任狀態是：
 
-
-> What is your current employment status as a teacher, in terms of working hours?
+> 原文：What is your current employment status as a teacher, in terms of working hours?
 
 ## 選項量尺
 
@@ -15,15 +15,18 @@ Full-time (more than 90% of full-time hours)（Full-time (more than 90% of full-
 
 ## 題目
 
-**1. My employment status at this school**
+**1. 我在這所學校的聘任狀態**
 
+　　原文：My employment status at this school
 　　代碼：`TC261Q01DA`
 
-**2. All my teaching employments together**
+**2. 我所有的教職加起來的聘任狀態**
 
+　　原文：All my teaching employments together
 　　代碼：`TC261Q02JA`
 
 ---
 
 資料：OECD PISA 2025 Codebook（題目原文與選項）＋ PISA 2025 Results (Volume I) Annex B（臺灣與 OECD 百分比）。
-中文為本專案翻譯，非 OECD 官方譯本。〈尖括號〉為 PISA 在地化佔位符。
+中文優先採用 OECD 臺灣國家版問卷（Chinese Taipei StQ/IcQ/ScQ/TcQ/PaQ, zh-TW）的官方題目文字；
+標註「（本專案翻譯）」者為臺灣版未涵蓋、由本專案翻譯。〈尖括號〉為 PISA 在地化佔位符。

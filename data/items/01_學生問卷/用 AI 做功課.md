@@ -6,7 +6,7 @@
 
 ## 題幹
 
-> 你多常使用 AI 聊天機器人（例如〈ChatGPT〉）做功課，進行下列活動？
+> 你有多常為了功課使用人工智慧聊天機器人（例如 ChatGPT）來做以
 
 > 原文：How often do you use Artificial Intelligence chatbots (e.g. <ChatGPT>) for your school work to do the following activities?
 
@@ -16,7 +16,7 @@
 
 ## 題目
 
-**1. 摘要我必須閱讀的文本**
+**1. 摘要一篇我必須閱讀的文章**
 
 　　原文：To summarize a text I had to read
 　　代碼：`ST438Q01DA`
@@ -29,7 +29,7 @@
 　　| 大約一週一到兩次 | 14.93% | 19.04% |
 　　| 每天或幾乎每天 | 5.53% | 10.67% |
 
-**2. 針對新主題做初步查資料**
+**2. 進行一個新主題的初步研究**
 
 　　原文：To conduct preliminary research on a new topic
 　　代碼：`ST438Q02DA`
@@ -42,7 +42,7 @@
 　　| 大約一週一到兩次 | 16.21% | 20.11% |
 　　| 每天或幾乎每天 | 6.04% | 11.08% |
 
-**3. 為寫作作業起草文字**
+**3. 起稿寫作作業的文章**
 
 　　原文：To draft texts for writing assignments
 　　代碼：`ST438Q03DA`
@@ -71,4 +71,5 @@
 ---
 
 資料：OECD PISA 2025 Codebook（題目原文與選項）＋ PISA 2025 Results (Volume I) Annex B（臺灣與 OECD 百分比）。
-中文為本專案翻譯，非 OECD 官方譯本。〈尖括號〉為 PISA 在地化佔位符。
+中文優先採用 OECD 臺灣國家版問卷（Chinese Taipei StQ/IcQ/ScQ/TcQ/PaQ, zh-TW）的官方題目文字；
+標註「（本專案翻譯）」者為臺灣版未涵蓋、由本專案翻譯。〈尖括號〉為 PISA 在地化佔位符。

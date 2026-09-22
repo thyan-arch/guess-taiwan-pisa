@@ -23,20 +23,36 @@ PISA 2025 學生、家長、學校、教師問卷的**完整題項**，以及認
 每個主題的 `.md` 檔包含：題幹（中／英）、選項量尺（中／英）、逐題（中文、英文原文、變項代碼），
 以及該題的臺灣與 OECD 逐選項百分比對照表。
 
-## 中文的來源與界線
+## 中文的來源
 
-- **中文為本專案翻譯，不是 OECD 官方譯本。** 已翻譯 390 題：全部 280 題學生問卷，
-  加上其他問卷中 110 題有對應構念（＝實際被 OECD 分析使用）的題目。
-- 其餘 893 題（家長／學校／教師問卷中偏行政性的題目）目前只有英文原文。
-- **〈尖括號〉是 PISA 的在地化佔位符**，各國施測時會替換成當地說法。
-  例如 `〈學校科學課〉`＝該國學制中對應的自然科課程名稱。
+中文**優先採用 OECD 臺灣國家版問卷的官方題目文字**（`Chinese Taipei_StQ/IcQ/ScQFLA/TcQ_zh-TW.pdf`
+與 `PaQ_zh-TW.pdf`，即臺灣學生當年實際看到的字句）。臺灣版沒有的才由本專案翻譯，並在該題標註
+「（本專案翻譯）」。
 
-### 要官方中文版問卷
+| 中文來源 | 題數 |
+|---|--:|
+| OECD 臺灣國家版官方題目 | 1,032 |
+| 本專案翻譯 | 48 |
+| 尚無中文 | 203 |
 
-OECD 的臺灣版問卷在 `Chinese Taipei.zip`（[PISA 2025 Database](https://www.oecd.org/en/data/datasets/pisa-2025-database.html)
-→ National versions → Chinese Taipei）。該連結有 Cloudflare 人機驗證，需要用瀏覽器手動下載。
-下載後放到 `raw/items/`，執行 `python3 build/items_official_zh.py` 會列出裡面的中文題本並解壓到
-`raw/items/zh_official/`。
+**學生問卷 280 題全部有中文**（232 題官方 ＋ 48 題本專案翻譯）。
+尚無中文的 203 題集中在家長／學校／教師問卷。
+
+### 為什麼有 108 題對不上代碼
+
+臺灣國家版有時會沿用同一題號但換成不同後綴，代表的其實是**不同的題目**——
+例如臺灣版 `PA003Q21JA`（與孩子討論科學相關職業）與國際 Codebook 的 `PA003Q21DA`
+（討論科學如何應用在日常生活）並不是同一題。因此本庫**只接受完全相同的代碼**，
+不做題號硬套，以免張冠李戴。這 108 題臺灣版自有題號的中文另存於
+`00_總表/臺灣版自有題號_未對上國際代碼.csv`。
+
+**〈尖括號〉是 PISA 的在地化佔位符**，各國施測時會替換成當地說法（官方中文版已替換成臺灣用語）。
+
+### 重新產生官方中文
+
+`Chinese Taipei.zip` 在 [PISA 2025 Database](https://www.oecd.org/en/data/datasets/pisa-2025-database.html)
+→ National versions → Chinese Taipei，該連結有 Cloudflare 驗證需用瀏覽器下載。放到 `raw/items/` 後：
+`python3 build/items_official_zh.py && python3 build/parse_zh_pdf.py && python3 build/items_export.py`
 
 ## 判讀注意
 

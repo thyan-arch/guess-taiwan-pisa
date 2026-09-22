@@ -5,9 +5,9 @@
 
 ## 題幹
 
+> 下列敘述是否適用於您？
 
-
-> Do the following statements apply to you?
+> 原文：Do the following statements apply to you?
 
 ## 選項量尺
 
@@ -15,31 +15,38 @@
 
 ## 題目
 
-**1. I define rules about how long or when my child is allowed to use <digital resources>.**
+**1. 我規定孩子可以花多少時間或在什麼時候使用數位資源**
 
+　　原文：I define rules about how long or when my child is allowed to use <digital resources>.
 　　代碼：`PA202Q01DA`
 
-**2. I monitor what my child does when using <digital resources>.**
+**2. 我監督孩子在使用數位資源時所做的事情**
 
+　　原文：I monitor what my child does when using <digital resources>.
 　　代碼：`PA202Q02DA`
 
-**3. I set up filters to prevent my child from accessing inappropriate content online.**
+**3. 我設置過濾器來防止孩子存取網路上不適當的內容**
 
+　　原文：I set up filters to prevent my child from accessing inappropriate content online.
 　　代碼：`PA202Q03DA`
 
-**4. My child can use <digital resources> without any restriction.**
+**4. 我的孩子可以無限制地使用數位資源**
 
+　　原文：My child can use <digital resources> without any restriction.
 　　代碼：`PA202Q04DA`
 
-**5. I talk to my child about what he/she does on the internet.**
+**5. 我與孩子談論他在網路上做的事情**
 
+　　原文：I talk to my child about what he/she does on the internet.
 　　代碼：`PA202Q05DA`
 
-**6. I encourage my child to explore and learn things on the Internet.**
+**6. 我鼓勵孩子在網路上探索和學習事物**
 
+　　原文：I encourage my child to explore and learn things on the Internet.
 　　代碼：`PA202Q06DA`
 
 ---
 
 資料：OECD PISA 2025 Codebook（題目原文與選項）＋ PISA 2025 Results (Volume I) Annex B（臺灣與 OECD 百分比）。
-中文為本專案翻譯，非 OECD 官方譯本。〈尖括號〉為 PISA 在地化佔位符。
+中文優先採用 OECD 臺灣國家版問卷（Chinese Taipei StQ/IcQ/ScQ/TcQ/PaQ, zh-TW）的官方題目文字；
+標註「（本專案翻譯）」者為臺灣版未涵蓋、由本專案翻譯。〈尖括號〉為 PISA 在地化佔位符。

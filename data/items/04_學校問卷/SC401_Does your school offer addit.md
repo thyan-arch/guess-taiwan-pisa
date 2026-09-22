@@ -5,9 +5,9 @@
 
 ## 題幹
 
+> 貴校在平時的上課時間，除了提供正規的自然科學課程，是否提供額外
 
-
-> Does your school offer additional <school science> lessons apart from <school science> lessons offered during the usual school hours?
+> 原文：Does your school offer additional <school science> lessons apart from <school science> lessons offered during the usual school hours?
 
 ## 選項量尺
 
@@ -22,4 +22,5 @@
 ---
 
 資料：OECD PISA 2025 Codebook（題目原文與選項）＋ PISA 2025 Results (Volume I) Annex B（臺灣與 OECD 百分比）。
-中文為本專案翻譯，非 OECD 官方譯本。〈尖括號〉為 PISA 在地化佔位符。
+中文優先採用 OECD 臺灣國家版問卷（Chinese Taipei StQ/IcQ/ScQ/TcQ/PaQ, zh-TW）的官方題目文字；
+標註「（本專案翻譯）」者為臺灣版未涵蓋、由本專案翻譯。〈尖括號〉為 PISA 在地化佔位符。

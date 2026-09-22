@@ -5,6 +5,24 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import openpyxl
 from zh_items import OPT_ZH, STEM_ZH, ITEM_ZH, CONSTRUCT_ZH, BLOCK_ZH
 
+# 官方臺灣國家版中文（若已解壓 Chinese Taipei.zip 並跑過 parse_zh_pdf.py）
+_of = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'data', 'items', 'official_zh.json')
+OFFICIAL = json.load(open(_of, encoding='utf-8')) if os.path.exists(_of) else {'items': {}, 'stems': {}}
+OFF_ITEM, OFF_STEM = OFFICIAL.get('items', {}), OFFICIAL.get('stems', {})
+
+def zh_text(it):
+    """回傳 (中文, 來源)：官方優先，其次本專案翻譯"""
+    o = OFF_ITEM.get(it['code'])
+    if o: return o, '官方'
+    t = ITEM_ZH.get(it['code'], '')
+    return (t, '本專案翻譯') if t else ('', '')
+
+def zh_stem(block):
+    o = OFF_STEM.get(block)
+    if o: return o, '官方'
+    t = STEM_ZH.get(block, '')
+    return (t, '本專案翻譯') if t else ('', '')
+
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
 SRC  = os.path.join(ROOT, 'data', 'items', 'pisa2025_questionnaire_items.json')
 BASE = os.path.join(ROOT, 'data', 'items')
@@ -19,8 +37,9 @@ def zh_opt(label):
     return OPT_ZH.get(label.strip(), '')
 
 def md_item(it, n):
-    zh = ITEM_ZH.get(it['code'], '')
-    lines = [f"**{n}. {zh or it['text_en']}**", '']
+    zh, src = zh_text(it)
+    tag = {'官方': '', '本專案翻譯': '（本專案翻譯）'}.get(src, '')
+    lines = [f"**{n}. {zh or it['text_en']}**{tag}", '']
     if zh: lines.append(f"　　原文：{it['text_en']}")
     lines.append(f"　　代碼：`{it['code']}`")
     d = it.get('distribution')
@@ -34,7 +53,8 @@ def md_item(it, n):
 
 def write_group(path, title_zh, title_en, items, note=''):
     b = items[0]['block']
-    stem_zh, stem_en = STEM_ZH.get(b, ''), items[0]['stem_en']
+    stem_zh, stem_src = zh_stem(b)
+    stem_en = items[0]['stem_en']
     opts = items[0]['options']
     out = [f'# {title_zh}', '']
     if title_en: out.append(f'**Annex B 表標題（英文原文）**：{title_en}  ')
@@ -51,7 +71,8 @@ def write_group(path, title_zh, title_en, items, note=''):
         out.append(md_item(it, i))
     out += ['---', '',
             '資料：OECD PISA 2025 Codebook（題目原文與選項）＋ PISA 2025 Results (Volume I) Annex B（臺灣與 OECD 百分比）。',
-            '中文為本專案翻譯，非 OECD 官方譯本。〈尖括號〉為 PISA 在地化佔位符。']
+            '中文優先採用 OECD 臺灣國家版問卷（Chinese Taipei StQ/IcQ/ScQ/TcQ/PaQ, zh-TW）的官方題目文字；',
+            '標註「（本專案翻譯）」者為臺灣版未涵蓋、由本專案翻譯。〈尖括號〉為 PISA 在地化佔位符。']
     open(path, 'w', encoding='utf-8').write('\n'.join(out))
 
 def main():
@@ -94,14 +115,15 @@ def main():
         with open(os.path.join(BASE, folder, '_總表.csv'), 'w', newline='', encoding='utf-8-sig') as f:
             w = csv.writer(f)
             w.writerow(['代碼', '題組', '構念（中）', '構念（英）', '題幹（中）', '題幹（英）',
-                        '題目（中）', '題目（英）', '選項（中）', '選項（英）',
+                        '題目（中）', '中文來源', '題目（英）', '選項（中）', '選項（英）',
                         '臺灣各選項%', 'OECD各選項%', 'Annex B 表'])
             for it in sorted(sub, key=lambda x: x['code']):
                 d = it.get('distribution') or []
                 con = it.get('construct', '')
+                _zh, _src = zh_text(it)
                 w.writerow([it['code'], it['block'], CONSTRUCT_ZH.get(con, ''), con,
-                            STEM_ZH.get(it['block'], ''), it['stem_en'],
-                            ITEM_ZH.get(it['code'], ''), it['text_en'],
+                            zh_stem(it['block'])[0], it['stem_en'],
+                            _zh, _src, it['text_en'],
                             ' | '.join(zh_opt(o['label']) or o['label'] for o in it['options']),
                             ' | '.join(o['label'] for o in it['options']),
                             ' | '.join(f"{zh_opt(x['category']) or x['category']}={x['taiwan']}" for x in d),
@@ -113,20 +135,22 @@ def main():
     with open(os.path.join(BASE, '00_總表', '問卷題庫_全部.csv'), 'w', newline='', encoding='utf-8-sig') as f:
         w = csv.writer(f)
         w.writerow(['代碼', '問卷', '題組', '構念（中）', '構念（英）', '題幹（中）', '題幹（英）',
-                    '題目（中）', '題目（英）', '選項（英）', '臺灣各選項%', 'OECD各選項%', 'Annex B 表'])
+                    '題目（中）', '中文來源', '題目（英）', '選項（英）',
+                    '臺灣各選項%', 'OECD各選項%', 'Annex B 表'])
         for it in sorted(items, key=lambda x: (x['source'], x['code'])):
             d = it.get('distribution') or []
             con = it.get('construct', '')
+            _zh, _src = zh_text(it)
             w.writerow([it['code'], it['source'], it['block'], CONSTRUCT_ZH.get(con, ''), con,
-                        STEM_ZH.get(it['block'], ''), it['stem_en'],
-                        ITEM_ZH.get(it['code'], ''), it['text_en'],
+                        zh_stem(it['block'])[0], it['stem_en'],
+                        _zh, _src, it['text_en'],
                         ' | '.join(o['label'] for o in it['options']),
                         ' | '.join(f"{x['category']}={x['taiwan']}" for x in d),
                         ' | '.join(f"{x['category']}={x['oecd']}" for x in d),
                         it.get('annex_table', '')])
     for it in items:
-        it['text_zh'] = ITEM_ZH.get(it['code'], '')
-        it['stem_zh'] = STEM_ZH.get(it['block'], '')
+        it['text_zh'], it['text_zh_source'] = zh_text(it)
+        it['stem_zh'] = zh_stem(it['block'])[0]
         it['construct_zh'] = CONSTRUCT_ZH.get(it.get('construct', ''), '')
     json.dump(db, open(os.path.join(BASE, '00_總表', '問卷題庫_全部.json'), 'w', encoding='utf-8'),
               ensure_ascii=False, indent=1)

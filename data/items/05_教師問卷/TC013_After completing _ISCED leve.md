@@ -5,9 +5,9 @@
 
 ## 題幹
 
+> 在完成高中（職）或以下的學業後，您的職涯目標是從事教育業嗎？
 
-
-> After completing <ISCED level 3 or below>, was your goal to pursue a career in the teaching profession?
+> 原文：After completing <ISCED level 3 or below>, was your goal to pursue a career in the teaching profession?
 
 ## 選項量尺
 
@@ -22,4 +22,5 @@
 ---
 
 資料：OECD PISA 2025 Codebook（題目原文與選項）＋ PISA 2025 Results (Volume I) Annex B（臺灣與 OECD 百分比）。
-中文為本專案翻譯，非 OECD 官方譯本。〈尖括號〉為 PISA 在地化佔位符。
+中文優先採用 OECD 臺灣國家版問卷（Chinese Taipei StQ/IcQ/ScQ/TcQ/PaQ, zh-TW）的官方題目文字；
+標註「（本專案翻譯）」者為臺灣版未涵蓋、由本專案翻譯。〈尖括號〉為 PISA 在地化佔位符。
