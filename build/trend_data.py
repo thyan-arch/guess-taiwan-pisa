@@ -2,7 +2,7 @@
 """趨勢題資料：從 OECD 官方跨屆對照表抽出完整時間序列"""
 import json, os, sys, openpyxl
 sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
-from qtext import TREND, MORE_WORD, NEUTRAL
+from qtext import TREND, MORE_WORD, NEUTRAL, POLES
 ROOT=os.path.join(os.path.dirname(os.path.abspath(__file__)),'..')
 RAW=os.path.join(ROOT,'raw')
 _c={}
@@ -44,6 +44,13 @@ def series(f,sheet,cols,flip=False):
         out[canon(nm)]=vals
     return out,oecd
 
+def pos_of(data,country,i):
+    """光譜位置 0–100：比臺灣數值低的國家占多少"""
+    vs=[v[i] for c,v in data.items() if v[i] is not None]
+    t=data[country][i]
+    if t is None: return None
+    return round(100*sum(1 for x in vs if x<t)/max(1,len(vs)-1),1)
+
 def rank_of(data,country,i,hib):
     vs=[(v[i],c) for c,v in data.items() if v[i] is not None]
     vs.sort(reverse=hib)
@@ -58,8 +65,8 @@ SPEC=[
  dict(id='t_sci_mean',teaser='成績的十九年',hook='七屆走下來，是進步還是退步',
    f=F2,sheet='Table I.B1.2a.36',cols=[1,3,5,7,9,11,13],cycles=SEVEN,hib=True,
    fmt='{v:.0f} 分',label='科學平均分數',rng=[470,580,1],
-   q='2006 年臺灣科學 532 分（世界第 4）。十九年、七屆之後，2025 年是幾分？',
-   note='539.7 分，世界第 4。七屆的名次幾乎沒動過（4、11、10、4、10、4、4），但中間掉過兩次：2009 年 520 分、2018 年 516 分。總體是回到原點再往上一點。'),
+   q='2006 年臺灣科學 532 分（在各國中落在分數最高的那一端）。十九年、七屆之後，2025 年是幾分？',
+   note='539.7 分。七屆一直都在分數高的那一端，但中間掉過兩次：2009 年 520 分、2018 年 516 分。總體是回到原點再往上一點。'),
  dict(id='t_spread',teaser='差距的十九年',hook='前段與後段的距離，變近還是變遠',
    f=F2,sheet='Table I.B1.2a.42',cols=[3,7,11,15,19,23,27],cycles=SEVEN,hib=False,
    fmt='{v:.0f} 分',label='科學高低分差距（P90−P10）',rng=[190,320,1],
@@ -79,22 +86,22 @@ SPEC=[
    f=F4,sheet='Table I.B1.2c.25',cols=[1,7,13,19],cycles=[2015,2018,2022,2025],hib=None,flip=True,
    fmt='{v:+.1f} 分',label='科學成績性別差（女生減男生）',rng=[-25,25,0.5],
    q='2015 年臺灣男生的科學成績領先女生 4.5 分。2025 年的差距是多少？（正值代表女生領先）',
-   note='女生領先 10.5 分。四屆走勢：男生 +4.5 → +1.2 → +3.4 → 女生 +10.5。臺灣在 2025 年翻盤，而且女生 545 分是世界第 3。同一屆的日本、美國仍是男生領先。'),
+   note='女生領先 10.5 分。四屆走勢：男生 +4.5 → +1.2 → +3.4 → 女生 +10.5。臺灣在 2025 年翻盤，而且女生 545 分落在分數最高的那一端。同一屆的日本、美國仍是男生領先。'),
  dict(id='t_enjoy',teaser='樂趣的十年',hook='這題臺灣其實在變好',
    f=F6,sheet='Table I.B1.3.54',cols=[1,4],cycles=[2015,2025],hib=True,
    fmt='{v:+.2f}',label='享受科學（樂趣）指數',rng=[-0.6,0.6,0.01],
    q='2015 年臺灣學生「享受科學」的指數是 −0.06（低於 OECD 平均）。2025 年呢？',
-   note='+0.05，回到 OECD 平均之上，十年進步 0.12。這是 OECD 用連結量尺算出的正式變化量。但排名幾乎沒動（第 53 → 第 57）——因為別人也在進步。'),
+   note='+0.05，回到 OECD 平均之上，十年進步 0.12。這是 OECD 用連結量尺算出的正式變化量。放到各國之中看，2015 年落在不覺得有趣的那一端，2025 年移到中間偏不覺得有趣的位置——進步了，但仍不算喜歡。'),
  dict(id='t_teacher',teaser='教師支持的十年',hook='全站進步幅度最大的一項',
    f=F7,sheet='Table I.B1.4.115',cols=[1,4],cycles=[2015,2025],hib=True,
    fmt='{v:+.2f}',label='科學課的教師支持指數',rng=[-0.4,0.7,0.01],
    q='2015 年臺灣「科學課教師支持」指數是 +0.06，只比 OECD 平均高一點。2025 年呢？',
-   note='+0.33，十年進步 0.26，排名從第 41 名升到第 35 名。學生感受到的教師支持明顯提升——這是臺灣這十年少數大幅改善的項目。'),
+   note='+0.33，十年進步 0.26，在各國之中也往「教師支持多」的方向移動了一些。學生感受到的教師支持明顯提升——這是臺灣這十年少數大幅改善的項目。'),
  dict(id='t_escs',teaser='社經影響力的十年',hook='家庭背景的力量變大還是變小',
    f=F3,sheet='Table I.B1.2b.25',cols=[1,3,5,7],cycles=[2015,2018,2022,2025],hib=False,
    fmt='{v:.1f}%',label='社經地位可解釋的科學成績變異％',rng=[4,24,0.1],
    q='2015 年臺灣有 14.1% 的科學成績差異可以用家庭社經地位解釋。2025 年呢？',
-   note='11.4%，略低於 OECD 的 11.6%，十年下降 2.6 個百分點。單看這個指標，臺灣的「家庭決定論」其實在鬆動——但別忘了城鄉分數差仍有 102 分，補習的社經落差仍是世界倒數第二。'),
+   note='11.4%，略低於 OECD 的 11.6%，十年下降 2.6 個百分點。單看這個指標，臺灣的「家庭決定論」其實在鬆動——但別忘了城鄉分數差仍有 102 分，補習的社經落差仍落在落差最大的那一端。'),
 ]
 
 out=[]
@@ -112,7 +119,8 @@ for sp in SPEC:
       'type':'trend','group':'趨勢','id':sp['id'],'teaser':sp['teaser'],'hook':sp['hook'],
       'q':sp['q'],'note':sp['note'],'what':TREND[sp['id']],'fmt':sp['fmt'],'label':sp['label'],
       'cycles':sp['cycles'],'guess_i':gi,'rng':sp['rng'],
-      'tw':tw,'oecd':oecd,'ranks':ranks,
+      'tw':tw,'oecd':oecd,'ranks':ranks,'pos':[pos_of(data,'Chinese Taipei',k) for k in range(len(sp['cycles']))],
+      'poles':POLES[sp['id']],
       'refs':[{'zh':ZH[c],'v':data[c]} for c in REF if c in data],
       'surprise':round(abs(100*(ranks[gi][0]-1)/max(1,ranks[gi][1]-1)
                            -100*(ranks[0][0]-1)/max(1,ranks[0][1]-1)),1),

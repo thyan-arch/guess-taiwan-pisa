@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""把 _style.css / _body.html / _app.js / data/questions.json 組成 web/index.html"""
+"""把 _style.css / _body.html / _app.js / 題目資料（web_data + trend_data）組成 web/index.html"""
 import base64, json, os
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
 W = os.path.join(ROOT, 'web')
@@ -11,10 +11,15 @@ def build():
     css  = open(os.path.join(W, '_style.css'), encoding='utf-8').read()
     body = open(os.path.join(W, '_body.html'), encoding='utf-8').read()
     js   = open(os.path.join(W, '_app.js'), encoding='utf-8').read()
-    qs   = open(os.path.join(ROOT, 'data', 'questions.json'), encoding='utf-8').read()
+    qs = json.dumps(json.load(open(os.path.join(ROOT, 'data', 'web_data.json'), encoding='utf-8'))
+                  + json.load(open(os.path.join(ROOT, 'data', 'trend_data.json'), encoding='utf-8')),
+                  ensure_ascii=False, separators=(',', ':'))
+    open(os.path.join(ROOT, 'data', 'questions.json'), 'w', encoding='utf-8').write(qs)
     body = (body.replace('__LOGO_WHITE__', data_uri(os.path.join(W, 'assets/logo-white.png')))
                 .replace('__LOGO_COLOR__', data_uri(os.path.join(W, 'assets/logo-color.png'))))
-    head = ('<title>猜猜臺灣排第幾</title>\n'
+    head = ('<!doctype html>\n<meta charset="utf-8">\n'
+      '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
+      '<title>猜猜臺灣在哪一端</title>\n'
       '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
       '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
       '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?'

@@ -27,11 +27,11 @@ var CH=[['成績','我們很會考試嗎'],['自信','我覺得我做得到嗎']
 var MAXPTS=1000, state={}, openId=null, justRevealed=null, tab='成績';
 var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-try{var raw=localStorage.getItem('pisa-tw-v2');if(raw)state=JSON.parse(raw)||{};}catch(e){state={};}
+try{var raw=localStorage.getItem('pisa-tw-v3');if(raw)state=JSON.parse(raw)||{};}catch(e){state={};}
 try{var tb=localStorage.getItem('pisa-tw-tab');
   if(tb&&(tb==='summary'||CH.some(function(c){return c[0]===tb;})))tab=tb;}catch(e){}
 function saveTab(){try{localStorage.setItem('pisa-tw-tab',tab);}catch(e){}}
-function save(){try{localStorage.setItem('pisa-tw-v2',JSON.stringify(state));}catch(e){}}
+function save(){try{localStorage.setItem('pisa-tw-v3',JSON.stringify(state));}catch(e){}}
 
 function fmt(spec,v){
   var m=/\{v:([+]?)\.(\d)f\}/.exec(spec);
@@ -47,10 +47,10 @@ function stars(s){if(s==null)return'';var n=s>=45?3:(s>=20?2:1);
   return '<span class="stars" title="意外指數（由資料計算，非使用者統計）">'+'★'.repeat(n)+'☆'.repeat(3-n)+'</span>';}
 
 /* ---------- 計分 ---------- */
-function answerOf(d){return d.type==='trend'?d.tw[d.guess_i]:d.rank;}
+function answerOf(d){return d.type==='trend'?d.tw[d.guess_i]:d.pos;}
 function errOf(d,g){
   if(d.type==='trend'){var sp=d.rng[1]-d.rng[0];return Math.abs(g-answerOf(d))/sp;}
-  return Math.abs(g-d.rank)/Math.max(1,d.n-1);
+  return Math.abs(g-d.pos)/100;
 }
 function pointsOf(e){var x=Math.max(0,1-e/0.40);return Math.round(MAXPTS*Math.pow(x,1.5));}
 var BANDS=[[0.02,'神準','v0'],[0.07,'很接近','v1'],[0.18,'有概念','v2'],[9,'差很遠','v3']];
@@ -102,18 +102,18 @@ function renderPager(){
   elPager.innerHTML=h;
 }
 
-/* ---------- 圖表：一般題（各國分布） ---------- */
+/* ---------- 圖表：一般題（各國由低到高排成光譜） ---------- */
 function chartRank(d,guess){
-  var W=760,H=300,L=56,R=104,T=52,B=36,n=d.n,vals=d.dist;
+  var W=760,H=300,L=56,R=104,T=52,B=40,n=d.n,vals=d.dist;
   var lo=Math.min.apply(null,vals),hi=Math.max.apply(null,vals);
   if(d.oecd!=null){lo=Math.min(lo,d.oecd);hi=Math.max(hi,d.oecd);}
   var pad=(hi-lo)*0.12||1,LO=lo-pad,HI=hi+pad;
-  function X(r){return L+(r-1)/(n-1)*(W-L-R);}
+  function X(p){return L+p/100*(W-L-R);}
   function Y(v){return T+(HI-v)/(HI-LO)*(H-T-B);}
-  var pts=vals.map(function(v,k){return X(k+1).toFixed(1)+','+Y(v).toFixed(1);}).join(' ');
+  var pts=vals.map(function(v,k){return X(100*k/Math.max(1,n-1)).toFixed(1)+','+Y(v).toFixed(1);}).join(' ');
   var s='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="'+esc(d.label)
-    +'：各國由高到低排列，臺灣第 '+d.rank+' 名，共 '+n+' 個國家或經濟體">';
-  s+='<polyline points="'+X(1).toFixed(1)+','+(H-B)+' '+pts+' '+X(n).toFixed(1)+','+(H-B)
+    +'：'+n+' 個國家或經濟體由「'+esc(d.poles[0])+'」排到「'+esc(d.poles[1])+'」，臺灣落在'+esc(zone(d,d.pos))+'">';
+  s+='<polyline points="'+X(0).toFixed(1)+','+(H-B)+' '+pts+' '+X(100).toFixed(1)+','+(H-B)
     +'" fill="var(--blue-50)"/>';
   s+='<polyline points="'+pts+'" fill="none" stroke="var(--blue-300)" stroke-width="2"/>';
   if(d.oecd!=null){var oy=Y(d.oecd);
@@ -121,8 +121,8 @@ function chartRank(d,guess){
       +'" stroke="var(--ink-3)" stroke-width="1" stroke-dasharray="4 4"/>';
     s+='<text x="'+(W-R+8)+'" y="'+(oy+4).toFixed(1)+'" font-size="12" fill="var(--ink-3)" font-family="Fira Sans,sans-serif">OECD '+esc(fmt(d.fmt,d.oecd))+'</text>';}
   var placed=[];
-  d.marks.slice().sort(function(a,b){return a.r-b.r;}).forEach(function(m){
-    var x=X(m.r),y=Y(m.v),w=m.zh.length*12+12,row=0;
+  d.marks.slice().sort(function(a,b){return a.p-b.p;}).forEach(function(m){
+    var x=X(m.p),y=Y(m.v),w=m.zh.length*12+12,row=0;
     while(placed.some(function(p){return p.row===row&&Math.abs(p.x-x)<(p.w+w)/2;}))row++;
     placed.push({x:x,w:w,row:row});
     var ly=y-12-row*16,below=false;
@@ -134,21 +134,21 @@ function chartRank(d,guess){
     s+='<text x="'+x.toFixed(1)+'" y="'+ly.toFixed(1)+'" font-size="12" text-anchor="'+a
       +'" fill="var(--accent-ink)" font-family="Noto Sans TC,sans-serif">'+esc(m.zh)+'</text>';
   });
-  if(guess){var gx=X(Math.min(Math.max(guess,1),n));
+  if(guess!=null){var gx=X(Math.min(Math.max(guess,0),100));
     s+='<line x1="'+gx.toFixed(1)+'" y1="'+T+'" x2="'+gx.toFixed(1)+'" y2="'+(H-B)
       +'" stroke="var(--ink-3)" stroke-dasharray="2 3"/>';
-    s+='<text x="'+gx.toFixed(1)+'" y="'+(H-B+15)+'" font-size="12" text-anchor="middle" fill="var(--ink-3)" font-family="Noto Sans TC,sans-serif">你猜 '+guess+'</text>';}
-  var tx=X(d.rank),ty=Y(d.tw);
+    s+='<text x="'+gx.toFixed(1)+'" y="'+(H-B+15)+'" font-size="12" text-anchor="middle" fill="var(--ink-3)" font-family="Noto Sans TC,sans-serif">你猜的位置</text>';}
+  var tx=X(d.pos),ty=Y(d.tw);
   s+='<g class="'+(reduce?'':'pop')+'" style="transform-origin:'+tx.toFixed(1)+'px '+ty.toFixed(1)+'px">';
   s+='<line x1="'+tx.toFixed(1)+'" y1="'+(T-20)+'" x2="'+tx.toFixed(1)+'" y2="'+(H-B)+'" stroke="var(--yel-500)" stroke-width="2"/>';
   s+='<circle cx="'+tx.toFixed(1)+'" cy="'+ty.toFixed(1)+'" r="7" fill="var(--yel-500)" stroke="var(--surface)" stroke-width="2"/>';
-  var an=d.rank>n*0.7?'end':(d.rank<n*0.16?'start':'middle');
+  var an=d.pos>70?'end':(d.pos<16?'start':'middle');
   s+='<text x="'+tx.toFixed(1)+'" y="'+(T-26)+'" font-size="14" font-weight="700" text-anchor="'+an
-    +'" fill="var(--yel-700)" font-family="Noto Sans TC,sans-serif">臺灣 第 '+d.rank+' 名</text></g>';
+    +'" fill="var(--yel-700)" font-family="Noto Sans TC,sans-serif">臺灣</text></g>';
   s+='<line x1="'+L+'" y1="'+(H-B)+'" x2="'+(W-R)+'" y2="'+(H-B)+'" stroke="var(--line)"/>';
   var eL=endLabels(d);
-  s+='<text x="'+L+'" y="'+(H-B+28)+'" font-size="12" fill="var(--ink-3)" font-family="Noto Sans TC,sans-serif">'+esc(eL[0])+'</text>';
-  s+='<text x="'+(W-R)+'" y="'+(H-B+28)+'" font-size="12" text-anchor="end" fill="var(--ink-3)" font-family="Noto Sans TC,sans-serif">'+esc(eL[1])+'</text>';
+  s+='<text x="'+L+'" y="'+(H-B+32)+'" font-size="13" font-weight="700" fill="var(--ink-2)" font-family="Noto Sans TC,sans-serif">'+esc(eL[0])+'</text>';
+  s+='<text x="'+(W-R)+'" y="'+(H-B+32)+'" font-size="13" font-weight="700" text-anchor="end" fill="var(--ink-2)" font-family="Noto Sans TC,sans-serif">'+esc(eL[1])+'</text>';
   s+='<text x="'+(L-8)+'" y="'+(T+4)+'" font-size="12" text-anchor="end" fill="var(--ink-3)" font-family="Fira Sans,sans-serif">'+esc(fmt(d.fmt,hi))+'</text>';
   s+='<text x="'+(L-8)+'" y="'+(H-B)+'" font-size="12" text-anchor="end" fill="var(--ink-3)" font-family="Fira Sans,sans-serif">'+esc(fmt(d.fmt,lo))+'</text>';
   return s+'</svg>';
@@ -195,8 +195,6 @@ function chartTrend(d,guess){
     var isLast=i===d.guess_i;
     s+='<circle cx="'+X(i).toFixed(1)+'" cy="'+Y(v).toFixed(1)+'" r="'+(isLast?7:4.5)
       +'" fill="var(--yel-500)" stroke="var(--surface)" stroke-width="2"'+(isLast&&!reduce?' class="pop"':'')+'/>';
-    var rk=d.ranks[i];
-    if(rk&&rk[0])s+='<text x="'+X(i).toFixed(1)+'" y="'+(Y(v)-14).toFixed(1)+'" font-size="11" text-anchor="middle" fill="var(--yel-700)" font-family="Noto Sans TC,sans-serif">第 '+rk[0]+'</text>';
   });
   s+='<text x="'+X(0).toFixed(1)+'" y="'+(Y(d.tw[0])+22).toFixed(1)+'" font-size="13" font-weight="700" fill="var(--yel-700)" font-family="Noto Sans TC,sans-serif">臺灣</text>';
   if(guess!=null){
@@ -211,31 +209,34 @@ function chartTrend(d,guess){
 }
 
 
-/* ---------- 排名方向 / 定位語 ---------- */
+/* ---------- 光譜位置 / 定位語 ---------- */
 function diffUnit(d){return {pct:' 個百分點',score:' 分',points10:' 分'}[d.kind]||'';}
 function lowBetter(d){return d.hib===false;}
-function endLabels(d){
-  return lowBetter(d)
-    ? ['第 1 名 · 數值最小','第 '+d.n+' 名 · 數值最大']
-    : ['第 1 名 · 數值最高','第 '+d.n+' 名 · 數值最低'];
+/* 光譜位置 0–100（左＝數值低，右＝數值高）翻成文字 */
+function zone(d,p){
+  if(p==null)return '—';
+  var lo=d.poles[0],hi=d.poles[1];
+  if(p>=80)return hi+'的那一端';
+  if(p>=60)return '偏'+hi;
+  if(p>40)return '中間';
+  if(p>20)return '偏'+lo;
+  return lo+'的那一端';
 }
+function endLabels(d){return ['← '+d.poles[0],d.poles[1]+' →'];}
+function goodPole(d){return lowBetter(d)?d.poles[0]:d.poles[1];}
 function scaleHint(d){
-  if(d.neutral)
-    return '這題沒有絕對的好壞，看的是方向與幅度。本題納入 '+d.n+' 個國家／經濟體，'
-      +'排名從「'+(lowBetter(d)?'數值最小':'數值最高')+'」排到「'
-      +(lowBetter(d)?'數值最大':'數值最低')+'」。';
-  return lowBetter(d)
-    ? '這題數字愈小愈好。本題納入 '+d.n+' 個國家／經濟體：第 1 名是數值最小的，第 '+d.n+' 名是最大的。'
-    : '這題數字愈大愈好。本題納入 '+d.n+' 個國家／經濟體：第 1 名是數值最高的，第 '+d.n+' 名是最低的。';
+  var h='本題納入 '+d.n+' 個國家／經濟體，由左到右排成一條光譜：最左邊是最「'+d.poles[0]
+    +'」的國家，最右邊是最「'+d.poles[1]+'」的國家。把滑桿拉到你覺得臺灣所在的位置。';
+  return h+(d.neutral?'這題沒有絕對的好壞，看的是偏向哪一邊。':'對學生來說，愈靠「'+goodPole(d)+'」那一邊愈好。');
 }
 function verdictWord(d){
-  var q=d.rank/d.n;
-  if(d.neutral) return q<=0.25?['世界前段','v1']:(q>=0.70?['世界後段','v2']:['世界中段','v2']);
-  return q<=0.25?['臺灣的強項','v0']:(q>=0.70?['臺灣的弱項','v3']:['世界中段','v2']);
+  if(d.neutral)return null;
+  var q=lowBetter(d)?100-d.pos:d.pos;
+  return q>=75?['臺灣的強項','v0']:(q<=30?['臺灣的弱項','v3']:['不算強也不算弱','v2']);
 }
-/* 一句話定位：把「第 74 名」翻成看得懂的話 */
+/* 一句話定位：數值跟 OECD 比，再說明落在光譜哪裡、跟哪些國家相比 */
 function placement(d){
-  var w=d.moreWord||'高', parts=[];
+  var parts=[];
   if(d.oecd!=null){
     var diff=d.tw-d.oecd, ab=Math.abs(diff);
     var m=/\{v:[+]?\.(\d)f\}/.exec(d.fmt), dec=m?+m[1]:1;
@@ -244,14 +245,13 @@ function placement(d){
   }else{
     parts.push('臺灣 '+fmt(d.fmt,d.tw));
   }
-  var above=d.rank-1, below=d.n-d.rank;
-  if(lowBetter(d)){
-    parts.push('在 '+d.n+' 個國家／經濟體中，只有 '+below+' 個比臺灣更'+w
-      +'、有 '+above+' 個比臺灣更小');
-  }else{
-    parts.push('在 '+d.n+' 個國家／經濟體中，有 '+above+' 個比臺灣更'+w
-      +'、'+below+' 個比臺灣更低');
-  }
+  parts.push('在 '+d.n+' 個國家／經濟體排成的光譜上，臺灣落在「'+zone(d,d.pos)+'」');
+  var hiSide=d.marks.filter(function(x){return x.p>d.pos;}).map(function(x){return x.zh;}),
+      loSide=d.marks.filter(function(x){return x.p<d.pos;}).map(function(x){return x.zh;});
+  var cmp=[];
+  if(hiSide.length)cmp.push(hiSide.join('、')+'比臺灣更靠近「'+d.poles[1]+'」');
+  if(loSide.length)cmp.push(loSide.join('、')+'比臺灣更靠近「'+d.poles[0]+'」');
+  if(cmp.length)parts.push(cmp.join('；'));
   return parts.join('。')+'。';
 }
 function trendPlacement(d){
@@ -263,12 +263,10 @@ function trendPlacement(d){
     out.push(d.cycles[0]+' 年到 '+d.cycles[i]+' 年，從 '+fmt(d.fmt,v0)+'變成 '+fmt(d.fmt,v)
       +'（'+(diff>=0?'增加':'減少')+' '+Math.abs(diff).toFixed(dec)+diffUnit(d)+'）');
   }
-  var r0=d.ranks[0], rN=d.ranks[i];
-  if(r0&&r0[0]&&rN&&rN[0]){
-    var moved=rN[0]-r0[0];
-    out.push('名次從第 '+r0[0]+'／'+r0[1]+' 變成第 '+rN[0]+'／'+rN[1]
-      +(Math.abs(moved)<=2?'（幾乎沒動）':(moved>0?'（後退 '+moved+' 名）':'（前進 '+(-moved)+' 名）')));
-  }
+  var z0=zone(d,d.pos[0]), zN=zone(d,d.pos[i]);
+  if(d.pos[0]!=null&&d.pos[i]!=null)
+    out.push(z0===zN?'放到各國之中看，兩個年度都落在「'+zN+'」'
+      :'放到各國之中看，從「'+z0+'」移到「'+zN+'」');
   if(d.oecd&&d.oecd[i]!=null)
     out.push('同一年 OECD 平均是 '+fmt(d.fmt,d.oecd[i]));
   return out.join('。')+'。';
@@ -295,12 +293,12 @@ function guessUI(d){
     lo=d.rng[0];hi=d.rng[1];step=d.rng[2];
     mid=s?s.guess:d.tw[0];
     given='<div class="given">'+d.cycles.slice(0,d.guess_i).map(function(y,i){
-      return d.tw[i]==null?'':'<b>'+y+'：'+esc(fmt(d.fmt,d.tw[i]))+(d.ranks[i][0]?'（第 '+d.ranks[i][0]+' 名）':'')+'</b>';
+      return d.tw[i]==null?'':'<b>'+y+'：'+esc(fmt(d.fmt,d.tw[i]))+'</b>';
     }).join('')+'</div>';
     valLabel=esc(fmt(d.fmt,mid));
   }else{
-    lo=1;hi=d.n;step=1;mid=s?s.guess:Math.round(d.n/2);
-    valLabel='第 '+mid+' 名 <small>／ '+d.n+'</small>';
+    lo=0;hi=100;step=1;mid=s?s.guess:50;
+    valLabel=esc(zone(d,mid));
   }
   return '<div class="detail"><p class="q">'+esc(d.q)+'</p>'
     +'<p class="what">'+esc(d.what)+(help?' '+help:'')+'</p>'
@@ -309,9 +307,9 @@ function guessUI(d){
           :(lowBetter(d)?'這個數字愈小愈好。':'這個數字愈大愈好。'))
         :scaleHint(d))+'</p>'+given
     +'<div class="guess"><div class="guess-top"><span>'+(d.type==='trend'?'猜 '+d.cycles[d.guess_i]+' 年的數值':'你的猜測')+'</span>'
-    +'<span>'+(d.type==='trend'?esc(d.label):'共 '+d.n+' 個國家／經濟體')+'</span></div>'
+    +'<span>'+(d.type==='trend'?esc(d.label):d.n+' 個國家／經濟體的光譜')+'</span></div>'
     +'<div class="guess-num" id="gn-'+d.id+'">'+valLabel+'</div>'
-    +'<input type="range" id="sl-'+d.id+'" min="'+lo+'" max="'+hi+'" step="'+step+'" value="'+mid+'" aria-label="猜測值">'
+    +'<input type="range" id="sl-'+d.id+'" min="'+lo+'" max="'+hi+'" step="'+step+'" value="'+mid+'" aria-label="猜測值"'+(d.type==='trend'?'':' aria-valuetext="'+esc(zone(d,mid))+'"')+'>'
     +'<div class="ends"><span>'+(d.type==='trend'?esc(fmt(d.fmt,lo)):esc(endLabels(d)[0]))+'</span>'
     +'<span>'+(d.type==='trend'?esc(fmt(d.fmt,hi)):esc(endLabels(d)[1]))+'</span></div></div>'
     +'<div class="acts"><button class="btn" data-act="reveal" data-id="'+d.id+'" type="button">看答案</button>'
@@ -328,21 +326,22 @@ function revealUI(d){
     your='你猜 '+fmt(d.fmt,g)+(delta==null?'':'　｜　'+d.cycles[0]+'→'+d.cycles[d.guess_i]+' 變化 '+fmt(d.fmt.replace('{v:.','{v:+.').replace('{v:+:+.','{v:+.'),delta));
     var head='<tr><th>國家／經濟體</th>'+d.cycles.map(function(y){return '<th>'+y+'</th>';}).join('')+'</tr>';
     var body='<tr class="tw"><td>臺灣</td>'+d.tw.map(function(v){return '<td>'+(v==null?'—':esc(fmt(d.fmt,v)))+'</td>';}).join('')+'</tr>';
-    body+='<tr class="tw"><td>臺灣的名次</td>'+d.ranks.map(function(r){return '<td>'+(r[0]?'第 '+r[0]+' ／ '+r[1]:'—')+'</td>';}).join('')+'</tr>';
+    body+='<tr class="tw"><td>臺灣在各國中的位置</td>'+d.pos.map(function(p){return '<td>'+esc(zone(d,p))+'</td>';}).join('')+'</tr>';
     if(d.oecd)body+='<tr class="oecd"><td>OECD 平均</td>'+d.oecd.map(function(v){return '<td>'+(v==null?'—':esc(fmt(d.fmt,v)))+'</td>';}).join('')+'</tr>';
     d.refs.forEach(function(r){body+='<tr><td>'+esc(r.zh)+'</td>'+r.v.map(function(v){return '<td>'+(v==null?'—':esc(fmt(d.fmt,v)))+'</td>';}).join('')+'</tr>';});
     tbl='<table><caption>'+esc(d.label)+'</caption><thead>'+head+'</thead><tbody>'+body+'</tbody></table>';
   }else{
-    big='第 '+ans+' <small>／ '+d.n+'</small>';
-    var diff=Math.abs(g-ans);
-    your=diff===0?'完全猜中':'你猜第 '+g+' 名，差 '+diff+' 名（'+(g<ans?'比實際樂觀':'比實際保守')+'）';
-    var rows='<tr class="tw"><td>臺灣</td><td>'+esc(fmt(d.fmt,d.tw))+'</td><td>第 '+d.rank+'</td></tr>';
+    big=esc(zone(d,ans));
+    var diff=g-ans;
+    your=Math.abs(diff)<=3?'你猜的位置幾乎完全正確'
+      :'你猜「'+zone(d,g)+'」，比實際更偏向「'+(diff>0?d.poles[1]:d.poles[0])+'」';
+    var rows='<tr class="tw"><td>臺灣</td><td>'+esc(fmt(d.fmt,d.tw))+'</td><td>'+esc(zone(d,d.pos))+'</td></tr>';
     if(d.oecd!=null)rows+='<tr class="oecd"><td>OECD 平均</td><td>'+esc(fmt(d.fmt,d.oecd))+'</td><td>—</td></tr>';
-    d.marks.forEach(function(m){rows+='<tr><td>'+esc(m.zh)+'</td><td>'+esc(fmt(d.fmt,m.v))+'</td><td>第 '+m.r+'</td></tr>';});
-    rows+='<tr class="oecd"><td>世界最高 ｜ '+esc(d.best.zh)+'</td><td>'+esc(fmt(d.fmt,d.best.v))+'</td><td>第 1</td></tr>';
-    rows+='<tr class="oecd"><td>世界最低 ｜ '+esc(d.worst.zh)+'</td><td>'+esc(fmt(d.fmt,d.worst.v))+'</td><td>第 '+d.n+'</td></tr>';
+    d.marks.forEach(function(m){rows+='<tr><td>'+esc(m.zh)+'</td><td>'+esc(fmt(d.fmt,m.v))+'</td><td>'+esc(zone(d,m.p))+'</td></tr>';});
+    rows+='<tr class="oecd"><td>最右端（'+esc(d.poles[1])+'）｜ '+esc(d.top.zh)+'</td><td>'+esc(fmt(d.fmt,d.top.v))+'</td><td>—</td></tr>';
+    rows+='<tr class="oecd"><td>最左端（'+esc(d.poles[0])+'）｜ '+esc(d.bottom.zh)+'</td><td>'+esc(fmt(d.fmt,d.bottom.v))+'</td><td>—</td></tr>';
     tbl='<table><caption>'+esc(d.label)+'（PISA '+d.cycle+'）</caption>'
-      +'<thead><tr><th>國家／經濟體</th><th>數值</th><th>排名</th></tr></thead><tbody>'+rows+'</tbody></table>';
+      +'<thead><tr><th>國家／經濟體</th><th>數值</th><th>在光譜上的位置</th></tr></thead><tbody>'+rows+'</tbody></table>';
   }
   return '<div class="detail"><p class="q">'+esc(d.q)+'</p>'
     +'<p class="what">'+esc(d.what)+'</p>'
@@ -379,8 +378,8 @@ function render(){
   if(sl){
     var d=byId(openId),gn=document.getElementById('gn-'+openId);
     sl.addEventListener('input',function(){
-      gn.innerHTML=d.type==='trend'?esc(fmt(d.fmt,+sl.value))
-        :('第 '+sl.value+' 名 <small>／ '+d.n+'</small>');
+      gn.innerHTML=d.type==='trend'?esc(fmt(d.fmt,+sl.value)):esc(zone(d,+sl.value));
+      if(d.type!=='trend')sl.setAttribute('aria-valuetext',zone(d,+sl.value));
     });
   }
   if(justRevealed){rollNumber(justRevealed);justRevealed=null;}
@@ -389,13 +388,13 @@ function render(){
 function rollNumber(id){
   if(reduce)return;
   var d=byId(id),el=document.getElementById('big-'+id);
-  if(!el)return;
+  if(!el||d.type!=='trend')return;
   var s=state[id],from=s.guess,to=answerOf(d),t0=null,dur=650;
   var tail=el.querySelector('small').outerHTML;
   function frame(ts){
     if(!t0)t0=ts;
     var p=Math.min(1,(ts-t0)/dur),e=1-Math.pow(1-p,3),v=from+(to-from)*e;
-    el.innerHTML=(d.type==='trend'?esc(fmt(d.fmt,v)):('第 '+Math.round(v)+' '))+' '+tail;
+    el.innerHTML=esc(fmt(d.fmt,v))+' '+tail;
     if(p<1)requestAnimationFrame(frame);
   }
   requestAnimationFrame(frame);
@@ -451,9 +450,9 @@ function renderSummary(){
   if(t.done===0){
     head='<p class="insight">還沒有揭曉任何一題。先挑一張卡片猜猜看，這裡會統計你的分數與準確度。</p>';
   }else{
-    var signed=0;D.forEach(function(d){var s=state[d.id];if(!s||!s.done)return;
-      var ans=answerOf(d);signed+=(d.type==='trend'?0:(ans-s.guess));});
-    var rankDone=D.filter(function(d){return d.type!=='trend'&&state[d.id]&&state[d.id].done;}).length;
+    var signed=0,rankDone=0;D.forEach(function(d){var s=state[d.id];
+      if(!s||!s.done||d.type==='trend'||d.neutral)return;
+      rankDone++;signed+=(lowBetter(d)?-1:1)*(s.guess-d.pos);});
     head='<div class="title-card"><div class="lv">YOUR LEVEL</div><h3>'+esc(title[1])+'</h3>'
       +'<p>'+esc(title[2])+'</p></div>'
       +'<div class="stats"><div><b>'+t.pts.toLocaleString('en-US')+'</b><span>總分（滿分 '+max.toLocaleString('en-US')+'）</span></div>'
@@ -462,27 +461,27 @@ function renderSummary(){
       +'<div><b>'+Math.round(100*ratio)+'%</b><span>平均準確度</span></div></div>';
     if(rankDone>=3){
       var avg=signed/rankDone;
-      head+='<p class="insight">'+(avg>0?'在排名題上，你平均把臺灣猜得比實際<b>好 '+Math.abs(avg).toFixed(1)+' 名</b>。'
-        :(avg<0?'在排名題上，你平均把臺灣猜得比實際<b>差 '+Math.abs(avg).toFixed(1)+' 名</b>。':'你沒有系統性偏誤。'))
-        +'多數人會高估臺灣在態度、動機、自信上的位置——因為我們太習慣用成績排名去推論其他一切。</p>';
+      head+='<p class="insight">'+(avg>5?'整體來說，你把臺灣放在比實際<b>更好的位置</b>。'
+        :(avg<-5?'整體來說，你把臺灣放在比實際<b>更差的位置</b>。':'整體來說，你的猜測沒有明顯偏好或偏壞。'))
+        +'多數人會高估臺灣在態度、動機、自信上的位置——因為我們太習慣用成績去推論其他一切。</p>';
     }
   }
   board.innerHTML='<div class="panel"><h2>臺灣科學教育的體質</h2>'+head
     +'<div class="two">'
     +'<div class="box up"><h4>✓ 表現較佳的面向</h4><ul>'
-    +'<li>科學成績三個主測年都排 <b>第 4</b>（母數 57／73／91）</li>'
-    +'<li>頂尖學生 <b>20.1%</b>，第 3／91；2012 年以來成長約 2.4 倍，但中間 2018 年曾回落</li>'
-    +'<li>女生科學 <b>545 分</b>，第 3／91；2025 年首度反超男生 10.5 分</li>'
-    +'<li>三項科學能力中，「解釋現象」相對最突出（第 5／85）</li>'
-    +'<li>課堂秩序 <b>第 9／85</b>；蹺課率 <b>10.6%</b>（OECD 33.9%）</li>'
-    +'<li>教師支持十年進步 <b>0.26</b>，名次由第 41 升到第 35</li>'
+    +'<li>科學成績三個主測年都在<b>分數最高的那一端</b></li>'
+    +'<li>頂尖學生 <b>20.1%</b>，落在頂尖學生最多的那一端；2012 年以來成長約 2.4 倍，但中間 2018 年曾回落</li>'
+    +'<li>女生科學 <b>545 分</b>，落在分數最高的那一端；2025 年首度反超男生 10.5 分</li>'
+    +'<li>三項科學能力中，「解釋現象」是臺灣的<b>相對強項</b></li>'
+    +'<li>課堂落在<b>有秩序的那一端</b>；蹺課率 <b>10.6%</b>（OECD 33.9%）</li>'
+    +'<li>教師支持十年進步 <b>0.26</b>，在各國之中往「支持多」的方向移動</li>'
     +'</ul></div>'
     +'<div class="box down"><h4>⚠ 表現落後的面向</h4><ul>'
-    +'<li>成長心態 <b>第 82／90</b>，45.5% 不同意「智力無法改變」（OECD 69.3%、日本 76.0%、韓國 77.9%；香港 44.1%、中國四省市 49.6% 同樣偏低）</li>'
-    +'<li>應變信心 <b>第 81／83</b>；好奇心複合指數 <b>第 66／87</b>（但「我對很多事情都感到好奇」單題 73.2%，與 OECD 73.5% 相當）</li>'
-    +'<li>三項科學能力中，「評估資訊做決策」相對最不突出（第 82／85）；其絕對分數 528 分仍高於 OECD 的 480 分</li>'
+    +'<li>成長心態落在<b>最不相信能變聰明的那一端</b>：45.5% 不同意「智力無法改變」（OECD 69.3%、日本 76.0%、韓國 77.9%；香港 44.1%、中國四省市 49.6% 同樣偏低）</li>'
+    +'<li>應變信心落在<b>最沒信心的那一端</b>；好奇心複合指數<b>偏沒好奇心</b>（但「我對很多事情都感到好奇」單題 73.2%，與 OECD 73.5% 相當）</li>'
+    +'<li>三項科學能力中，「評估資訊做決策」是臺灣的<b>相對弱項</b>；其絕對分數 528 分仍高於 OECD 的 480 分</li>'
     +'<li>城鄉分數差 <b>102 分</b>（OECD 32 分）；鄉村學校 454 分，低於 OECD 平均 458 分</li>'
-    +'<li>補習的社經落差 <b>22 個百分點</b>（OECD 3.4），第 87／88</li>'
+    +'<li>補習的社經落差 <b>22 個百分點</b>（OECD 3.4），落在<b>落差最大的那一端</b></li>'
     +'<li>高低分差距 2012 年 215 分、2025 年 <b>281 分</b>，整體擴大但非逐屆遞增</li>'
     +'</ul></div></div>'
     +'<p class="insight"><b>怎麼讀這份資料：</b>臺灣學生的科學成績穩定位居前段，高分群也持續擴大。'
