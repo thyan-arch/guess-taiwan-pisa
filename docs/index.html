@@ -136,7 +136,8 @@ p{margin:0} img{max-width:100%}
 svg{display:block;width:100%;height:auto}
 .pop{animation:pop .5s ease-out}
 @keyframes pop{0%{transform:scale(.4);opacity:0}60%{transform:scale(1.25)}100%{transform:scale(1);opacity:1}}
-table{width:100%;border-collapse:collapse;margin-top:var(--md);font-family:var(--body);font-size:14px}
+.tblwrap{margin-top:var(--md);overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-family:var(--body);font-size:14px}
 caption{caption-side:top;text-align:left;font-family:var(--zh);font-size:12px;color:var(--ink-3);
   padding-bottom:var(--xs)}
 th,td{text-align:right;padding:var(--xs) var(--xs2);border-bottom:1px solid var(--line);
@@ -169,6 +170,12 @@ footer .ai{margin-top:var(--sm);font-weight:500}
 
 .place{margin-top:var(--sm);font-family:var(--zh);font-size:16px;line-height:1.7;color:var(--ink);
   border-left:var(--xs2) solid var(--brand);padding-left:var(--md)}
+@media (max-width:480px){
+  table{font-size:12px}
+  th,td{padding:var(--xs2) 2px}
+  .detail .q{font-size:20px}
+  .judge .big{font-size:40px}
+}
 
 </style>
 
@@ -255,12 +262,19 @@ function renderPager(){
     +(next?'<button class="btn" data-tab="'+esc(next)+'" type="button">'+esc(next)+' →</button>':'');
 }
 
+/* ---------- 圖表寬度：依卡片實際寬度畫，手機上字級不會被縮小 ---------- */
+function chartW(){return Math.max(240,Math.min(760,Math.round(board.clientWidth-34)));}
+/* 估算 12px 標籤的寬度（中文字約 12px、數字與符號約 7px），用來決定圖表左右留白 */
+function textW(t){var w=0;for(var i=0;i<t.length;i++)w+=/[\u2E80-\uFFFF]/.test(t[i])?12:7;return w;}
+
 /* ---------- 圖表：一般題（各國由低到高排成光譜） ---------- */
 function chartRank(d){
-  var W=760,H=300,L=56,R=104,T=52,B=40,n=d.n,vals=d.dist;
+  var W=chartW(),nar=W<520,H=nar?260:300,L=nar?48:56,R=nar?16:104,T=52,B=40,n=d.n,vals=d.dist;
   var lo=Math.min.apply(null,vals),hi=Math.max.apply(null,vals);
   if(d.oecd!=null){lo=Math.min(lo,d.oecd);hi=Math.max(hi,d.oecd);}
   var pad=(hi-lo)*0.12||1,LO=lo-pad,HI=hi+pad;
+  L=Math.max(L,Math.max(textW(fmt(d.fmt,hi)),textW(fmt(d.fmt,lo)))+14);
+  if(!nar&&d.oecd!=null)R=Math.max(R,textW('OECD '+fmt(d.fmt,d.oecd))+16);
   function X(p){return L+p/100*(W-L-R);}
   function Y(v){return T+(HI-v)/(HI-LO)*(H-T-B);}
   var pts=vals.map(function(v,k){return X(100*k/Math.max(1,n-1)).toFixed(1)+','+Y(v).toFixed(1);}).join(' ');
@@ -272,7 +286,8 @@ function chartRank(d){
   if(d.oecd!=null){var oy=Y(d.oecd);
     s+='<line x1="'+L+'" y1="'+oy.toFixed(1)+'" x2="'+(W-R)+'" y2="'+oy.toFixed(1)
       +'" stroke="var(--ink-3)" stroke-width="1" stroke-dasharray="4 4"/>';
-    s+='<text x="'+(W-R+8)+'" y="'+(oy+4).toFixed(1)+'" font-size="12" fill="var(--ink-3)" font-family="Fira Sans,sans-serif">OECD '+esc(fmt(d.fmt,d.oecd))+'</text>';}
+    s+=nar?'<text x="'+(L+4)+'" y="'+(oy-5).toFixed(1)+'" font-size="12" fill="var(--ink-3)" font-family="Fira Sans,sans-serif">OECD '+esc(fmt(d.fmt,d.oecd))+'</text>'
+      :'<text x="'+(W-R+8)+'" y="'+(oy+4).toFixed(1)+'" font-size="12" fill="var(--ink-3)" font-family="Fira Sans,sans-serif">OECD '+esc(fmt(d.fmt,d.oecd))+'</text>';}
   var placed=[];
   d.marks.slice().sort(function(a,b){return a.p-b.p;}).forEach(function(m){
     var x=X(m.p),y=Y(m.v),w=m.zh.length*12+12,row=0;
@@ -305,13 +320,14 @@ function chartRank(d){
 
 /* ---------- 圖表：趨勢題（跨屆折線） ---------- */
 function chartTrend(d){
-  var W=760,H=330,L=66,R=96,T=56,B=52,cy=d.cycles,n=cy.length;
+  var W=chartW(),nar=W<520,H=nar?280:330,L=nar?56:66,R=nar?56:96,T=56,B=52,cy=d.cycles,n=cy.length;
   var all=[];
   d.tw.forEach(function(v){if(v!=null)all.push(v);});
   if(d.oecd)d.oecd.forEach(function(v){if(v!=null)all.push(v);});
   d.refs.forEach(function(r){r.v.forEach(function(v){if(v!=null)all.push(v);});});
   var lo=Math.min.apply(null,all),hi=Math.max.apply(null,all);
   var pad=(hi-lo)*0.14||1,LO=lo-pad,HI=hi+pad;
+  L=Math.max(L,Math.max(textW(fmt(d.fmt,HI-pad/2)),textW(fmt(d.fmt,LO+pad/2)))+14);
   function X(i){return L+i/(n-1)*(W-L-R);}
   function Y(v){return T+(HI-v)/(HI-LO)*(H-T-B);}
   function path(arr){var out=[],started=false;
@@ -433,7 +449,7 @@ function detailUI(d){
     body+='<tr class="tw"><td>臺灣在各國中的位置</td>'+d.pos.map(function(p){return '<td>'+esc(zone(d,p))+'</td>';}).join('')+'</tr>';
     if(d.oecd)body+='<tr class="oecd"><td>OECD 平均</td>'+d.oecd.map(function(v){return '<td>'+(v==null?'—':esc(fmt(d.fmt,v)))+'</td>';}).join('')+'</tr>';
     d.refs.forEach(function(r){body+='<tr><td>'+esc(r.zh)+'</td>'+r.v.map(function(v){return '<td>'+(v==null?'—':esc(fmt(d.fmt,v)))+'</td>';}).join('')+'</tr>';});
-    tbl='<table><caption>'+esc(d.label)+'</caption><thead>'+head+'</thead><tbody>'+body+'</tbody></table>';
+    tbl='<div class="tblwrap"><table><caption>'+esc(d.label)+'</caption><thead>'+head+'</thead><tbody>'+body+'</tbody></table></div>';
   }else{
     big=esc(zone(d,d.pos));
     var rows='<tr class="tw"><td>臺灣</td><td>'+esc(fmt(d.fmt,d.tw))+'</td><td>'+esc(zone(d,d.pos))+'</td></tr>';
@@ -441,8 +457,8 @@ function detailUI(d){
     d.marks.forEach(function(m){rows+='<tr><td>'+esc(m.zh)+'</td><td>'+esc(fmt(d.fmt,m.v))+'</td><td>'+esc(zone(d,m.p))+'</td></tr>';});
     rows+='<tr class="oecd"><td>最右端（'+esc(d.poles[1])+'）｜ '+esc(d.top.zh)+'</td><td>'+esc(fmt(d.fmt,d.top.v))+'</td><td>—</td></tr>';
     rows+='<tr class="oecd"><td>最左端（'+esc(d.poles[0])+'）｜ '+esc(d.bottom.zh)+'</td><td>'+esc(fmt(d.fmt,d.bottom.v))+'</td><td>—</td></tr>';
-    tbl='<table><caption>'+esc(d.label)+'（PISA '+d.cycle+'）</caption>'
-      +'<thead><tr><th>國家／經濟體</th><th>數值</th><th>在光譜上的位置</th></tr></thead><tbody>'+rows+'</tbody></table>';
+    tbl='<div class="tblwrap"><table><caption>'+esc(d.label)+'（PISA '+d.cycle+'）</caption>'
+      +'<thead><tr><th>國家／經濟體</th><th>數值</th><th>在光譜上的位置</th></tr></thead><tbody>'+rows+'</tbody></table></div>';
   }
   return '<div class="detail"><p class="q">'+esc(d.q)+'</p>'
     +'<p class="what">'+esc(d.what)+(help?' '+help:'')+'</p>'
@@ -491,6 +507,12 @@ board.addEventListener('click',function(ev){
     if(el)el.scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'});
   }
 });
+
+/* 螢幕寬度改變（例如手機轉向）時，重畫已展開的圖表 */
+var lastW=chartW(),rt=null;
+window.addEventListener('resize',function(){
+  clearTimeout(rt);rt=setTimeout(function(){
+    var w=chartW();if(w!==lastW){lastW=w;if(openId)render();}},200);});
 
 render();
 })();

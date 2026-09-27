@@ -128,7 +128,8 @@ p{margin:0} img{max-width:100%}
 svg{display:block;width:100%;height:auto}
 .pop{animation:pop .5s ease-out}
 @keyframes pop{0%{transform:scale(.4);opacity:0}60%{transform:scale(1.25)}100%{transform:scale(1);opacity:1}}
-table{width:100%;border-collapse:collapse;margin-top:var(--md);font-family:var(--body);font-size:14px}
+.tblwrap{margin-top:var(--md);overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-family:var(--body);font-size:14px}
 caption{caption-side:top;text-align:left;font-family:var(--zh);font-size:12px;color:var(--ink-3);
   padding-bottom:var(--xs)}
 th,td{text-align:right;padding:var(--xs) var(--xs2);border-bottom:1px solid var(--line);
@@ -161,3 +162,9 @@ footer .ai{margin-top:var(--sm);font-weight:500}
 
 .place{margin-top:var(--sm);font-family:var(--zh);font-size:16px;line-height:1.7;color:var(--ink);
   border-left:var(--xs2) solid var(--brand);padding-left:var(--md)}
+@media (max-width:480px){
+  table{font-size:12px}
+  th,td{padding:var(--xs2) 2px}
+  .detail .q{font-size:20px}
+  .judge .big{font-size:40px}
+}
