@@ -3,8 +3,7 @@
 /* 配色一律跟隨系統（見 _style.css 的 prefers-color-scheme） */
 var D=JSON.parse(document.getElementById('pisa-data').textContent);
 var board=document.getElementById('board');
-var elProg=document.getElementById('prog'),elCnt=document.getElementById('cnt'),
-    elTabs=document.getElementById('tabs'),elPager=document.getElementById('pager');
+var elTabs=document.getElementById('tabs'),elPager=document.getElementById('pager');
 var CH=[['成績','我們很會考試嗎'],['自信','我覺得我做得到嗎'],['動機','我想學嗎'],
         ['性別','男生女生誰領先'],['城鄉','在哪裡出生決定多少'],['課堂','教室裡發生什麼事'],
         ['趨勢','十九年下來變了什麼']];
@@ -29,12 +28,7 @@ function esc(s){return String(s).replace(/[&<>"]/g,function(c){
 function stars(s){if(s==null)return'';var n=s>=45?3:(s>=20?2:1);
   return '<span class="stars" title="意外指數（由資料計算）">'+'★'.repeat(n)+'☆'.repeat(3-n)+'</span>';}
 
-/* ---------- 瀏覽進度 ---------- */
-function updateHUD(){
-  var n=D.filter(function(d){return seen[d.id];}).length;
-  elCnt.textContent='已看 '+n+' / '+D.length;
-  elProg.style.width=(100*n/D.length).toFixed(1)+'%';
-}
+/* ---------- 各分類已看題數 ---------- */
 function chapterStat(name){
   var items=D.filter(function(d){return d.group===name;});
   var done=items.filter(function(d){return seen[d.id];}).length;
@@ -270,7 +264,6 @@ function render(){
   });
   html+='</div></section>';
   board.innerHTML=html;
-  updateHUD();
 }
 
 function goTab(name){

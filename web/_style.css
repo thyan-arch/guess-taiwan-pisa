@@ -60,15 +60,8 @@ p{margin:0} img{max-width:100%}
 .rules span{font-family:var(--zh);font-size:12px;padding:var(--xs2) var(--xs);border-radius:var(--r-sm);
   background:rgba(255,255,255,.14);color:#EAF6FD}
 
-/* HUD */
-.hud{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--surface);
-  border:1px solid var(--line);border-radius:var(--r-md);margin-top:var(--lg);
-  padding:var(--sm) var(--md);display:flex;align-items:center;gap:var(--md);flex-wrap:wrap}
-.hud .prog{flex:1;min-width:110px;height:8px;background:var(--sunken);border-radius:999px;overflow:hidden}
-.hud .prog i{display:block;height:100%;background:var(--accent);width:0;transition:width .4s}
-.hud .cnt{font-family:var(--body);font-size:12px;color:var(--ink-3);white-space:nowrap}
 /* 分頁列 */
-.tabs{display:flex;gap:var(--xs);margin-top:var(--md);overflow-x:auto;padding-bottom:var(--xs2);
+.tabs{display:flex;gap:var(--xs);margin-top:var(--lg);overflow-x:auto;padding-bottom:var(--xs2);
   scrollbar-width:thin}
 .tab{flex:none;font:inherit;font-family:var(--zh);font-size:14px;font-weight:500;cursor:pointer;
   background:var(--surface);border:1px solid var(--line);border-radius:var(--r-sm);
@@ -106,7 +99,7 @@ p{margin:0} img{max-width:100%}
 .badge{font-family:var(--body);font-size:12px;padding:var(--xs2) var(--xs);border-radius:var(--r-sm);
   border:1px solid var(--line);background:var(--sunken);color:var(--ink-2)}
 .badge.cyc{font-family:var(--head);font-weight:500;letter-spacing:.04em}
-.qcard.open{grid-column:1/-1;scroll-margin-top:72px;border-color:var(--brand);cursor:default}
+.qcard.open{grid-column:1/-1;scroll-margin-top:16px;border-color:var(--brand);cursor:default}
 .qcard.open:hover{background:var(--surface)}
 
 /* Detail */
