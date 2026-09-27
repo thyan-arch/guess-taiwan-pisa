@@ -5,7 +5,7 @@ ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
 W = os.path.join(ROOT, 'web')
 
 # Google Analytics 4 評估 ID（形如 G-XXXXXXXXXX）。留空＝不載入 GA、頁尾也不顯示統計說明。
-GA_ID = ''
+GA_ID = 'G-78CWC9YJ20'
 
 def data_uri(p):
     return 'data:image/png;base64,' + base64.b64encode(open(p, 'rb').read()).decode()
