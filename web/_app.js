@@ -15,6 +15,8 @@ try{var tb=localStorage.getItem('pisa-tw-tab');
   if(tb&&CH.some(function(c){return c[0]===tb;}))tab=tb;}catch(e){}
 function saveTab(){try{localStorage.setItem('pisa-tw-tab',tab);}catch(e){}}
 function save(){try{localStorage.setItem('pisa-tw-seen',JSON.stringify(seen));}catch(e){}}
+/* 流量統計：有載入 Google Analytics（make_site.py 的 GA_ID）才送事件，否則不做任何事 */
+function track(name,params){try{if(typeof window.gtag==='function')window.gtag('event',name,params);}catch(e){}}
 
 function fmt(spec,v){
   var m=/\{v:([+]?)\.(\d)f\}/.exec(spec);
@@ -278,6 +280,7 @@ function render(){
 function goTab(name){
   if(tab===name)return;
   tab=name;openId=null;saveTab();render();
+  track('view_tab',{tab_name:name});
   var top=elTabs.getBoundingClientRect().top+window.scrollY-8;
   window.scrollTo({top:Math.max(0,top),behavior:reduce?'auto':'smooth'});
 }
@@ -291,6 +294,8 @@ board.addEventListener('click',function(ev){
   var card=ev.target.closest('[data-card]');
   if(card&&card.tagName==='BUTTON'){
     openId=card.getAttribute('data-card');seen[openId]=1;save();render();
+    var dd=D.filter(function(x){return x.id===openId;})[0];
+    if(dd)track('open_card',{card_id:dd.id,card_title:dd.teaser,card_group:dd.group});
     var el=document.querySelector('[data-card="'+openId+'"]');
     if(el)el.scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'});
   }

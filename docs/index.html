@@ -205,6 +205,7 @@ footer .ai{margin-top:var(--sm);font-weight:500}
     <p class="fmeta"><b>27 題</b>　<b>最多 91 個國家／經濟體</b>　<b>OECD PISA 2006・2015・2025 官方 Annex B 資料表</b></p>
     <p>由 LIS 情境科學教材製作。臺灣在 OECD 表中為 Chinese Taipei，不計入 OECD 平均；指數型指標以 OECD 平均 = 0 標準化。每題附原始表號；卡片星等表示該題位置與科學成績位置的落差。</p>
     <p class="ai">本頁內容由 AI 協助整理生成，可能有誤，引用前請以 OECD 原始資料表為準。</p>
+    
   </footer>
 </div>
 
@@ -227,6 +228,8 @@ try{var tb=localStorage.getItem('pisa-tw-tab');
   if(tb&&CH.some(function(c){return c[0]===tb;}))tab=tb;}catch(e){}
 function saveTab(){try{localStorage.setItem('pisa-tw-tab',tab);}catch(e){}}
 function save(){try{localStorage.setItem('pisa-tw-seen',JSON.stringify(seen));}catch(e){}}
+/* 流量統計：有載入 Google Analytics（make_site.py 的 GA_ID）才送事件，否則不做任何事 */
+function track(name,params){try{if(typeof window.gtag==='function')window.gtag('event',name,params);}catch(e){}}
 
 function fmt(spec,v){
   var m=/\{v:([+]?)\.(\d)f\}/.exec(spec);
@@ -490,6 +493,7 @@ function render(){
 function goTab(name){
   if(tab===name)return;
   tab=name;openId=null;saveTab();render();
+  track('view_tab',{tab_name:name});
   var top=elTabs.getBoundingClientRect().top+window.scrollY-8;
   window.scrollTo({top:Math.max(0,top),behavior:reduce?'auto':'smooth'});
 }
@@ -503,6 +507,8 @@ board.addEventListener('click',function(ev){
   var card=ev.target.closest('[data-card]');
   if(card&&card.tagName==='BUTTON'){
     openId=card.getAttribute('data-card');seen[openId]=1;save();render();
+    var dd=D.filter(function(x){return x.id===openId;})[0];
+    if(dd)track('open_card',{card_id:dd.id,card_title:dd.teaser,card_group:dd.group});
     var el=document.querySelector('[data-card="'+openId+'"]');
     if(el)el.scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'});
   }

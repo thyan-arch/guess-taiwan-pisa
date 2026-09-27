@@ -1,8 +1,11 @@
 # -*- coding: utf-8 -*-
 """把 _style.css / _body.html / _app.js / 題目資料（web_data + trend_data）組成 web/index.html"""
-import base64, json, os
+import base64, json, os, re
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
 W = os.path.join(ROOT, 'web')
+
+# Google Analytics 4 評估 ID（形如 G-XXXXXXXXXX）。留空＝不載入 GA、頁尾也不顯示統計說明。
+GA_ID = ''
 
 def data_uri(p):
     return 'data:image/png;base64,' + base64.b64encode(open(p, 'rb').read()).decode()
@@ -17,6 +20,9 @@ def build():
     open(os.path.join(ROOT, 'data', 'questions.json'), 'w', encoding='utf-8').write(qs)
     body = (body.replace('__LOGO_WHITE__', data_uri(os.path.join(W, 'assets/logo-white.png')))
                 .replace('__LOGO_COLOR__', data_uri(os.path.join(W, 'assets/logo-color.png'))))
+    if GA_ID and not re.fullmatch(r'G-[A-Z0-9]{4,}', GA_ID):
+        raise SystemExit('GA_ID 格式不對，應為 G-XXXXXXXXXX：' + GA_ID)
+    body = body.replace('__GA_NOTE__', '<p class="ga">本站使用 Google Analytics 統計瀏覽人數與各題點閱次數。</p>' if GA_ID else '')
     head = ('<!doctype html>\n<meta charset="utf-8">\n'
       '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
       '<title>臺灣在哪一端</title>\n'
@@ -25,6 +31,10 @@ def build():
       '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?'
       'family=Noto+Sans+TC:wght@400;500;700&family=Ubuntu:wght@500;700&'
       'family=Fira+Sans:wght@400;500&display=swap">\n')
+    if GA_ID:
+        head += ('<script async src="https://www.googletagmanager.com/gtag/js?id=' + GA_ID + '"></script>\n'
+                 '<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}'
+                 "gtag('js',new Date());gtag('config','" + GA_ID + "');</script>\n")
     html = (head + '<style>\n' + css + '\n</style>\n\n' + body +
             '\n<script id="pisa-data" type="application/json">' + qs + '</script>\n'
             '<script>\n' + js + '\n</script>\n')
