@@ -19,7 +19,7 @@ def build():
                 .replace('__LOGO_COLOR__', data_uri(os.path.join(W, 'assets/logo-color.png'))))
     head = ('<!doctype html>\n<meta charset="utf-8">\n'
       '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
-      '<title>猜猜臺灣在哪一端</title>\n'
+      '<title>臺灣在哪一端</title>\n'
       '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
       '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
       '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?'
