@@ -55,6 +55,7 @@ p{margin:0} img{max-width:100%}
   color:var(--blue-100);margin-top:var(--lg)}
 .hero h1{font-size:clamp(36px,8vw,56px);line-height:1.2;color:#FFF;margin-top:var(--xs)}
 .hero h1 em{font-style:normal;color:var(--yel-500)}
+.hero h1 .nowrap{white-space:nowrap}
 .hero .sub{margin-top:var(--md);max-width:30em;color:#FFFFFF;font-size:16px;font-family:var(--zh)}
 .rules{display:flex;gap:var(--xs);flex-wrap:wrap;margin-top:var(--lg)}
 .rules span{font-family:var(--zh);font-size:12px;padding:var(--xs2) var(--xs);border-radius:var(--r-sm);
