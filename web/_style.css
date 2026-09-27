@@ -169,3 +169,4 @@ footer .ai{margin-top:var(--sm);font-weight:500}
   .detail .q{font-size:20px}
   .judge .big{font-size:40px}
 }
+.insight .ilab{display:block;font-weight:700;margin-bottom:var(--xs2);color:var(--hi-strong)}

@@ -256,7 +256,7 @@ function detailUI(d){
     +(vw?'<span class="verdict '+vw[1]+'">'+esc(vw[0])+'</span>':'')+'</div>'
     +'<p class="place">'+esc(place)+'</p>'
     +'<div class="chartwrap">'+(d.type==='trend'?chartTrend(d):chartRank(d))+'</div>'
-    +tbl+'<p class="insight">'+esc(d.note)+'</p>'
+    +tbl+'<p class="insight"><b class="ilab">這代表什麼</b>'+esc(d.note)+'</p>'
     +'<p class="src">資料表：'+esc(d.src)+'</p>'
     +'<div class="acts"><button class="btn alt" data-act="close" type="button">收起</button></div></div>';
 }
