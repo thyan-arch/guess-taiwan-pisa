@@ -25,7 +25,7 @@ def build():
     body = body.replace('__GA_NOTE__', '<p class="ga">本站使用 Google Analytics 統計瀏覽人數與各題點閱次數。</p>' if GA_ID else '')
     head = ('<!doctype html>\n<meta charset="utf-8">\n'
       '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
-      '<title>PISA 臺灣科學教育，強在哪、弱在哪？</title>\n'
+      '<title>PISA 2025 臺灣科學教育，強在哪、弱在哪？</title>\n'
       '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
       '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
       '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?'
